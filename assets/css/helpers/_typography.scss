@@ -1,0 +1,12 @@
+@import "variables";
+
+.sms-link-dark-bg {
+  color: $color-sms-white;
+  &:hover {
+    color: $color-sms-white-hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $color-sms-contrast;
+  }
+}

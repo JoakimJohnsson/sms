@@ -1,0 +1,56 @@
+// Colors
+$color-sms-blue: #014656;
+$color-sms-blue-light: #096176;
+$color-sms-blue-rgba-trans: rgba(1, 70, 86, 0.5);
+
+$color-sms-yellow: #f6d101;
+$color-sms-yellow-light: #fde85d;
+$color-sms-yellow-rgba-trans: rgba(246, 209, 1, 0.5);
+
+$color-sms-red: #D61016;
+$color-sms-green: #47AC34;
+$color-sms-grey: #cccccc;
+
+$color-sms-black: #011c22;
+$color-sms-black-hover: $color-sms-blue;
+$color-sms-black-active: $color-sms-yellow;
+$color-sms-black-disabled: $color-sms-grey;
+
+$color-sms-white: #ffffff;
+$color-sms-white-hover: $color-sms-grey;
+$color-sms-white-active: $color-sms-yellow;
+$color-sms-white-disabled: $color-sms-grey;
+
+
+$color-sms-primary: $color-sms-blue;
+$color-sms-primary-light: $color-sms-blue-light;
+
+$color-sms-contrast: $color-sms-yellow;
+$color-sms-contrast-rgba-trans: $color-sms-yellow-rgba-trans;
+
+// Typography
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$headings-font-family: 'Muli', sans-serif;
+$headings-font-weight: 900;
+$headings-color: $color-sms-black;
+
+$link-color: $color-sms-primary;
+$link-hover-color: $color-sms-primary-light;
+
+// Bootstrap overrides
+$navbar-dark-color: $color-sms-white;
+$navbar-dark-hover-color: $color-sms-white-hover;
+$navbar-dark-active-color: $color-sms-white-active;
+$navbar-dark-disabled-color: $color-sms-white-disabled;
+$navbar-dark-toggler-border-color: transparent;
+
+$navbar-light-color: $color-sms-black;
+$navbar-light-hover-color: $color-sms-black-hover;
+$navbar-light-active-color: $color-sms-black-active;
+$navbar-light-disabled-color: $color-sms-black-disabled;
+$navbar-light-toggler-border-color: transparent;
+
+
+

@@ -1,0 +1,59 @@
+@import "../helpers/variables";
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .navbar-brand {
+    margin-right: 5rem;
+  }
+}
+
+.login-dropdown {
+  .dropdown-menu {
+    background: transparent;
+    border: none;
+    left: -170px;
+    padding: 1rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .login-dropdown {
+    .form-row {
+      margin-right: 25%;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .login-dropdown {
+    .form-row {
+      margin-right: 50%;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .login-dropdown {
+    .form-row {
+      margin-right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .login-dropdown {
+    .dropdown-menu {
+      background: $color-sms-primary-light;
+      left: -170px;
+      padding: 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
