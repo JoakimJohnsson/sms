@@ -1,9 +1,14 @@
 @import "../helpers/variables";
 
+.sms-navbar-main {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+}
+
 .navbar-brand {
   margin-right: 2rem;
 }
-
 @include media-breakpoint-up(sm) {
   .navbar-brand {
     margin-right: 5rem;
@@ -14,8 +19,6 @@
   .dropdown-menu {
     background: transparent;
     border: none;
-    left: -170px;
-    padding: 1rem;
   }
 }
 
@@ -46,7 +49,7 @@
     .dropdown-menu {
       background: $color-sms-primary-light;
       left: -170px;
-      padding: 1rem;
+      padding: 2rem;
     }
   }
 }
