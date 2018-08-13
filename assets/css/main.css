@@ -8169,7 +8169,8 @@ template {
   color: #f6d101;
   background-color: transparent;
   background-image: none;
-  border-color: #f6d101; }
+  border-color: #f6d101;
+  border-radius: 0; }
 
 .sms-btn-outline-contrast:hover {
   color: #014656;
