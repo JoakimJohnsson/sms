@@ -8131,6 +8131,9 @@ template {
   .sms-link-dark-bg:active {
     color: #f6d101; }
 
+.sms-navbar-main .navbar {
+  padding: 0.5rem 0; }
+
 .navbar-brand {
   margin-right: 2rem; }
 
@@ -8139,9 +8142,7 @@ template {
     margin-right: 5rem; } }
 .login-dropdown .dropdown-menu {
   background: transparent;
-  border: none;
-  left: -170px;
-  padding: 1rem; }
+  border: none; }
 
 @media (min-width: 576px) {
   .login-dropdown .form-row {
@@ -8156,7 +8157,7 @@ template {
   .login-dropdown .dropdown-menu {
     background: #096176;
     left: -170px;
-    padding: 1rem; } }
+    padding: 2rem; } }
 .sms-navbar-top {
   font-size: .8rem;
   min-height: 60px;
