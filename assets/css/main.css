@@ -8143,6 +8143,9 @@ template {
 @media (min-width: 576px) {
   .navbar-brand {
     margin-right: 5rem; } }
+.login-dropdown label {
+  color: #ffffff;
+  font-size: .8rem; }
 .login-dropdown .dropdown-menu {
   background: transparent;
   border: none; }
@@ -8194,5 +8197,18 @@ template {
 
 .sms-btn-outline-contrast:not(:disabled):not(.disabled):active:focus, .sms-btn-outline-contrast:not(:disabled):not(.disabled).active:focus, .show > .sms-btn-outline-contrast.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 209, 1, 0.5); }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #f6d101; }
+
+.custom-control-label::before {
+  background-color: #ffffff; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #014656;
+  background-color: #f6d101; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
 /*# sourceMappingURL=main.css.map */

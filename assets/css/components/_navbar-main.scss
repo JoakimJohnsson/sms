@@ -16,6 +16,10 @@
 }
 
 .login-dropdown {
+  label {
+    color: $color-sms-white;
+    font-size: .8rem;
+  }
   .dropdown-menu {
     background: transparent;
     border: none;
