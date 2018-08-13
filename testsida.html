@@ -12,8 +12,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="fas fa-15x fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav pt-sm-3 pt-lg-0 mr-auto">
@@ -64,9 +64,9 @@
                     </ul>
                     <ul class="navbar-nav login-dropdown">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button"
+                            <a class="nav-link " href="#" id="navbarDropdown-2" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Inloggning
+                                <span class="mr-3">Logga in</span><span class="fas fa-15x fa-unlock-alt"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
                                 <form class="form-row">
@@ -76,6 +76,13 @@
                                            aria-label="Password">
                                     <button class="btn sms-btn-outline-contrast mb-4" type="submit">Logga in</button>
                                 </form>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Kom ihåg mig!
+                                    </label>
+                                </div>
+
                                 <p><a class="sms-link-dark-bg" href="#">Glömt lösenord?</a></p>
                                 <p><a class="sms-link-dark-bg" href="#">Bli medlem</a></p>
                             </div>

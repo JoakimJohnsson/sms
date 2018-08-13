@@ -8131,6 +8131,9 @@ template {
   .sms-link-dark-bg:active {
     color: #f6d101; }
 
+.fa-15x {
+  font-size: 1.5rem; }
+
 .sms-navbar-main .navbar {
   padding: 0.5rem 0; }
 
