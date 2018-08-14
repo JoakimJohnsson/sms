@@ -8131,8 +8131,20 @@ template {
   .sms-link-dark-bg:active {
     color: #f6d101; }
 
+.fa-18x {
+  font-size: 1.8rem; }
+
 .fa-15x {
   font-size: 1.5rem; }
+
+.fa-12x {
+  font-size: 1.2rem; }
+
+.ftw-200 {
+  font-weight: 200; }
+
+.ftw-600 {
+  font-weight: 600; }
 
 .sms-navbar-main .navbar {
   padding: 0.5rem 0; }
@@ -8150,15 +8162,6 @@ template {
   background: transparent;
   border: none; }
 
-@media (min-width: 576px) {
-  .login-dropdown .form-row {
-    margin-right: 25%; } }
-@media (min-width: 768px) {
-  .login-dropdown .form-row {
-    margin-right: 50%; } }
-@media (min-width: 992px) {
-  .login-dropdown .form-row {
-    margin-right: 0; } }
 @media (min-width: 992px) {
   .login-dropdown .dropdown-menu {
     background: #096176;
