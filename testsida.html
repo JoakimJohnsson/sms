@@ -12,72 +12,66 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 
 <header>
     <!-- Top navigation -->
-    <div class="row no-gutters sms-navbar-top sms-bg-dark d-flex align-items-center">
-        <div class="container">
+    <div class="container-fluid sms-navbar-top sms-bg-dark d-none d-lg-flex">
+        <div class="container pr-0 pl-0 d-flex align-items-center">
             <p class="mb-0">Joakim "Spindelmannen" Johnsson</p>
         </div> <!-- /container-fluid -->
     </div> <!-- /row -->
     <!-- Main navigation -->
-    <div class="row no-gutters sms-navbar-main sms-bg-dark">
-        <div class="container">
-            <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-5 pb-lg-5 navbar-expand-lg navbar-dark sms-bg-dark">
+    <div class="container-fluid sms-navbar-main sms-bg-dark">
+        <div class="container pr-0 pl-0 sms-bg-dark">
+
+            <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-4 pb-lg-4 navbar-expand-lg navbar-dark sms-bg-dark">
                 <a class="navbar-brand" href="#">
                     <img class="d-block d-sm-none" src="assets/images/logo-white-small.png">
                     <img class="d-none d-sm-block" src="assets/images/logo-white-medium.png">
-                    <!--<img class="d-none d-lg-block" src="assets/images/logo-white-large.png">-->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="fas fa-18x fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
                     <ul class="navbar-nav pt-sm-3 pt-lg-0 mr-auto">
+                        <li class="dropdown-divider"></li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Startsida<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Bli medlem</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
+                        <li class="dropdown-divider"></li>
                     </ul>
                     <ul class="navbar-nav login-dropdown">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button"
+                            <a class="nav-link " href="#" id="navbarDropdown-2" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Inloggning
+                                <span class="mr-3 ftw-200">Inloggning</span><span
+                                    class="fas fa-12x fa-door-closed"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                                <form class="form-row">
-                                    <input class="form-control mb-3" type="search" placeholder="E-post"
+                                <form class="form-row m-0">
+                                    <input class="form-control mb-3 ftw-200" type="email" placeholder="E-post"
                                            aria-label="User name">
-                                    <input class="form-control mb-4" type="search" placeholder="Lösenord"
+                                    <input class="form-control mb-4 ftw-200" type="password" placeholder="Lösenord"
                                            aria-label="Password">
+
+                                    <div class="custom-control mb-4 w-100 custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Kom ihåg mig</label>
+                                    </div>
+
                                     <button class="btn sms-btn-outline-contrast mb-4" type="submit">Logga in</button>
                                 </form>
+
                                 <p><a class="sms-link-dark-bg" href="#">Glömt lösenord?</a></p>
-                                <p><a class="sms-link-dark-bg" href="#">Bli medlem</a></p>
                             </div>
                         </li>
                     </ul>
@@ -89,11 +83,39 @@
 </header>
 
 <div class="row no-gutters">
-    <div class="container"><h1>EN RUBRIK</h1>
+
+    <div class="container">
+        <h1>EN RUBRIK</h1>
+
+        <a href="#">Hej hej hej </a>
+
+        <h1>EN RUBRIK</h1>
+
+        <a href="#">Hej hej hej </a>
+
+        <h1>EN RUBRIK</h1>
+
+        <a href="#">Hej hej hej </a>
+
+        <h1>EN RUBRIK</h1>
 
         <a href="#">Hej hej hej </a>
     </div>
+
 </div>
+
+<footer>
+    <div class="container-fluid p-5 sms-bg-dark">
+        <div class="container pl-0 pr-0"><div class="row">
+            <div class="col-4">en kolumn</div>
+        <div class="col-4">en annan</div>
+        <div class="col-4">en tredje</div></div></div>
+
+
+    </div>
+
+
+</footer>
 
 <!-- /body -->
 <!-- Javascript -->

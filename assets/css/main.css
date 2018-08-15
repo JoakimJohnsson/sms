@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-sans-serif: "Muli", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -55,7 +55,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3764,7 +3764,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -3849,7 +3849,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7876,7 +7876,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -8131,6 +8131,21 @@ template {
   .sms-link-dark-bg:active {
     color: #f6d101; }
 
+.fa-18x {
+  font-size: 1.8rem; }
+
+.fa-15x {
+  font-size: 1.5rem; }
+
+.fa-12x {
+  font-size: 1.2rem; }
+
+.ftw-200 {
+  font-weight: 200; }
+
+.ftw-600 {
+  font-weight: 600; }
+
 .sms-navbar-main .navbar {
   padding: 0.5rem 0; }
 
@@ -8140,19 +8155,13 @@ template {
 @media (min-width: 576px) {
   .navbar-brand {
     margin-right: 5rem; } }
+.login-dropdown label {
+  color: #ffffff;
+  font-size: .8rem; }
 .login-dropdown .dropdown-menu {
   background: transparent;
   border: none; }
 
-@media (min-width: 576px) {
-  .login-dropdown .form-row {
-    margin-right: 25%; } }
-@media (min-width: 768px) {
-  .login-dropdown .form-row {
-    margin-right: 50%; } }
-@media (min-width: 992px) {
-  .login-dropdown .form-row {
-    margin-right: 0; } }
 @media (min-width: 992px) {
   .login-dropdown .dropdown-menu {
     background: #096176;
@@ -8191,5 +8200,18 @@ template {
 
 .sms-btn-outline-contrast:not(:disabled):not(.disabled):active:focus, .sms-btn-outline-contrast:not(:disabled):not(.disabled).active:focus, .show > .sms-btn-outline-contrast.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 209, 1, 0.5); }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #f6d101; }
+
+.custom-control-label::before {
+  background-color: #ffffff; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #014656;
+  background-color: #f6d101; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
 /*# sourceMappingURL=main.css.map */

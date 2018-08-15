@@ -16,31 +16,13 @@
 }
 
 .login-dropdown {
+  label {
+    color: $color-sms-white;
+    font-size: .8rem;
+  }
   .dropdown-menu {
     background: transparent;
     border: none;
-  }
-}
-
-@include media-breakpoint-up(sm) {
-  .login-dropdown {
-    .form-row {
-      margin-right: 25%;
-    }
-  }
-}
-@include media-breakpoint-up(md) {
-  .login-dropdown {
-    .form-row {
-      margin-right: 50%;
-    }
-  }
-}
-@include media-breakpoint-up(lg) {
-  .login-dropdown {
-    .form-row {
-      margin-right: 0;
-    }
   }
 }
 
@@ -53,10 +35,6 @@
     }
   }
 }
-
-
-
-
 
 
 
