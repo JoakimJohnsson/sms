@@ -1,10 +1,7 @@
 @import "../helpers/variables";
 
 .sms-navbar-top {
-  font-size: .8rem;
   min-height: 60px;
-  p {
-    color: $color-sms-white;
-  }
+  color: $color-sms-white;
   border-bottom: 1px solid $color-sms-grey;
 }

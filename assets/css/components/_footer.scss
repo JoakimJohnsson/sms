@@ -1,0 +1,16 @@
+@import "../helpers/variables";
+
+.sms-footer {
+  color: $color-sms-white;
+  a {
+    color: $color-sms-white-hover;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $color-sms-white;
+    }
+    &:active {
+      color: $color-sms-white-active;
+    }
+  }
+}

@@ -8123,6 +8123,15 @@ template {
 .sms-bg-light {
   background: #096176; }
 
+.sms-bg-white-hover {
+  background: #cccccc; }
+
+.text-color-primary-light {
+  color: #096176; }
+
+.text-color-white-hover {
+  color: #cccccc; }
+
 .sms-link-dark-bg {
   color: #ffffff; }
   .sms-link-dark-bg:hover {
@@ -8131,14 +8140,20 @@ template {
   .sms-link-dark-bg:active {
     color: #f6d101; }
 
-.fa-18x {
+.fs-18x {
   font-size: 1.8rem; }
 
-.fa-15x {
+.fs-15x {
   font-size: 1.5rem; }
 
-.fa-12x {
+.fs-12x {
   font-size: 1.2rem; }
+
+.fs-08x {
+  font-size: .8rem; }
+
+.fs-06x {
+  font-size: .6rem; }
 
 .ftw-200 {
   font-weight: 200; }
@@ -8156,8 +8171,7 @@ template {
   .navbar-brand {
     margin-right: 5rem; } }
 .login-dropdown label {
-  color: #ffffff;
-  font-size: .8rem; }
+  color: #ffffff; }
 .login-dropdown .dropdown-menu {
   background: transparent;
   border: none; }
@@ -8168,11 +8182,19 @@ template {
     left: -170px;
     padding: 2rem; } }
 .sms-navbar-top {
-  font-size: .8rem;
   min-height: 60px;
+  color: #ffffff;
   border-bottom: 1px solid #cccccc; }
-  .sms-navbar-top p {
-    color: #ffffff; }
+
+.sms-footer {
+  color: #ffffff; }
+  .sms-footer a {
+    color: #cccccc;
+    text-decoration: none; }
+    .sms-footer a:hover, .sms-footer a:focus {
+      color: #ffffff; }
+    .sms-footer a:active {
+      color: #f6d101; }
 
 .sms-btn-outline-contrast {
   color: #f6d101;
