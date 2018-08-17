@@ -16,10 +16,29 @@
 }
 
 
-.text-color-primary-light {
-  color: $color-sms-primary-light;
+
+
+
+// Margins
+
+.mb-neg-05 {
+  margin-bottom: -.5rem;
 }
 
-.text-color-white-hover {
-  color: $color-sms-white-hover;
+// Width / Height
+
+
+// Special elements
+
+.sms-logo {
+  font-size: 1.2rem;
+}
+@include media-breakpoint-up(sm) {
+  .sms-logo {
+    font-size: 1.5rem;
+  }
+}
+
+.sms-logo-footer {
+  width: 50px;
 }

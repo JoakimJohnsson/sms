@@ -11,6 +11,20 @@
   }
 }
 
+// Text colors
+
+.text-color-primary-light {
+  color: $color-sms-primary-light;
+}
+
+.text-color-white {
+  color: $color-sms-white;
+}
+
+.text-color-white-hover {
+  color: $color-sms-white-hover;
+}
+
 // Font size
 
 .fs-18x {
@@ -36,3 +50,4 @@
 .ftw-600 {
   font-weight: 600;
 }
+
