@@ -11,4 +11,34 @@
 .sms-bg-light {
   background: $color-sms-primary-light;
 }
+.sms-bg-white-hover {
+  background: $color-sms-white-hover;
+}
 
+
+
+
+
+// Margins
+
+.mb-neg-05 {
+  margin-bottom: -.5rem;
+}
+
+// Width / Height
+
+
+// Special elements
+
+.sms-logo {
+  font-size: 1.2rem;
+}
+@include media-breakpoint-up(sm) {
+  .sms-logo {
+    font-size: 1.5rem;
+  }
+}
+
+.sms-logo-footer {
+  width: 50px;
+}

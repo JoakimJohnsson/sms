@@ -11,16 +11,36 @@
   }
 }
 
-// Fontawesome
+// Text colors
 
-.fa-18x {
+.text-color-primary-light {
+  color: $color-sms-primary-light;
+}
+
+.text-color-white {
+  color: $color-sms-white;
+}
+
+.text-color-white-hover {
+  color: $color-sms-white-hover;
+}
+
+// Font size
+
+.fs-18x {
   font-size: 1.8rem;
 }
-.fa-15x {
+.fs-15x {
   font-size: 1.5rem;
 }
-.fa-12x {
+.fs-12x {
   font-size: 1.2rem;
+}
+.fs-08x {
+  font-size: .8rem;
+}
+.fs-06x {
+  font-size: .6rem;
 }
 
 // Font weights
@@ -30,3 +50,4 @@
 .ftw-600 {
   font-weight: 600;
 }
+
