@@ -17,6 +17,14 @@
 </head>
 <body>
 
+<!-- TODO: Classes are defined in this order:
+"what kind of element? (container)"
+"a class that defines the name of the element (sms-navbar)"
+"general layout classes (bg's text-colors and such)"
+"margins and paddings"
+"display properties"
+-->
+
 <header>
     <!-- Top navigation -->
     <div class="container-fluid sms-navbar-top sms-bg-dark d-none d-lg-flex">
@@ -30,15 +38,19 @@
 
             <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-4 pb-lg-4 navbar-expand-lg navbar-dark sms-bg-dark">
                 <a class="navbar-brand" href="#">
-                    
+
                     <div class="sms-logo text-color-white d-flex align-items-center">
-                        <img class="d-none d-sm-inline-block mr-3" src="assets/images/logo-shield.png"/>
+                        <!--<img class="d-none d-sm-inline-block mr-3" src="assets/images/logo-shield.png"/>-->
+
+                        <object class="d-none d-sm-inline-block mr-2" type="image/svg+xml"
+                                data="assets/images/shield.svg">Din webbläsare kan inte visa SVG-bilder
+                        </object>
 
                         <div>
-                            <p class="mb-neg-05">
+                            <p class="mb-neg-05 ftw-600">
                                 SVENSKA
                             </p>
-                            <p class="m-0">
+                            <p class="m-0 ftw-600">
                                 MARVELSAMLARE
                             </p>
                         </div>
@@ -177,46 +189,42 @@
     <div class="container-fluid sms-footer fs-08x p-5 sms-bg-dark">
         <div class="container pl-0 pr-0">
             <div class="row">
-                <div class="col-12 col-md-4 mb-5">
-
-
-                    <div class="fs-08x text-color-white d-flex align-items-center">
-                        <img class="sms-logo-footer mr-2" src="assets/images/logo-shield.png"/>
-                        <div>
-                            <p class="m-0">
+                <div class="col-12 col-md-4">
+                    <div class="fs-08x pt-0 text-color-white d-flex align-items-center">
+                        <div class="mb-3">
+                            <p class="m-0 ftw-600">
                                 SVENSKA
                             </p>
-                            <p class="m-0">
+
+                            <p class="m-0 ftw-600">
                                 MARVELSAMLARE
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-8 mb-5">
-                     <span class="fs-06x">This webb application contains images and information which is owned and copyrighted by MARVEL and is
+                </div> <!-- /col-12 -->
+
+                <div class="col-12 col-md-8">
+                    <p class="fs-12x">
+                        <span class="fab fa-facebook-f mr-2"></span>
+                        <span class="fab fa-instagram mr-2"></span>
+                        <span class="fas fa-shopping-cart"></span>
+                    </p>
+                    <p class="fs-06x">
+                        This webb application contains images and information which is owned and
+                        copyrighted by MARVEL and is
                         used without permission according to the Fair Use doctrin of the United States.
-                        This material is used for such purposes as archiving, research, news reporting and informed discussion.
-                        SVENSKA MARVELSAMLARE is a non-profit project run by a handful of Swedish Marvel-collectors.</span>
-
-                </div>
-                <div class="col-12 col-md-4">
-                </div>
-
-                <div class="col-12 col-md-8 ">
-                    <span class="far fa-copyright mr-2"></span>
-                    <span class="mr-3">2019</span>
-                    <span class="fab fa-facebook-f mr-2"></span>
-                    <span class="fab fa-instagram mr-2"></span>
-                    <span class="fas fa-shopping-cart"></span>
-                </div>
-
-            </div>
-        </div>
-
-
-    </div>
-
-
+                        This material is used for such purposes as archiving, research, news reporting and informed
+                        discussion.
+                        SVENSKA MARVELSAMLARE is a non-profit project run by a handful of Swedish Marvel-collectors.
+                    </p>
+                    <p>
+                        <span class="far fa-copyright mr-2"></span>
+                        <span class="mr-3">2019</span>
+                    </p>
+                </div> <!-- /col-12 -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </div> <!-- /container-fluid -->
 </footer>
 
 <!-- /body -->

@@ -1,8 +1,7 @@
 @import "variables";
 
-// General layout
-
-
+// GENERAL LAYOUT
+// ******************************************************
 
 // Backgrounds
 .sms-bg-dark {
@@ -15,12 +14,7 @@
   background: $color-sms-white-hover;
 }
 
-
-
-
-
 // Margins
-
 .mb-neg-05 {
   margin-bottom: -.5rem;
 }
@@ -28,17 +22,18 @@
 // Width / Height
 
 
-// Special elements
+// SPECIAL ELEMENTS
+// ******************************************************
 
+// Sms logotype
 .sms-logo {
   font-size: 1.2rem;
 }
 @include media-breakpoint-up(sm) {
   .sms-logo {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
-
 .sms-logo-footer {
   width: 50px;
 }
