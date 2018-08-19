@@ -1,4 +1,10 @@
-// Colors
+// VARIABLES
+// ******************************************************
+
+// COLORS
+// ******************************************************
+
+// Main colors
 $color-sms-blue: #014656;
 $color-sms-blue-light: #096176;
 $color-sms-blue-rgba-trans: rgba(1, 70, 86, 0.5);
@@ -21,15 +27,15 @@ $color-sms-white-hover: $color-sms-grey;
 $color-sms-white-active: $color-sms-yellow;
 $color-sms-white-disabled: $color-sms-grey;
 
-
+// Color variables
 $color-sms-primary: $color-sms-blue;
 $color-sms-primary-light: $color-sms-blue-light;
 
 $color-sms-contrast: $color-sms-yellow;
 $color-sms-contrast-rgba-trans: $color-sms-yellow-rgba-trans;
 
-// Typography
-
+// TYPOGRAPHY
+// ******************************************************
 $font-family-sans-serif: 'Muli', sans-serif;
 
 $headings-font-family: 'Muli', sans-serif;
@@ -38,6 +44,9 @@ $headings-color: $color-sms-black;
 
 $link-color: $color-sms-primary;
 $link-hover-color: $color-sms-primary-light;
+
+// BOOTSTRAP
+// ******************************************************
 
 // Bootstrap overrides
 $navbar-dark-color: $color-sms-white;

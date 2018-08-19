@@ -1,5 +1,9 @@
 @import "variables";
 
+// TYPOGRAPHY
+// ******************************************************
+
+// Links
 .sms-link-dark-bg {
   color: $color-sms-white;
   &:hover {
@@ -11,22 +15,20 @@
   }
 }
 
-// Text colors
+//TODO: länkarna i footer ska definieras med en sån här länkklass istället för i _footer.scss. Och även textfärgen.
 
+// Text colors
 .text-color-primary-light {
   color: $color-sms-primary-light;
 }
-
 .text-color-white {
   color: $color-sms-white;
 }
-
 .text-color-white-hover {
   color: $color-sms-white-hover;
 }
 
 // Font size
-
 .fs-18x {
   font-size: 1.8rem;
 }
