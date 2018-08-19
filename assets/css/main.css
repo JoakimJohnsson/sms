@@ -2979,7 +2979,7 @@ tbody.collapse.show {
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #f6d101; }
 .navbar-dark .navbar-nav .nav-link {
-  color: #FDF9DF; }
+  color: #FCFAF2; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
     color: #cccccc; }
   .navbar-dark .navbar-nav .nav-link.disabled {
@@ -2990,12 +2990,12 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #f6d101; }
 .navbar-dark .navbar-toggler {
-  color: #FDF9DF;
+  color: #FCFAF2;
   border-color: transparent; }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FDF9DF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FCFAF2' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 .navbar-dark .navbar-text {
-  color: #FDF9DF; }
+  color: #FCFAF2; }
   .navbar-dark .navbar-text a {
     color: #f6d101; }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
@@ -8139,7 +8139,7 @@ template {
   width: 50px; }
 
 .sms-link-dark-bg {
-  color: #FDF9DF; }
+  color: #FCFAF2; }
   .sms-link-dark-bg:hover {
     color: #cccccc;
     text-decoration: none; }
@@ -8150,7 +8150,7 @@ template {
   color: #096176; }
 
 .text-color-white {
-  color: #FDF9DF; }
+  color: #FCFAF2; }
 
 .text-color-white-hover {
   color: #cccccc; }
@@ -8186,7 +8186,7 @@ template {
   .navbar-brand {
     margin-right: 5rem; } }
 .login-dropdown label {
-  color: #FDF9DF; }
+  color: #FCFAF2; }
 .login-dropdown .dropdown-menu {
   background: transparent;
   border: none; }
@@ -8198,16 +8198,16 @@ template {
     padding: 2rem; } }
 .sms-navbar-top {
   min-height: 60px;
-  color: #FDF9DF;
+  color: #FCFAF2;
   border-bottom: 1px solid #cccccc; }
 
 .sms-footer {
-  color: #FDF9DF; }
+  color: #FCFAF2; }
   .sms-footer a {
     color: #cccccc;
     text-decoration: none; }
     .sms-footer a:hover, .sms-footer a:focus {
-      color: #FDF9DF; }
+      color: #FCFAF2; }
     .sms-footer a:active {
       color: #f6d101; }
 
@@ -8242,7 +8242,7 @@ template {
   background-color: #f6d101; }
 
 .custom-control-label::before {
-  background-color: #FDF9DF; }
+  background-color: #FCFAF2; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #014656;
