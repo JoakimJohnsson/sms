@@ -8126,6 +8126,14 @@ template {
 .sms-bg-white-hover {
   background: #cccccc; }
 
+.sms-bg-front-fullscreen {
+  background-image: url("../images/bg-marvel-heroes-2.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .mb-neg-05 {
   margin-bottom: -.5rem; }
 
@@ -8250,5 +8258,8 @@ template {
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
+
+.sms-main-front {
+  min-height: 75vh; }
 
 /*# sourceMappingURL=main.css.map */

@@ -20,41 +20,36 @@
 <!-- TODO: Classes are defined in this order:
 "what kind of element? (container)"
 "a class that defines the name of the element (sms-navbar)"
-"general layout classes (bg's text-colors and such)"
+"general layout classes (bg's text-colors/sizes and such)"
 "margins and paddings"
 "display properties"
 -->
 
 <header>
     <!-- Top navigation -->
-    <div class="container-fluid sms-navbar-top sms-bg-dark d-none d-lg-flex">
-        <div class="container pr-0 pl-0 d-flex align-items-center fs-08x">
+    <div class="container-fluid sms-navbar-top sms-bg-dark d-none ">
+        <div class="container fs-08x pr-0 pl-0 d-flex align-items-center">
             <p class="mb-0">Joakim "Spindelmannen" Johnsson</p>
         </div> <!-- /container-fluid -->
     </div> <!-- /row -->
     <!-- Main navigation -->
     <div class="container-fluid sms-navbar-main sms-bg-dark">
-        <div class="container pr-0 pl-0 sms-bg-dark">
-
+        <div class="container sms-bg-dark pr-0 pl-0">
             <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-4 pb-lg-4 navbar-expand-lg navbar-dark sms-bg-dark">
                 <a class="navbar-brand" href="#">
-
                     <div class="sms-logo text-color-white d-flex align-items-center">
-
-                        <object class="d-none d-sm-inline-block mr-2" type="image/svg+xml"
+                        <object class="mr-2 d-none d-sm-inline-block" type="image/svg+xml"
                                 data="assets/images/shield.svg">Din webbläsare kan inte visa SVG-bilder
                         </object>
-
-                        <div>
-                            <p class="mb-neg-05 ftw-600">
+                        <div class="ftw-600">
+                            <p class="mb-neg-05">
                                 SVENSKA
                             </p>
-                            <p class="m-0 ftw-600">
+                            <p class="m-0">
                                 MARVELSAMLARE
                             </p>
                         </div>
-                    </div>
-
+                    </div> <!-- /sms-logo -->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
@@ -62,7 +57,7 @@
                     <span class="fas fs-18x fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
-                    <ul class="navbar-nav pt-sm-3 pt-lg-0 mr-auto">
+                    <ul class="navbar-nav mr-auto pt-sm-3 pt-lg-0">
                         <li class="dropdown-divider"></li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Startsida<span class="sr-only">(current)</span></a>
@@ -74,128 +69,66 @@
                     </ul>
                     <ul class="navbar-nav login-dropdown">
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" id="navbarDropdown-2" role="button"
+                            <a class="nav-link " href="#" id="dropdown-login" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 ftw-200">Inloggning</span><span
                                     class="fas fa-door-closed fs-12x"></span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
+                            <div class="dropdown-menu" aria-labelledby="dropdown-login">
                                 <form class="form-row m-0">
-                                    <input class="form-control mb-3 ftw-200" type="email" placeholder="E-post"
+                                    <input class="form-control ftw-200 mb-3" type="email" placeholder="E-post"
                                            aria-label="User name">
-                                    <input class="form-control mb-4 ftw-200" type="password" placeholder="Lösenord"
+                                    <input class="form-control ftw-200 mb-4" type="password" placeholder="Lösenord"
                                            aria-label="Password">
-
 
                                     <button class="btn sms-btn-outline-contrast mb-3" type="submit">Logga in</button>
 
-
-                                    <div class="custom-control mb-1 w-100 custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label fs-08x" for="customCheck1">Kom ihåg
-                                            mig</label>
+                                    <div class="custom-control custom-checkbox mb-1 w-100">
+                                        <input type="checkbox" class="custom-control-input" id="custom-checkbox-remember">
+                                        <label class="custom-control-label fs-08x" for="custom-checkbox-remember">
+                                            Kom ihåg mig
+                                        </label>
                                     </div>
                                 </form>
-
                                 <p class="mb-2 mb-sm-0"><a class="sms-link-dark-bg fs-08x" href="#">Glömt lösenord?</a>
                                 </p>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </nav> <!-- /Main navigation -->
-
+            </nav>
         </div> <!-- /container-fluid -->
     </div> <!-- /row -->
 </header>
 
-<div class="container-fluid p-4">
+<div class="container-fluid sms-main-front sms-bg-front-fullscreen">
 
-    <div class="container pl-0 pr-0">
+    <div class="container pr-0 pl-0">
+        <div class="row pt-3 pb-3 pt-sm-5 pb-sm-5">
+            <div class="col-12">
 
-        <div class="row">
-            <div class="col-3 sms-bg-light p-3"><h1>EN RUBRIK</h1>
+                hej
 
-                <p href="#">Hej d� hej </p>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
             </div>
-            <div class="col-3 sms-bg-white-hover p-3"><h1>EN RUBRIK</h1>
 
-                <p href="#">Hej hej hej </p>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-            </div>
-            <div class="col-3 sms-bg-light p-3"><h1>EN RUBRIK</h1>
-
-                <p href="#">Hej hej hej </p>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-            </div>
-            <div class="col-3 sms-bg-white-hover p-3"><h1>EN RUBRIK</h1>
-
-                <p href="#">Hej hej hej </p>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-
-                <h1>EN RUBRIK</h1>
-
-                <a href="#">Hej hej hej </a>
-            </div>
         </div>
 
     </div>
 
-</div>
 
+</div>
+<!-- Footer -->
 <footer>
-    <div class="container-fluid sms-footer fs-08x p-5 sms-bg-dark">
+    <div class="container-fluid sms-footer fs-08x sms-bg-dark">
         <div class="container pl-0 pr-0">
-            <div class="row">
+            <div class="row pt-3 pb-3 pt-sm-5 pb-sm-5">
                 <div class="col-12 col-md-4">
-                    <div class="fs-08x pt-0 text-color-white d-flex align-items-center">
-                        <div class="mb-3">
-                            <p class="m-0 ftw-600">
+                    <div class="fs-08x  text-color-white d-flex align-items-center">
+                        <div class="ftw-600 mb-3">
+                            <p class="m-0">
                                 SVENSKA
                             </p>
-
-                            <p class="m-0 ftw-600">
+                            <p class="m-0">
                                 MARVELSAMLARE
                             </p>
                         </div>
@@ -216,10 +149,10 @@
                         discussion.
                         SVENSKA MARVELSAMLARE is a non-profit project run by a handful of Swedish Marvel-collectors.
                     </p>
-                    <p>
+                    <div>
                         <span class="far fa-copyright mr-2"></span>
                         <span class="mr-3">2019</span>
-                    </p>
+                    </div>
                 </div> <!-- /col-12 -->
             </div> <!-- /row -->
         </div> <!-- /container -->

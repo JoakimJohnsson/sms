@@ -14,12 +14,24 @@
   background: $color-sms-white-hover;
 }
 
+.sms-bg-front-fullscreen {
+  background-image: url($sms-img-path-marvel-heroes-2);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 // Margins
 .mb-neg-05 {
   margin-bottom: -.5rem;
 }
 
 // Width / Height
+
+
 
 
 // SPECIAL ELEMENTS
@@ -37,3 +49,5 @@
 .sms-logo-footer {
   width: 50px;
 }
+
+// Full screen background image on front page
