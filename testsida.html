@@ -27,21 +27,21 @@
 
 <header>
     <!-- Top navigation -->
-    <div class="container-fluid sms-navbar-top sms-bg-dark d-none ">
+    <div class="container-fluid sms-navbar-top sms-bg-primary d-none ">
         <div class="container fs-08x pr-0 pl-0 d-flex align-items-center">
             <p class="mb-0">Joakim "Spindelmannen" Johnsson</p>
         </div> <!-- /container-fluid -->
     </div> <!-- /row -->
     <!-- Main navigation -->
-    <div class="container-fluid sms-navbar-main sms-bg-dark">
-        <div class="container sms-bg-dark pr-0 pl-0">
-            <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-4 pb-lg-4 navbar-expand-lg navbar-dark sms-bg-dark">
+    <div class="container-fluid sms-navbar-main sms-bg-primary">
+        <div class="container sms-bg-primary pr-0 pl-0">
+            <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-4 pb-lg-4 navbar-expand-lg navbar-dark sms-bg-primary">
                 <a class="navbar-brand" href="#">
                     <div class="sms-logo text-color-white d-flex align-items-center">
                         <object class="mr-2 d-none d-sm-inline-block" type="image/svg+xml"
                                 data="assets/images/shield.svg">Din webbläsare kan inte visa SVG-bilder
                         </object>
-                        <div class="ftw-600">
+                        <div class="ftw-700">
                             <p class="mb-neg-05">
                                 SVENSKA
                             </p>
@@ -76,15 +76,16 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-login">
                                 <form class="form-row m-0">
-                                    <input class="form-control ftw-200 mb-3" type="email" placeholder="E-post"
+                                    <input class="form-control mb-3" type="email" placeholder="E-post"
                                            aria-label="User name">
-                                    <input class="form-control ftw-200 mb-4" type="password" placeholder="Lösenord"
+                                    <input class="form-control mb-4" type="password" placeholder="Lösenord"
                                            aria-label="Password">
 
                                     <button class="btn sms-btn-outline-contrast mb-3" type="submit">Logga in</button>
 
                                     <div class="custom-control custom-checkbox mb-1 w-100">
-                                        <input type="checkbox" class="custom-control-input" id="custom-checkbox-remember">
+                                        <input type="checkbox" class="custom-control-input"
+                                               id="custom-checkbox-remember">
                                         <label class="custom-control-label fs-08x" for="custom-checkbox-remember">
                                             Kom ihåg mig
                                         </label>
@@ -105,26 +106,96 @@
 
     <div class="container pr-0 pl-0">
         <div class="row pt-3 pb-3 pt-sm-5 pb-sm-5">
+
+
             <div class="col-12">
+                <button class="sms-btn-front-collapse w-100 p-3" type="button" data-toggle="collapse"
+                        data-target="#sign-up-collapse" aria-expanded="false" aria-controls="sign-up-collapse">
+                    <h2 class="m-0 text-color-primary-light">REGISTRERA DIG HÄR <span class="fas fa-angle-double-down"></span></h2>
+                </button>
 
-                hej
+                <div class="collapse" id="sign-up-collapse">
+                    <div class="col-12 sms-bg-primary-light text-color-white">
 
+                        <div class="container pt-3">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-12 col-form-label">E-post</label>
+                                    <div class="col-12 ">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="E-post">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword3" class="col-12 col-form-label">Lösenord</label>
+                                    <div class="col-12">
+                                        <input type="password" class="form-control" id="inputPassword3"
+                                               placeholder="Lösenord">
+                                    </div>
+                                </div>
+                                <fieldset class="form-group row">
+                                    <legend class="col-form-legend col-sm-2">Radios</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                       id="gridRadios1" value="option1" checked>
+                                                Option one is this and that&mdash;be sure to include why it's great
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                       id="gridRadios2" value="option2">
+                                                Option two can be something else and selecting it will deselect option
+                                                one
+                                            </label>
+                                        </div>
+                                        <div class="form-check disabled">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                       id="gridRadios3" value="option3" disabled>
+                                                Option three is disabled
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-group row">
+                                    <label class="col-sm-2">Checkbox</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-sm-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-        </div>
 
-    </div>
+        </div> <!-- /row -->
+    </div> <!-- /container -->
 
 
-</div>
+</div> <!-- /container-fluid -->
 <!-- Footer -->
 <footer>
-    <div class="container-fluid sms-footer fs-08x sms-bg-dark">
+    <div class="container-fluid sms-footer fs-08x sms-bg-primary">
         <div class="container pl-0 pr-0">
             <div class="row pt-3 pb-3 pt-sm-5 pb-sm-5">
                 <div class="col-12 col-md-4">
                     <div class="fs-08x  text-color-white d-flex align-items-center">
-                        <div class="ftw-600 mb-3">
+                        <div class="ftw-700 mb-3">
                             <p class="m-0">
                                 SVENSKA
                             </p>
@@ -151,7 +222,7 @@
                     </p>
                     <div>
                         <span class="far fa-copyright mr-2"></span>
-                        <span class="mr-3">2019</span>
+                        <span class="mr-3">2019 Svenska Marvelsamlare</span>
                     </div>
                 </div> <!-- /col-12 -->
             </div> <!-- /row -->

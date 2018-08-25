@@ -5,8 +5,9 @@
 // ******************************************************
 
 // Main colors
-$color-sms-blue: #014656;
-$color-sms-blue-light: #096176;
+$color-sms-blue: #00232b;
+$color-sms-blue-light: #013845;
+$color-sms-blue-light-rgba-trans: rgba(9, 97, 118, 0.5);
 $color-sms-blue-rgba-trans: rgba(1, 70, 86, 0.5);
 
 $color-sms-yellow: #f6d101;
@@ -30,8 +31,10 @@ $color-sms-white-disabled: $color-sms-grey;
 // Color variables
 $color-sms-primary: $color-sms-blue;
 $color-sms-primary-light: $color-sms-blue-light;
+$color-sms-primary-light-rgba-trans: $color-sms-blue-light-rgba-trans;
 
 $color-sms-contrast: $color-sms-yellow;
+$color-sms-contrast-hover: $color-sms-yellow-light;
 $color-sms-contrast-rgba-trans: $color-sms-yellow-rgba-trans;
 
 // TYPOGRAPHY
@@ -40,7 +43,7 @@ $font-family-sans-serif: 'Muli', sans-serif;
 
 $headings-font-family: 'Muli', sans-serif;
 $headings-font-weight: 900;
-$headings-color: $color-sms-black;
+$headings-color: $color-sms-primary;
 
 $link-color: $color-sms-primary;
 $link-hover-color: $color-sms-primary-light;

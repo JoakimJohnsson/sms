@@ -137,12 +137,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #014656;
+  color: #00232b;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #096176;
+    color: #013845;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Muli", sans-serif;
   font-weight: 900;
   line-height: 1.2;
-  color: #011c22; }
+  color: #00232b; }
 
 h1, .h1 {
   font-size: 2.5rem; }
@@ -2105,10 +2105,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #014656;
+  color: #00232b;
   background-color: transparent; }
   .btn-link:hover {
-    color: #096176;
+    color: #013845;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -2954,7 +2954,7 @@ tbody.collapse.show {
 .navbar-light .navbar-nav .nav-link {
   color: #011c22; }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: #014656; }
+    color: #00232b; }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: #cccccc; }
 .navbar-light .navbar-nav .show > .nav-link,
@@ -3201,11 +3201,11 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #014656;
+  color: #00232b;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:hover {
-    color: #096176;
+    color: #013845;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -3961,7 +3961,7 @@ button.close {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #011c22;
+  color: #00232b;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.3rem - 1px);
@@ -7958,12 +7958,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #014656;
+  color: #00232b;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #096176;
+    color: #013845;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -8117,14 +8117,20 @@ template {
 [hidden] {
   display: none !important; }
 
-.sms-bg-dark {
-  background: #014656; }
+.sms-bg-primary {
+  background: #00232b; }
 
-.sms-bg-light {
-  background: #096176; }
+.sms-bg-primary-light {
+  background: #013845; }
 
 .sms-bg-white-hover {
   background: #cccccc; }
+
+.sms-bg-contrast {
+  background: #f6d101; }
+
+.sms-bg-white {
+  background: #FCFAF2; }
 
 .sms-bg-front-fullscreen {
   background-image: url("../images/bg-marvel-heroes-2.jpg");
@@ -8133,6 +8139,9 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.sms-border-white {
+  border: 1px solid #FCFAF2; }
 
 .mb-neg-05 {
   margin-bottom: -.5rem; }
@@ -8155,7 +8164,10 @@ template {
     color: #f6d101; }
 
 .text-color-primary-light {
-  color: #096176; }
+  color: #013845; }
+
+.text-color-primary {
+  color: #00232b; }
 
 .text-color-white {
   color: #FCFAF2; }
@@ -8184,6 +8196,9 @@ template {
 .ftw-600 {
   font-weight: 600; }
 
+.ftw-700 {
+  font-weight: 700; }
+
 .sms-navbar-main .navbar {
   padding: 0.5rem 0; }
 
@@ -8201,7 +8216,7 @@ template {
 
 @media (min-width: 992px) {
   .login-dropdown .dropdown-menu {
-    background: #096176;
+    background: #013845;
     left: -170px;
     padding: 2rem; } }
 .sms-navbar-top {
@@ -8227,7 +8242,7 @@ template {
   border-radius: 0; }
 
 .sms-btn-outline-contrast:hover {
-  color: #014656;
+  color: #00232b;
   background-color: #f6d101;
   border-color: #f6d101; }
 
@@ -8239,12 +8254,39 @@ template {
   background-color: transparent; }
 
 .sms-btn-outline-contrast:not(:disabled):not(.disabled):active, .sms-btn-outline-contrast:not(:disabled):not(.disabled).active, .show > .sms-btn-outline-contrast.dropdown-toggle {
-  color: #014656;
+  color: #00232b;
   background-color: #f6d101;
   border-color: #f6d101; }
 
 .sms-btn-outline-contrast:not(:disabled):not(.disabled):active:focus, .sms-btn-outline-contrast:not(:disabled):not(.disabled).active:focus, .show > .sms-btn-outline-contrast.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 209, 1, 0.5); }
+
+.sms-btn-outline-primary-light {
+  color: #013845;
+  background-color: transparent;
+  background-image: none;
+  border-color: #013845;
+  border-radius: 0; }
+
+.sms-btn-outline-primary-light:hover {
+  color: #FCFAF2;
+  background-color: #013845;
+  border-color: #013845; }
+
+.sms-btn-outline-primary-light:focus, .sms-btn-outline-primary-light.focus {
+  box-shadow: 0 0 0 0.2rem rgba(9, 97, 118, 0.5); }
+
+.sms-btn-outline-primary-light.disabled, .sms-btn-outline-primary-light:disabled {
+  color: #013845;
+  background-color: transparent; }
+
+.sms-btn-outline-primary-light:not(:disabled):not(.disabled):active, .sms-btn-outline-primary-light:not(:disabled):not(.disabled).active, .show > .sms-btn-outline-primary-light.dropdown-toggle {
+  color: #FCFAF2;
+  background-color: #013845;
+  border-color: #013845; }
+
+.sms-btn-outline-primary-light:not(:disabled):not(.disabled):active:focus, .sms-btn-outline-primary-light:not(:disabled):not(.disabled).active:focus, .show > .sms-btn-outline-primary-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(9, 97, 118, 0.5); }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #f6d101; }
@@ -8253,11 +8295,30 @@ template {
   background-color: #FCFAF2; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: #014656;
+  color: #00232b;
   background-color: #f6d101; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
+
+.sms-btn-front-collapse {
+  background-color: #00232b;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer; }
+
+.sms-btn-front-collapse h2 {
+  color: #FCFAF2; }
+
+.sms-btn-front-collapse:hover h2 {
+  color: #cccccc; }
+
+.sms-btn-front-collapse:focus h2 {
+  color: #f6d101; }
+
+.form-control {
+  font-weight: 200; }
 
 .sms-main-front {
   min-height: 75vh; }

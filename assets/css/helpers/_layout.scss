@@ -4,14 +4,22 @@
 // ******************************************************
 
 // Backgrounds
-.sms-bg-dark {
+.sms-bg-primary {
   background: $color-sms-primary;
 }
-.sms-bg-light {
+.sms-bg-primary-light {
   background: $color-sms-primary-light;
 }
 .sms-bg-white-hover {
   background: $color-sms-white-hover;
+}
+
+.sms-bg-contrast {
+  background: $color-sms-contrast;
+}
+
+.sms-bg-white {
+  background: $color-sms-white;
 }
 
 .sms-bg-front-fullscreen {
@@ -21,8 +29,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
+// Borders
+.sms-border-white {
+  border: 1px solid $color-sms-white;
+}
+
+
 
 // Margins
 .mb-neg-05 {
@@ -50,4 +64,3 @@
   width: 50px;
 }
 
-// Full screen background image on front page
