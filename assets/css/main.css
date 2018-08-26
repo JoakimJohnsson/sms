@@ -2979,7 +2979,7 @@ tbody.collapse.show {
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #f6d101; }
 .navbar-dark .navbar-nav .nav-link {
-  color: #FCFAF2; }
+  color: #ffffff; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
     color: #cccccc; }
   .navbar-dark .navbar-nav .nav-link.disabled {
@@ -2990,12 +2990,12 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #f6d101; }
 .navbar-dark .navbar-toggler {
-  color: #FCFAF2;
+  color: #ffffff;
   border-color: transparent; }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FCFAF2' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 .navbar-dark .navbar-text {
-  color: #FCFAF2; }
+  color: #ffffff; }
   .navbar-dark .navbar-text a {
     color: #f6d101; }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
@@ -8130,7 +8130,7 @@ template {
   background: #f6d101; }
 
 .sms-bg-white {
-  background: #FCFAF2; }
+  background: #ffffff; }
 
 .sms-bg-front-fullscreen {
   background-image: url("../images/bg-marvel-heroes-2.jpg");
@@ -8141,7 +8141,7 @@ template {
   background-size: cover; }
 
 .sms-border-white {
-  border: 1px solid #FCFAF2; }
+  border: 1px solid #ffffff; }
 
 .mb-neg-05 {
   margin-bottom: -.5rem; }
@@ -8155,12 +8155,24 @@ template {
 .sms-logo-footer {
   width: 50px; }
 
-.sms-link-dark-bg {
-  color: #FCFAF2; }
-  .sms-link-dark-bg:hover {
-    color: #cccccc;
+.sms-main-front {
+  min-height: 75vh; }
+
+.sms-link-dark-bg a {
+  color: #cccccc; }
+  .sms-link-dark-bg a:hover, .sms-link-dark-bg a:focus {
+    color: #ffffff;
     text-decoration: none; }
-  .sms-link-dark-bg:active {
+  .sms-link-dark-bg a:active {
+    color: #f6d101; }
+
+.sms-link-light-bg a {
+  color: #013845;
+  text-decoration: underline; }
+  .sms-link-light-bg a:hover, .sms-link-light-bg a:focus {
+    color: #00232b;
+    text-decoration: none; }
+  .sms-link-light-bg a:active {
     color: #f6d101; }
 
 .text-color-primary-light {
@@ -8170,7 +8182,7 @@ template {
   color: #00232b; }
 
 .text-color-white {
-  color: #FCFAF2; }
+  color: #ffffff; }
 
 .text-color-white-hover {
   color: #cccccc; }
@@ -8199,6 +8211,9 @@ template {
 .ftw-700 {
   font-weight: 700; }
 
+.form-control {
+  font-weight: 200; }
+
 .sms-navbar-main .navbar {
   padding: 0.5rem 0; }
 
@@ -8209,7 +8224,7 @@ template {
   .navbar-brand {
     margin-right: 5rem; } }
 .login-dropdown label {
-  color: #FCFAF2; }
+  color: #ffffff; }
 .login-dropdown .dropdown-menu {
   background: transparent;
   border: none; }
@@ -8221,18 +8236,8 @@ template {
     padding: 2rem; } }
 .sms-navbar-top {
   min-height: 60px;
-  color: #FCFAF2;
+  color: #ffffff;
   border-bottom: 1px solid #cccccc; }
-
-.sms-footer {
-  color: #FCFAF2; }
-  .sms-footer a {
-    color: #cccccc;
-    text-decoration: none; }
-    .sms-footer a:hover, .sms-footer a:focus {
-      color: #FCFAF2; }
-    .sms-footer a:active {
-      color: #f6d101; }
 
 .sms-btn-outline-contrast {
   color: #f6d101;
@@ -8269,7 +8274,7 @@ template {
   border-radius: 0; }
 
 .sms-btn-outline-primary-light:hover {
-  color: #FCFAF2;
+  color: #ffffff;
   background-color: #013845;
   border-color: #013845; }
 
@@ -8281,7 +8286,7 @@ template {
   background-color: transparent; }
 
 .sms-btn-outline-primary-light:not(:disabled):not(.disabled):active, .sms-btn-outline-primary-light:not(:disabled):not(.disabled).active, .show > .sms-btn-outline-primary-light.dropdown-toggle {
-  color: #FCFAF2;
+  color: #ffffff;
   background-color: #013845;
   border-color: #013845; }
 
@@ -8292,7 +8297,7 @@ template {
   background-color: #f6d101; }
 
 .custom-control-label::before {
-  background-color: #FCFAF2; }
+  background-color: #ffffff; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #00232b;
@@ -8306,16 +8311,26 @@ template {
   background-image: none;
   border: none;
   border-radius: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important; }
   .sms-btn-front-collapse h3 {
-    color: #00232b; }
+    color: #00232b;
+    font-size: 1rem; }
   .sms-btn-front-collapse:hover h3, .sms-btn-front-collapse:focus h3 {
     color: #013845; }
 
-.form-control {
-  font-weight: 200; }
+@media (min-width: 576px) {
+  .sms-btn-front-collapse h3 {
+    font-size: 1.75rem; } }
+body {
+  background-color: #ffffff; }
 
-.sms-main-front {
-  min-height: 75vh; }
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -65,11 +65,14 @@
                             <a class="nav-link" href="#">Startsida<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bli medlem</a>
+                            <a class="nav-link" href="#">Länkar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
                         </li>
                         <li class="dropdown-divider"></li>
                     </ul>
-                    <ul class="navbar-nav login-dropdown">
+                    <ul class="navbar-nav login-dropdown sms-link-dark-bg">
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#" id="dropdown-login" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -105,186 +108,133 @@
     <!-- /Main navigation -->
 </header>
 <main>
-    <div class="container-fluid sms-main-front sms-bg-front-fullscreen">
+    <div class="container-fluid sms-main-front sms-bg-front-fullscreen sms-link-light-bg">
         <div class="container pr-0 pl-0">
-
-            <!-- Registration collapse -->
             <div class="row pt-3 pb-3 pt-sm-5">
+
                 <div class="col-12 col-lg-6">
-                    <div class="sms-btn-front-collapse w-100 p-3 mb-3" id="btn-registration" type="button" data-toggle="collapse"
+                    <div class="p-3 mb-3 sms-bg-white">
+                        <h1>Välkommen till Svenska marvelsamlare</h1>
+                        <p class="lead">En webbapplikation för dig som gillar att samla på svenska marveltidningar. Här
+                            kan du enkelt
+                            administrera och få överblick över din samling.</p>
+                        <p>Undrar du hur mycket din samling är värd? Ange skickgradering på dina tidningar så estimeras
+                            samlingens
+                            värde automatiskt enligt siffrorna hos <a href="http://www.seriekatalogen.se">seriekatalogen.se</a>.
+                        </p>
+                        <p class="mb-4">Vår databas uppdateras kontinuerligt med nya tidningar, fler inscannade
+                            omslag, bilder, information om tecknare och författare m.m.</p>
+                        <h2>Skapa ett konto</h2>
+                        <p class="mb-4">För att kunna ta del av dessa funktioner måste du skapa ett konto. Det gör du
+                            enklast genom
+                            att fylla i registreringsformuläret här på sidan. När du gjort det är det bara att logga
+                            in.</p>
+                        <h2>Sociala medier</h2>
+                        <p>Vi har en facebookgrupp. Du kan även använda hashtaggen #svenskamarvelsamlare överallt där
+                            sådana används.</p>
+                    </div>
+                </div>
+
+
+                <aside class="col-12 col-lg-6">
+                    <!-- Registration collapse -->
+                    <div class="sms-btn-front-collapse w-100 p-3 mb-3" id="btn-registration" type="button"
+                         data-toggle="collapse"
                          data-target="#sign-up-collapse" aria-expanded="false" aria-controls="sign-up-collapse">
                         <div class="row">
                             <div class="col-6 col-sm-8 col-md-10 pl-4">
-                                <h3 class="m-0">REGISTRERA DIG HÄR </h3>
+                                <h3 class="m-0">REGISTRERING</h3>
                             </div>
                             <div class="col-6 col-sm-4 col-md-2 pr-4">
                                 <h3 class="m-0 text-right">
                                     <span class="show-more-registration fas fa-chevron-down"></span>
-                                    <span class="show-more-registration fas fa-chevron-up" style="display: none;"></span>
+                                    <span class="show-more-registration fas fa-chevron-up"
+                                          style="display: none;"></span>
                                 </h3>
                             </div>
                         </div>
                     </div>
+                    <!-- /Registration collapse -->
                     <div class="collapse" id="sign-up-collapse">
                         <div class="col-12 sms-bg-primary-light text-color-white">
 
                             <div class="container pt-3">
                                 <form>
                                     <div class="form-group row">
-                                        <label for="inputEmail3" class="col-12 col-form-label">E-post</label>
+                                        <label for="input-first-name" class="col-12 col-form-label">Förnamn</label>
                                         <div class="col-12 ">
-                                            <input type="email" class="form-control" id="inputEmail3"
-                                                   placeholder="E-post">
+                                            <input type="text" class="form-control" id="input-first-name"
+                                                   placeholder="Förnamn">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputPassword3" class="col-12 col-form-label">Lösenord</label>
+                                        <label for="input-last-name" class="col-12 col-form-label">Efternamn</label>
+                                        <div class="col-12 ">
+                                            <input type="text" class="form-control" id="input-last-name"
+                                                   placeholder="Efternamn">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="input-email" class="col-12 col-form-label">E-post
+                                            (användarnamn)</label>
+                                        <div class="col-12 ">
+                                            <input type="email" class="form-control" id="input-email"
+                                                   placeholder="E-post (användarnamn)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="input-password" class="col-12 col-form-label">Lösenord</label>
                                         <div class="col-12">
-                                            <input type="password" class="form-control" id="inputPassword3"
+                                            <input type="password" class="form-control" id="input-password"
                                                    placeholder="Lösenord">
                                         </div>
                                     </div>
-                                    <fieldset class="form-group row">
-                                        <legend class="col-form-legend col-sm-2">Radios</legend>
-                                        <div class="col-sm-10">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                           id="gridRadios1" value="option1" checked>
-                                                    Option one is this and that&mdash;be sure to include why it's great
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                           id="gridRadios2" value="option2">
-                                                    Option two can be something else and selecting it will deselect
-                                                    option
-                                                    one
-                                                </label>
-                                            </div>
-                                            <div class="form-check disabled">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                           id="gridRadios3" value="option3" disabled>
-                                                    Option three is disabled
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
                                     <div class="form-group row">
-                                        <label class="col-sm-2">Checkbox</label>
-                                        <div class="col-sm-10">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox"> Check me out
-                                                </label>
-                                            </div>
+                                        <label for="input-password-confirm" class="col-12 col-form-label">Bekräfta
+                                            lösenord</label>
+                                        <div class="col-12">
+                                            <input type="password" class="form-control" id="input-password-confirm"
+                                                   placeholder="Lösenord">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <div class="offset-sm-2 col-sm-10">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                    <div class="form-group row mb-4">
+                                        <label for="input-favorite-character" class="col-12 col-form-label">Säkerhetsfråga
+                                            - Favorithjälte / skurk?</label>
+                                        <div class="col-12">
+                                            <input type="password" class="form-control" id="input-favorite-character"
+                                                   placeholder="Favorithjälte / skurk?">
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-4">
+                                        <input type="checkbox" class="custom-control-input"
+                                               id="custom-checkbox-agree">
+                                        <label class="custom-control-label fs-08x" for="custom-checkbox-agree">
+                                            Jag godkänner att Svenska marvelsamlare sparar denna information
+                                        </label>
+                                    </div>
+                                    <div class="form-group row pb-4">
+                                        <div class="col-12">
+                                        <button class="btn sms-btn-outline-contrast mb-3" type="submit">Skicka</button>
+
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
+                    </div> <!-- /collapse -->
+
+                    <div class="col-12 p-3 mb-3 sms-bg-white">
+                        <h3>Statistik</h3>
+                        <p><span class="font-weight-bold">Antal medlemmar: </span> 88 st</p>
+                        <p><span class="font-weight-bold">Antal titlar: </span> 142 st</p>
+                        <p><span class="font-weight-bold">Nyaste medlem: </span> Karolina Bladh</p>
+                        <p><span class="font-weight-bold">Största samling: </span> Joakim Johnsson</p>
+                        <p><span class="font-weight-bold">Mest värdefulla samling: </span> Kalle Anka, 12 340:-</p>
                     </div>
-                </div> <!-- /col-12 -->
 
-            <!-- /Registration collapse -->
-
-            <!-- Login collapse -->
-                <div class="col-12 col-lg-6">
-                    <div class="sms-btn-front-collapse w-100 p-3 mb-3" id="btn-log-in" type="button" data-toggle="collapse"
-                         data-target="#log-in-collapse" aria-expanded="false" aria-controls="log-in-collapse">
-                        <div class="row">
-                            <div class="col-6 col-sm-8 col-md-10 pl-4">
-                                <h3 class="m-0">LOGGA IN </h3>
-                            </div>
-                            <div class="col-6 col-sm-4 col-md-2 pr-4">
-                                <h3 class="m-0 text-right">
-                                    <span class="fas fa-chevron-down show-more-login"></span>
-                                    <span class="fas fa-chevron-up show-more-login" style="display: none;"></span>
-                                </h3>
+                </aside>
 
 
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapse" id="log-in-collapse">
-                        <div class="col-12 sms-bg-primary-light text-color-white">
-
-                            <div class="container pt-3">
-                                <form>
-                                    <div class="form-group row">
-                                        <label for="inputEmail3" class="col-12 col-form-label">E-post</label>
-                                        <div class="col-12 ">
-                                            <input type="email" class="form-control" id="inputEmail7"
-                                                   placeholder="E-post">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputPassword3" class="col-12 col-form-label">Lösenord</label>
-                                        <div class="col-12">
-                                            <input type="password" class="form-control" id="inputPassword9"
-                                                   placeholder="Lösenord">
-                                        </div>
-                                    </div>
-                                    <fieldset class="form-group row">
-                                        <legend class="col-form-legend col-sm-2">Radios</legend>
-                                        <div class="col-sm-10">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                           id="gridRadios6" value="option1" checked>
-                                                    Option one is this and that&mdash;be sure to include why it's great
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                           id="gridRadios9" value="option2">
-                                                    Option two can be something else and selecting it will deselect
-                                                    option
-                                                    one
-                                                </label>
-                                            </div>
-                                            <div class="form-check disabled">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                           id="gridRadios8" value="option3" disabled>
-                                                    Option three is disabled
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2">Checkbox</label>
-                                        <div class="col-sm-10">
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox"> Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="offset-sm-2 col-sm-10">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- /col-12 -->
-            <!-- /Login collapse -->
             </div> <!-- /row -->
         </div> <!-- /container -->
     </div> <!-- /container-fluid -->
@@ -292,7 +242,7 @@
 
 <!-- Footer -->
 <footer>
-    <div class="container-fluid sms-footer fs-08x sms-bg-primary">
+    <div class="container-fluid sms-footer text-color-white fs-08x sms-bg-primary">
         <div class="container pl-0 pr-0">
             <div class="row pt-3 pb-3 pt-sm-5 pb-sm-5">
                 <div class="col-12 col-md-4">
@@ -308,7 +258,7 @@
                     </div>
                 </div> <!-- /col-12 -->
 
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 sms-link-dark-bg">
                     <p class="fs-12x">
                         <a href="#"><span class="fab fa-facebook-f mr-2"></span></a>
                         <a href="#"><span class="fab fa-instagram mr-2"></span></a>
@@ -316,15 +266,15 @@
                     </p>
                     <p class="fs-06x">
                         This webb application contains images and information which is owned and
-                        copyrighted by <a href="#">MARVEL</a> and is
+                        copyrighted by <a href="http://www.marvel.com">MARVEL Entertainment</a> and is
                         used without permission according to the Fair Use doctrin of the United States.
                         This material is used for such purposes as archiving, research, news reporting and informed
                         discussion.
-                        SVENSKA MARVELSAMLARE is a non-profit project run by a handful of Swedish Marvel-collectors.
+                        Svenska marvelsamlare is a non-profit project run by a handful of Swedish Marvel collectors.
                     </p>
                     <div>
                         <span class="far fa-copyright mr-2"></span>
-                        <span class="mr-3">2019 Svenska Marvelsamlare</span>
+                        <span class="mr-3">2019 Svenska marvelsamlare</span>
                     </div>
                 </div> <!-- /col-12 -->
             </div> <!-- /row -->

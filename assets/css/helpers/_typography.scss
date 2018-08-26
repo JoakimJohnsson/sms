@@ -5,17 +5,32 @@
 
 // Links
 .sms-link-dark-bg {
-  color: $color-sms-white;
-  &:hover {
+  a {
     color: $color-sms-white-hover;
-    text-decoration: none;
-  }
-  &:active {
-    color: $color-sms-contrast;
+    &:hover,
+    &:focus {
+      color: $color-sms-white;
+      text-decoration: none;
+    }
+    &:active {
+      color: $color-sms-white-active;
+    }
   }
 }
-
-//TODO: länkarna i footer ska definieras med en sån här länkklass istället för i _footer.scss. Och även textfärgen.
+.sms-link-light-bg {
+  a {
+    color: $color-sms-primary-hover;
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      color: $color-sms-primary;
+      text-decoration: none;
+    }
+    &:active {
+      color: $color-sms-white-active;
+    }
+  }
+}
 
 // Text colors
 .text-color-primary-light {
@@ -59,3 +74,7 @@
   font-weight: 700;
 }
 
+// Special components
+.form-control {
+  font-weight: 200;
+}

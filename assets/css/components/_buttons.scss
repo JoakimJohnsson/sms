@@ -90,8 +90,11 @@
   border: none;
   border-radius: 0;
   cursor: pointer;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
   h3 {
     color: $color-sms-primary;
+    font-size: 1rem;
   }
   &:hover,
   &:focus {
@@ -99,6 +102,12 @@
       color: $color-sms-primary-hover;
     }
   }
-
+}
+@include media-breakpoint-up(sm) {
+  .sms-btn-front-collapse {
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
 }
 
