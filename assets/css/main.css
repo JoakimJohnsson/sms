@@ -8302,20 +8302,15 @@ template {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
 .sms-btn-front-collapse {
-  background-color: #00232b;
+  background-color: #f6d101;
   background-image: none;
   border: none;
   border-radius: 0;
   cursor: pointer; }
-
-.sms-btn-front-collapse h2 {
-  color: #FCFAF2; }
-
-.sms-btn-front-collapse:hover h2 {
-  color: #cccccc; }
-
-.sms-btn-front-collapse:focus h2 {
-  color: #f6d101; }
+  .sms-btn-front-collapse h3 {
+    color: #00232b; }
+  .sms-btn-front-collapse:hover h3, .sms-btn-front-collapse:focus h3 {
+    color: #013845; }
 
 .form-control {
   font-weight: 200; }

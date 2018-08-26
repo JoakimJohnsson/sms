@@ -34,36 +34,36 @@
 }
 
 .sms-btn-outline-primary-light {
-  color: $color-sms-primary-light;
+  color: $color-sms-primary-hover;
   background-color: transparent;
   background-image: none;
-  border-color: $color-sms-primary-light;
+  border-color: $color-sms-primary-hover;
   border-radius: 0;
 }
 
 .sms-btn-outline-primary-light:hover {
   color: $color-sms-white;
-  background-color: $color-sms-primary-light;
-  border-color: $color-sms-primary-light;
+  background-color: $color-sms-primary-hover;
+  border-color: $color-sms-primary-hover;
 }
 
 .sms-btn-outline-primary-light:focus, .sms-btn-outline-primary-light.focus {
-  box-shadow: 0 0 0 0.2rem $color-sms-primary-light-rgba-trans;
+  box-shadow: 0 0 0 0.2rem $color-sms-primary-hover-rgba-trans;
 }
 
 .sms-btn-outline-primary-light.disabled, .sms-btn-outline-primary-light:disabled {
-  color: $color-sms-primary-light;
+  color: $color-sms-primary-hover;
   background-color: transparent;
 }
 
 .sms-btn-outline-primary-light:not(:disabled):not(.disabled):active, .sms-btn-outline-primary-light:not(:disabled):not(.disabled).active, .show > .sms-btn-outline-primary-light.dropdown-toggle {
   color: $color-sms-white;
-  background-color: $color-sms-primary-light;
-  border-color: $color-sms-primary-light;
+  background-color: $color-sms-primary-hover;
+  border-color: $color-sms-primary-hover;
 }
 
 .sms-btn-outline-primary-light:not(:disabled):not(.disabled):active:focus, .sms-btn-outline-primary-light:not(:disabled):not(.disabled).active:focus, .show > .sms-btn-outline-primary-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $color-sms-primary-light-rgba-trans;
+  box-shadow: 0 0 0 0.2rem $color-sms-primary-hover-rgba-trans;
 }
 
 // Custom checkbox
@@ -85,19 +85,20 @@
 }
 
 .sms-btn-front-collapse {
-  background-color: $color-sms-primary;
+  background-color: $color-sms-contrast;
   background-image: none;
   border: none;
   border-radius: 0;
   cursor: pointer;
+  h3 {
+    color: $color-sms-primary;
+  }
+  &:hover,
+  &:focus {
+    h3 {
+      color: $color-sms-primary-hover;
+    }
+  }
+
 }
 
-.sms-btn-front-collapse h2 {
-  color: $color-sms-white;
-}
-.sms-btn-front-collapse:hover h2 {
-  color: $color-sms-white-hover;
-}
-.sms-btn-front-collapse:focus h2 {
-  color: $color-sms-contrast;
-}
