@@ -8306,16 +8306,32 @@ template {
   background-image: none;
   border: none;
   border-radius: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important; }
   .sms-btn-front-collapse h3 {
-    color: #00232b; }
+    color: #00232b;
+    font-size: 1rem; }
   .sms-btn-front-collapse:hover h3, .sms-btn-front-collapse:focus h3 {
     color: #013845; }
 
+@media (min-width: 576px) {
+  .sms-btn-front-collapse h3 {
+    font-size: 1.75rem; } }
 .form-control {
   font-weight: 200; }
 
 .sms-main-front {
   min-height: 75vh; }
+
+body {
+  background-color: #FCFAF2; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
 
 /*# sourceMappingURL=main.css.map */

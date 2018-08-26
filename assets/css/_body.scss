@@ -1,0 +1,13 @@
+@import "helpers/variables";
+
+body {
+  background-color: $color-sms-white;
+}
+
+button,
+ input[type="button"],
+ input[type="reset"],
+ input[type="submit"] {
+   -moz-appearance: none;
+   -webkit-appearance: none;
+ }
