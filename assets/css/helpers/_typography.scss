@@ -19,7 +19,10 @@
 
 // Text colors
 .text-color-primary-light {
-  color: $color-sms-primary-light;
+  color: $color-sms-primary-hover;
+}
+.text-color-primary {
+  color: $color-sms-primary;
 }
 .text-color-white {
   color: $color-sms-white;
@@ -51,5 +54,8 @@
 }
 .ftw-600 {
   font-weight: 600;
+}
+.ftw-700 {
+  font-weight: 700;
 }
 
