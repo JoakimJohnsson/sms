@@ -19,7 +19,7 @@
 }
 .sms-link-light-bg {
   a {
-    color: $color-sms-primary-hover;
+    color: $color-sms-primary-hover-lighter;
     text-decoration: underline;
     &:hover,
     &:focus {
@@ -61,6 +61,41 @@
 }
 .fs-06x {
   font-size: .6rem;
+}
+
+@include media-breakpoint-down(md) {
+  h1 {
+    font-size: 2.15rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+}
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
 }
 
 // Font weights

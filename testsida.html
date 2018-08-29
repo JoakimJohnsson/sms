@@ -24,8 +24,7 @@
 "margins and paddings"
 "display properties"
 -->
-
-<header>
+<header class="fixed-top" id="sms-header">
     <!-- Top navigation -->
     <div class="container-fluid sms-navbar-top sms-bg-primary d-none ">
         <div class="container fs-08x pr-0 pl-0 d-flex align-items-center">
@@ -37,10 +36,10 @@
     <!-- Main navigation -->
     <div class="container-fluid sms-navbar-main sms-bg-primary">
         <div class="container sms-bg-primary pr-0 pl-0">
-            <nav class="navbar pt-sm-3 pb-sm-3 pt-lg-4 pb-lg-4 navbar-expand-lg navbar-dark sms-bg-primary">
+            <nav class="navbar pt-sm-2 pb-sm-2 pt-lg-3 pb-lg-3 navbar-expand-lg navbar-dark sms-bg-primary">
                 <a class="navbar-brand" href="#">
                     <div class="sms-logo text-color-white d-flex align-items-center">
-                        <object class="mr-2 d-none d-sm-inline-block" type="image/svg+xml"
+                        <object class="mr-2" type="image/svg+xml"
                                 data="assets/images/shield.svg">Din webbläsare kan inte visa SVG-bilder
                         </object>
                         <div class="ftw-700">
@@ -64,20 +63,32 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Startsida<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Länkar</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2">Länkar</span><span class="fas fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Seriekatalogen</a>
+                                <a class="dropdown-item" href="#">Seriewikin</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">Instagram</a>
+                            </div>
                         </li>
+
+
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakt</a>
+                            <a class="nav-link" href="mailto: admin@svenskamarvelsamlare.se">Kontakt</a>
                         </li>
                         <li class="dropdown-divider"></li>
                     </ul>
                     <ul class="navbar-nav login-dropdown sms-link-dark-bg">
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" id="dropdown-login" role="button"
+                            <a class="nav-link" href="#" id="dropdown-login" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 ftw-200">Inloggning</span><span
-                                    class="fas fa-door-closed fs-12x"></span>
+                                <span class="mr-2 ftw-200">Inloggning</span>
+                                <span class="fas fa-door-closed fs-12x"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-login">
                                 <form class="form-row m-0">
@@ -108,27 +119,37 @@
     <!-- /Main navigation -->
 </header>
 <main>
-    <div class="container-fluid sms-main-front sms-bg-front-fullscreen sms-link-light-bg">
+    <div class="container-fluid sms-main-front sms-bg-grey-lighter sms-link-light-bg">
         <div class="container pr-0 pl-0">
-            <div class="row pt-3 pb-3 pt-sm-5">
+            <div class="row pt-0 pb-0 pt-sm-5 pb-sm-3">
 
                 <div class="col-12 col-lg-6">
-                    <div class="p-3 mb-3 sms-bg-white">
+                    <div class="p-4 mb-0 mb-sm-3 sms-bg-white">
                         <h1>Välkommen till Svenska marvelsamlare</h1>
                         <p class="lead">En webbapplikation för dig som gillar att samla på svenska marveltidningar. Här
-                            kan du enkelt
-                            administrera och få överblick över din samling.</p>
-                        <p>Undrar du hur mycket din samling är värd? Ange skickgradering på dina tidningar så estimeras
-                            samlingens
-                            värde automatiskt enligt siffrorna hos <a href="http://www.seriekatalogen.se">seriekatalogen.se</a>.
-                        </p>
+                            kan du enkelt dokumentera, överblicka och administrera din samling.</p>
+                        <p>Självklart är appen optimerad för användning i mobilen, vilket gör den till din
+                            bästa kompis på loppisar, marknader och seriemässor.</p>
+
+                        <p>Vi erbjuder ett flertal finurliga funktioner för att göra samlandet enklare och roligare:</p>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li" ><span class="fas fa-angle-right"></span></span>
+                                Ange skickgradering på dina tidningar så estimeras samlingens värde automatiskt enligt
+                                siffrorna hos <a href="http://www.seriekatalogen.se">seriekatalogen.se</a>.</li>
+                            <li><span class="fa-li" ><span class="fas fa-angle-right"></span></span>
+                                Jämför din samling med andra medlemmar.</li>
+                            <li><span class="fa-li" ><span class="fas fa-angle-right"></span></span>
+                                Markera vilka tidningar du har dubbletter av, och vilka tidningar som är till salu, så andra
+                                medlemmar kan kontakta dig för eventuell försäljning.</li>
+                        </ul>
+
                         <p class="mb-4">Vår databas uppdateras kontinuerligt med nya tidningar, fler inscannade
                             omslag, bilder, information om tecknare och författare m.m.</p>
                         <h2>Skapa ett konto</h2>
-                        <p class="mb-4">För att kunna ta del av dessa funktioner måste du skapa ett konto. Det gör du
-                            enklast genom
-                            att fylla i registreringsformuläret här på sidan. När du gjort det är det bara att logga
-                            in.</p>
+                        <p class="mb-4">För att kunna ta del av dessa funktioner måste du bli medlem. Du skapar enkelt
+                            ett konto genom att fylla i formuläret här på sidan. Sedan är det bara att logga
+                            in och börja administrera din samling.</p>
+
                         <h2>Sociala medier</h2>
                         <p>Vi har en facebookgrupp. Du kan även använda hashtaggen #svenskamarvelsamlare överallt där
                             sådana används.</p>
@@ -138,14 +159,14 @@
 
                 <aside class="col-12 col-lg-6">
                     <!-- Registration collapse -->
-                    <div class="sms-btn-front-collapse w-100 p-3 mb-3" id="btn-registration" type="button"
+                    <div class="sms-btn-front-collapse w-100 p-3 mb-0 mb-sm-3" id="btn-registration" type="button"
                          data-toggle="collapse"
-                         data-target="#sign-up-collapse" aria-expanded="false" aria-controls="sign-up-collapse">
+                         data-target="#registration-collapse" aria-expanded="false" aria-controls="registration-collapse">
                         <div class="row">
-                            <div class="col-6 col-sm-8 col-md-10 pl-4">
-                                <h3 class="m-0">REGISTRERING</h3>
+                            <div class="col-10 pl-4">
+                                <h3 class="m-0">Skapa konto</h3>
                             </div>
-                            <div class="col-6 col-sm-4 col-md-2 pr-4">
+                            <div class="col-2 pr-4">
                                 <h3 class="m-0 text-right">
                                     <span class="show-more-registration fas fa-chevron-down"></span>
                                     <span class="show-more-registration fas fa-chevron-up"
@@ -155,8 +176,8 @@
                         </div>
                     </div>
                     <!-- /Registration collapse -->
-                    <div class="collapse" id="sign-up-collapse">
-                        <div class="col-12 sms-bg-primary-light text-color-white">
+                    <div class="collapse" id="registration-collapse">
+                        <div class="col-12 sms-bg-primary-hover text-color-white">
 
                             <div class="container pt-3">
                                 <form>
@@ -223,7 +244,7 @@
                         </div>
                     </div> <!-- /collapse -->
 
-                    <div class="col-12 p-3 mb-3 sms-bg-white">
+                    <div class="col-12 p-4 mb-0 mb-sm-3 sms-bg-white">
                         <h3>Statistik</h3>
                         <p><span class="font-weight-bold">Antal medlemmar: </span> 88 st</p>
                         <p><span class="font-weight-bold">Antal titlar: </span> 142 st</p>
@@ -244,7 +265,7 @@
 <footer>
     <div class="container-fluid sms-footer text-color-white fs-08x sms-bg-primary">
         <div class="container pl-0 pr-0">
-            <div class="row pt-3 pb-3 pt-sm-5 pb-sm-5">
+            <div class="row p-4 pt-sm-5 pb-sm-5 pr-sm-o pl-sm-0">
                 <div class="col-12 col-md-4">
                     <div class="fs-08x  text-color-white d-flex align-items-center">
                         <div class="ftw-700 mb-3">
@@ -260,9 +281,9 @@
 
                 <div class="col-12 col-md-8 sms-link-dark-bg">
                     <p class="fs-12x">
-                        <a href="#"><span class="fab fa-facebook-f mr-2"></span></a>
-                        <a href="#"><span class="fab fa-instagram mr-2"></span></a>
-                        <a href="#"><span class="fas fa-shopping-cart mr-2"></span></a>
+                        <a href="#"><span class="fab fs-15x fa-facebook-f mr-2"></span></a>
+                        <a href="#"><span class="fab fs-15x fa-instagram mr-2"></span></a>
+                        <a href="#"><span class="fas fs-15x fa-shopping-cart mr-2"></span></a>
                     </p>
                     <p class="fs-06x">
                         This webb application contains images and information which is owned and
@@ -274,7 +295,7 @@
                     </p>
                     <div>
                         <span class="far fa-copyright mr-2"></span>
-                        <span class="mr-3">2019 Svenska marvelsamlare</span>
+                        <span class="mr-3"><a href="mailto: admin@svenskamarvelsamlare.se">2019 Svenska marvelsamlare</a></span>
                     </div>
                 </div> <!-- /col-12 -->
             </div> <!-- /row -->

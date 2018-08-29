@@ -28,9 +28,10 @@
 @include media-breakpoint-up(lg) {
   .login-dropdown {
     .dropdown-menu {
-      background: $color-sms-primary-hover;
-      left: -170px;
+      background: $color-sms-primary-hover-lighter;
+      left: -160px;
       padding: 2rem;
+      width: 300px;
     }
   }
 }
