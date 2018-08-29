@@ -92,10 +92,6 @@
   cursor: pointer;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
-  h3 {
-    color: $color-sms-primary;
-    font-size: 1rem;
-  }
   &:hover,
   &:focus {
     h3 {
@@ -103,11 +99,3 @@
     }
   }
 }
-@include media-breakpoint-up(sm) {
-  .sms-btn-front-collapse {
-    h3 {
-      font-size: 1.75rem;
-    }
-  }
-}
-

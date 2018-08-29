@@ -6,20 +6,20 @@
 
 // Main colors
 $color-sms-blue: #00232b;
-$color-sms-blue-light: #013845;
-$color-sms-blue-light-rgba-trans: rgba(9, 97, 118, 0.5);
+$color-sms-blue-hover: #013845;
+$color-sms-blue-hover-lighter: #094857;
 $color-sms-blue-rgba-trans: rgba(1, 70, 86, 0.5);
+$color-sms-blue-hover-rgba-trans: rgba(9, 97, 118, 0.5);
 
 $color-sms-yellow: #f6d101;
-$color-sms-yellow-light: #f8d92d;
+$color-sms-yellow-hover: #fee141;
 $color-sms-yellow-rgba-trans: rgba(246, 209, 1, 0.5);
 
-$color-sms-red: #D61016;
-$color-sms-green: #47AC34;
 $color-sms-grey: #cccccc;
+$color-sms-grey-lighter: #fafafa;
 
 $color-sms-black: #011c22;
-$color-sms-black-hover: $color-sms-blue;
+$color-sms-black-hover: $color-sms-blue-hover;
 $color-sms-black-active: $color-sms-yellow;
 $color-sms-black-disabled: $color-sms-grey;
 
@@ -30,11 +30,12 @@ $color-sms-white-disabled: $color-sms-grey;
 
 // Color variables
 $color-sms-primary: $color-sms-blue;
-$color-sms-primary-hover: $color-sms-blue-light;
-$color-sms-primary-hover-rgba-trans: $color-sms-blue-light-rgba-trans;
+$color-sms-primary-hover: $color-sms-blue-hover;
+$color-sms-primary-hover-lighter: $color-sms-blue-hover-lighter;
+$color-sms-primary-hover-rgba-trans: $color-sms-blue-hover-rgba-trans;
 
 $color-sms-contrast: $color-sms-yellow;
-$color-sms-contrast-hover: $color-sms-yellow-light;
+$color-sms-contrast-hover: $color-sms-yellow-hover;
 $color-sms-contrast-rgba-trans: $color-sms-yellow-rgba-trans;
 
 // TYPOGRAPHY
@@ -70,8 +71,7 @@ $navbar-light-toggler-border-color: transparent;
 // Shield in logo
 $sms-img-path-logo-shield: "../images/shield.svg";
 
-// Shield in logo
-$sms-img-path-marvel-heroes: "../images/bg-marvel-heroes.jpg";
+// Front page background
 $sms-img-path-marvel-heroes-2: "../images/bg-marvel-heroes-2.jpg";
 
 

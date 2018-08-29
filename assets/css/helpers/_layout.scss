@@ -7,19 +7,23 @@
 .sms-bg-primary {
   background: $color-sms-primary;
 }
-.sms-bg-primary-light {
+.sms-bg-primary-hover {
   background: $color-sms-primary-hover;
+}
+.sms-bg-primary-hover-lighter {
+  background: $color-sms-primary-hover-lighter;
+}
+.sms-bg-contrast {
+  background: $color-sms-contrast;
+}
+.sms-bg-white {
+  background: $color-sms-white;
 }
 .sms-bg-white-hover {
   background: $color-sms-white-hover;
 }
-
-.sms-bg-contrast {
-  background: $color-sms-contrast;
-}
-
-.sms-bg-white {
-  background: $color-sms-white;
+.sms-bg-grey-lighter {
+  background: $color-sms-grey-lighter;
 }
 
 .sms-bg-front-fullscreen {
@@ -53,19 +57,34 @@
 
 // Sms logotype
 .sms-logo {
-  font-size: 1.2rem;
+  font-size: .9rem;
+  object {
+    width: 40px;
+  }
 }
 @include media-breakpoint-up(sm) {
   .sms-logo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    object {
+      width: 50px;
+    }
   }
-}
-.sms-logo-footer {
-  width: 50px;
 }
 
 // Main front page
 .sms-main-front {
   min-height: 75vh;
+}
+
+
+// Special front page media queries
+@include media-breakpoint-down(sm) {
+  .sms-main-front {
+    padding: 0;
+    margin: 0;
+  }
+  #registration-collapse.form-group:last-child {
+    margin-bottom: 0;
+  }
 }
 

@@ -2954,7 +2954,7 @@ tbody.collapse.show {
 .navbar-light .navbar-nav .nav-link {
   color: #011c22; }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: #00232b; }
+    color: #013845; }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: #cccccc; }
 .navbar-light .navbar-nav .show > .nav-link,
@@ -8120,17 +8120,23 @@ template {
 .sms-bg-primary {
   background: #00232b; }
 
-.sms-bg-primary-light {
+.sms-bg-primary-hover {
   background: #013845; }
 
-.sms-bg-white-hover {
-  background: #cccccc; }
+.sms-bg-primary-hover-lighter {
+  background: #094857; }
 
 .sms-bg-contrast {
   background: #f6d101; }
 
 .sms-bg-white {
   background: #ffffff; }
+
+.sms-bg-white-hover {
+  background: #cccccc; }
+
+.sms-bg-grey-lighter {
+  background: #fafafa; }
 
 .sms-bg-front-fullscreen {
   background-image: url("../images/bg-marvel-heroes-2.jpg");
@@ -8147,17 +8153,25 @@ template {
   margin-bottom: -.5rem; }
 
 .sms-logo {
-  font-size: 1.2rem; }
+  font-size: .9rem; }
+  .sms-logo object {
+    width: 40px; }
 
 @media (min-width: 576px) {
   .sms-logo {
-    font-size: 1.4rem; } }
-.sms-logo-footer {
-  width: 50px; }
-
+    font-size: 1.2rem; }
+    .sms-logo object {
+      width: 50px; } }
 .sms-main-front {
   min-height: 75vh; }
 
+@media (max-width: 767.98px) {
+  .sms-main-front {
+    padding: 0;
+    margin: 0; }
+
+  #registration-collapse.form-group:last-child {
+    margin-bottom: 0; } }
 .sms-link-dark-bg a {
   color: #cccccc; }
   .sms-link-dark-bg a:hover, .sms-link-dark-bg a:focus {
@@ -8167,7 +8181,7 @@ template {
     color: #f6d101; }
 
 .sms-link-light-bg a {
-  color: #013845;
+  color: #094857;
   text-decoration: underline; }
   .sms-link-light-bg a:hover, .sms-link-light-bg a:focus {
     color: #00232b;
@@ -8202,6 +8216,36 @@ template {
 .fs-06x {
   font-size: .6rem; }
 
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2.15rem; }
+
+  h2 {
+    font-size: 1.75rem; }
+
+  h3 {
+    font-size: 1.5rem; }
+
+  h4 {
+    font-size: 1.25rem; }
+
+  h5 {
+    font-size: 1.15rem; } }
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 1.75rem; }
+
+  h2 {
+    font-size: 1.5rem; }
+
+  h3 {
+    font-size: 1.3rem; }
+
+  h4 {
+    font-size: 1.15rem; }
+
+  h5 {
+    font-size: 1rem; } }
 .ftw-200 {
   font-weight: 200; }
 
@@ -8231,9 +8275,10 @@ template {
 
 @media (min-width: 992px) {
   .login-dropdown .dropdown-menu {
-    background: #013845;
-    left: -170px;
-    padding: 2rem; } }
+    background: #094857;
+    left: -160px;
+    padding: 2rem;
+    width: 300px; } }
 .sms-navbar-top {
   min-height: 60px;
   color: #ffffff;
@@ -8314,17 +8359,12 @@ template {
   cursor: pointer;
   -moz-appearance: none !important;
   -webkit-appearance: none !important; }
-  .sms-btn-front-collapse h3 {
-    color: #00232b;
-    font-size: 1rem; }
   .sms-btn-front-collapse:hover h3, .sms-btn-front-collapse:focus h3 {
     color: #013845; }
 
-@media (min-width: 576px) {
-  .sms-btn-front-collapse h3 {
-    font-size: 1.75rem; } }
 body {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  color: #011c22; }
 
 button,
 input[type="button"],
