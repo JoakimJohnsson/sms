@@ -24,7 +24,7 @@
 "margins and paddings"
 "display properties"
 -->
-<header class="fixed-top" id="sms-header">
+<header id="sms-header">
     <!-- Top navigation -->
     <div class="container-fluid sms-navbar-top sms-bg-primary d-none ">
         <div class="container fs-08x pr-0 pl-0 d-flex align-items-center">
@@ -64,7 +64,8 @@
                             <a class="nav-link" href="#">Startsida<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2">Länkar</span><span class="fas fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,7 +76,6 @@
                                 <a class="dropdown-item" href="#">Instagram</a>
                             </div>
                         </li>
-
 
 
                         <li class="nav-item">
@@ -120,48 +120,44 @@
 </header>
 <main>
     <div class="container-fluid sms-main-front sms-bg-grey-lighter sms-link-light-bg">
-        <div class="container pr-0 pl-0">
-            <div class="row pt-0 pb-0 pt-sm-5 pb-sm-3">
-
-                <div class="col-12 col-lg-6">
-                    <div class="p-4 mb-0 mb-sm-3 sms-bg-white">
-                        <h1>Välkommen till Svenska marvelsamlare</h1>
-                        <p class="lead">En webbapplikation för dig som gillar att samla på svenska marveltidningar. Här
-                            kan du enkelt dokumentera, överblicka och administrera din samling.</p>
-                        <p>Självklart är appen optimerad för användning i mobilen, vilket gör den till din
-                            bästa kompis på loppisar, marknader och seriemässor.</p>
-
-                        <p>Vi erbjuder ett flertal finurliga funktioner för att göra samlandet enklare och roligare:</p>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li" ><span class="fas fa-angle-right"></span></span>
-                                Ange skickgradering på dina tidningar så estimeras samlingens värde automatiskt enligt
-                                siffrorna hos <a href="http://www.seriekatalogen.se">seriekatalogen.se</a>.</li>
-                            <li><span class="fa-li" ><span class="fas fa-angle-right"></span></span>
-                                Jämför din samling med andra medlemmar.</li>
-                            <li><span class="fa-li" ><span class="fas fa-angle-right"></span></span>
-                                Markera vilka tidningar du har dubbletter av, och vilka tidningar som är till salu, så andra
-                                medlemmar kan kontakta dig för eventuell försäljning.</li>
-                        </ul>
-
-                        <p class="mb-4">Vår databas uppdateras kontinuerligt med nya tidningar, fler inscannade
-                            omslag, bilder, information om tecknare och författare m.m.</p>
-                        <h2>Skapa ett konto</h2>
-                        <p class="mb-4">För att kunna ta del av dessa funktioner måste du bli medlem. Du skapar enkelt
-                            ett konto genom att fylla i formuläret här på sidan. Sedan är det bara att logga
-                            in och börja administrera din samling.</p>
-
-                        <h2>Sociala medier</h2>
-                        <p>Vi har en facebookgrupp. Du kan även använda hashtaggen #svenskamarvelsamlare överallt där
-                            sådana används.</p>
-                    </div>
+        <div class="container">
+            <div class="row pt-0 pb-0 pt-sm-5 pb-sm-5">
+                <div class="col-12 col-lg-6 sms-bg-white p-4 mb-0 mb-sm-3">
+                    <h1>Välkommen till Svenska marvelsamlare</h1>
+                    <p class="lead">En webbapplikation för dig som gillar att samla på svenska marveltidningar. Här
+                        kan du enkelt dokumentera, överblicka och administrera din samling.</p>
+                    <p>Självklart är appen optimerad för användning i mobilen, vilket gör den till din
+                        bästa kompis på loppisar, marknader och seriemässor.</p>
+                    <p>Vi erbjuder ett flertal finurliga funktioner för att göra samlandet enklare och roligare:</p>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><span class="fas fa-angle-right"></span></span>
+                            Ange skickgradering på dina tidningar så estimeras samlingens värde automatiskt enligt
+                            siffrorna hos <a href="http://www.seriekatalogen.se">seriekatalogen.se</a>.
+                        </li>
+                        <li><span class="fa-li"><span class="fas fa-angle-right"></span></span>
+                            Jämför din samling med andra medlemmar.
+                        </li>
+                        <li><span class="fa-li"><span class="fas fa-angle-right"></span></span>
+                            Markera vilka tidningar du har dubbletter av, och vilka tidningar som är till salu, så andra
+                            medlemmar kan kontakta dig för eventuell försäljning.
+                        </li>
+                    </ul>
+                    <p class="">Vår databas uppdateras kontinuerligt med nya tidningar, fler inscannade
+                        omslag, bilder, information om tecknare och författare m.m.</p>
+                    <h2>Skapa ett konto</h2>
+                    <p class="mb-4">För att kunna ta del av dessa funktioner måste du bli medlem. Du skapar enkelt
+                        ett konto genom att fylla i formuläret här på sidan. Sedan är det bara att logga
+                        in och börja administrera din samling.</p>
+                    <h2>Sociala medier</h2>
+                    <p>Vi har en facebookgrupp. Du kan även använda hashtaggen #svenskamarvelsamlare överallt där
+                        sådana används.</p>
                 </div>
-
-
                 <aside class="col-12 col-lg-6">
                     <!-- Registration collapse -->
                     <div class="sms-btn-front-collapse w-100 p-3 mb-0 mb-sm-3" id="btn-registration" type="button"
                          data-toggle="collapse"
-                         data-target="#registration-collapse" aria-expanded="false" aria-controls="registration-collapse">
+                         data-target="#registration-collapse" aria-expanded="false"
+                         aria-controls="registration-collapse">
                         <div class="row">
                             <div class="col-10 pl-4">
                                 <h3 class="m-0">Skapa konto</h3>
@@ -175,87 +171,79 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /Registration collapse -->
-                    <div class="collapse" id="registration-collapse">
-                        <div class="col-12 sms-bg-primary-hover text-color-white">
-
-                            <div class="container pt-3">
-                                <form>
-                                    <div class="form-group row">
-                                        <label for="input-first-name" class="col-12 col-form-label">Förnamn</label>
-                                        <div class="col-12 ">
-                                            <input type="text" class="form-control" id="input-first-name"
-                                                   placeholder="Förnamn">
-                                        </div>
+                    <div class="collapse w-100 sms-bg-primary-hover text-color-white" id="registration-collapse">
+                        <div class="container pt-3">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="input-first-name" class="col-12 col-form-label">Förnamn</label>
+                                    <div class="col-12 ">
+                                        <input type="text" class="form-control" id="input-first-name"
+                                               placeholder="Förnamn">
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="input-last-name" class="col-12 col-form-label">Efternamn</label>
-                                        <div class="col-12 ">
-                                            <input type="text" class="form-control" id="input-last-name"
-                                                   placeholder="Efternamn">
-                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="input-last-name" class="col-12 col-form-label">Efternamn</label>
+                                    <div class="col-12 ">
+                                        <input type="text" class="form-control" id="input-last-name"
+                                               placeholder="Efternamn">
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="input-email" class="col-12 col-form-label">E-post
-                                            (användarnamn)</label>
-                                        <div class="col-12 ">
-                                            <input type="email" class="form-control" id="input-email"
-                                                   placeholder="E-post (användarnamn)">
-                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="input-email" class="col-12 col-form-label">E-post
+                                        (användarnamn)</label>
+                                    <div class="col-12 ">
+                                        <input type="email" class="form-control" id="input-email"
+                                               placeholder="E-post (användarnamn)">
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="input-password" class="col-12 col-form-label">Lösenord</label>
-                                        <div class="col-12">
-                                            <input type="password" class="form-control" id="input-password"
-                                                   placeholder="Lösenord">
-                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="input-password" class="col-12 col-form-label">Lösenord</label>
+                                    <div class="col-12">
+                                        <input type="password" class="form-control" id="input-password"
+                                               placeholder="Lösenord">
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="input-password-confirm" class="col-12 col-form-label">Bekräfta
-                                            lösenord</label>
-                                        <div class="col-12">
-                                            <input type="password" class="form-control" id="input-password-confirm"
-                                                   placeholder="Lösenord">
-                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="input-password-confirm" class="col-12 col-form-label">Bekräfta
+                                        lösenord</label>
+                                    <div class="col-12">
+                                        <input type="password" class="form-control" id="input-password-confirm"
+                                               placeholder="Lösenord">
                                     </div>
-                                    <div class="form-group row mb-4">
-                                        <label for="input-favorite-character" class="col-12 col-form-label">Säkerhetsfråga
-                                            - Favorithjälte / skurk?</label>
-                                        <div class="col-12">
-                                            <input type="password" class="form-control" id="input-favorite-character"
-                                                   placeholder="Favorithjälte / skurk?">
-                                        </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label for="input-favorite-character" class="col-12 col-form-label">Säkerhetsfråga -
+                                        Favorithjälte / skurk?</label>
+                                    <div class="col-12">
+                                        <input type="password" class="form-control" id="input-favorite-character"
+                                               placeholder="Favorithjälte / skurk?">
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-4">
-                                        <input type="checkbox" class="custom-control-input"
-                                               id="custom-checkbox-agree">
-                                        <label class="custom-control-label fs-08x" for="custom-checkbox-agree">
-                                            Jag godkänner att Svenska marvelsamlare sparar denna information
-                                        </label>
-                                    </div>
-                                    <div class="form-group row pb-4">
-                                        <div class="col-12">
+                                </div>
+                                <div class="custom-control custom-checkbox mb-4">
+                                    <input type="checkbox" class="custom-control-input"
+                                           id="custom-checkbox-agree">
+                                    <label class="custom-control-label fs-08x" for="custom-checkbox-agree">
+                                        Jag godkänner att Svenska marvelsamlare sparar denna information
+                                    </label>
+                                </div>
+                                <div class="form-group row mb-0 mb-sm-3 pb-4">
+                                    <div class="col-12">
                                         <button class="btn sms-btn-outline-contrast mb-3" type="submit">Skicka</button>
-
-                                        </div>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
                         </div>
                     </div> <!-- /collapse -->
-
-                    <div class="col-12 p-4 mb-0 mb-sm-3 sms-bg-white">
-                        <h3>Statistik</h3>
-                        <p><span class="font-weight-bold">Antal medlemmar: </span> 88 st</p>
-                        <p><span class="font-weight-bold">Antal titlar: </span> 142 st</p>
-                        <p><span class="font-weight-bold">Nyaste medlem: </span> Karolina Bladh</p>
-                        <p><span class="font-weight-bold">Största samling: </span> Joakim Johnsson</p>
-                        <p><span class="font-weight-bold">Mest värdefulla samling: </span> Kalle Anka, 12 340:-</p>
+                    <!-- /Registration collapse -->
+                    <div class="w-100 p-4 sms-bg-white">
+                    <h3>Statistik</h3>
+                    <p><span class="font-weight-bold">Antal medlemmar: </span> 88 st</p>
+                    <p><span class="font-weight-bold">Antal titlar: </span> 142 st</p>
+                    <p><span class="font-weight-bold">Nyaste medlem: </span> Karolina Bladh</p>
+                    <p><span class="font-weight-bold">Största samling: </span> Joakim Johnsson</p>
+                    <p><span class="font-weight-bold">Mest värdefulla samling: </span> Kalle Anka, 12 340:-</p>
                     </div>
-
                 </aside>
-
-
             </div> <!-- /row -->
         </div> <!-- /container -->
     </div> <!-- /container-fluid -->
@@ -295,7 +283,8 @@
                     </p>
                     <div>
                         <span class="far fa-copyright mr-2"></span>
-                        <span class="mr-3"><a href="mailto: admin@svenskamarvelsamlare.se">2019 Svenska marvelsamlare</a></span>
+                        <span class="mr-3"><a
+                                href="mailto: admin@svenskamarvelsamlare.se">2019 Svenska marvelsamlare</a></span>
                     </div>
                 </div> <!-- /col-12 -->
             </div> <!-- /row -->

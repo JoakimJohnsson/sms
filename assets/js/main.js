@@ -12,21 +12,21 @@ smsobj.startpagetoggler = {
     }
 };
 
-smsobj.setbodypaddingtop = {
-    init: function() {
-        var $header = $('#sms-header');
-
-        $(document.body).css('padding-top', $header.css("height"));
-
-        $( window ).resize(function() {
-            $(document.body).css('padding-top', $header.css("height"));
-        });
-
-
-    }
-};
+// smsobj.setbodypaddingtop = {
+//     init: function() {
+//         var $header = $('#sms-header');
+//
+//         $(document.body).css('padding-top', $header.css("height"));
+//
+//         $( window ).resize(function() {
+//             $(document.body).css('padding-top', $header.css("height"));
+//         });
+//
+//
+//     }
+// };
 
 $(function(){
     smsobj.startpagetoggler.init();
-    smsobj.setbodypaddingtop.init();
+    // smsobj.setbodypaddingtop.init();
 });

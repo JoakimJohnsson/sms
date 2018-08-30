@@ -75,16 +75,21 @@
 .sms-main-front {
   min-height: 75vh;
 }
-
-
-// Special front page media queries
+@include media-breakpoint-down(md) {
+  .sms-main-front {
+    aside {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
 @include media-breakpoint-down(sm) {
   .sms-main-front {
     padding: 0;
     margin: 0;
   }
-  #registration-collapse.form-group:last-child {
-    margin-bottom: 0;
-  }
+  //#registration-collapse.form-group:last-child {
+  //  margin-bottom: 0;
+  //}
 }
 
