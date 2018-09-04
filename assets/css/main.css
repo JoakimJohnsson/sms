@@ -8138,6 +8138,9 @@ template {
 .sms-bg-grey-lighter {
   background: #eeeeee; }
 
+@media (min-width: 576px) {
+  .sms-bg-sm-grey-lighter {
+    background: #eeeeee; } }
 .sms-bg-front-fullscreen {
   background-image: url("../images/bg-marvel-heroes-2.jpg");
   background-repeat: no-repeat;
@@ -8174,7 +8177,8 @@ template {
     padding: 0;
     margin: 0; } }
 .sms-link-dark-bg a {
-  color: #cccccc; }
+  color: #cccccc;
+  text-decoration: underline; }
   .sms-link-dark-bg a:hover, .sms-link-dark-bg a:focus {
     color: #ffffff;
     text-decoration: none; }
@@ -8188,6 +8192,22 @@ template {
     color: #00232b;
     text-decoration: none; }
   .sms-link-light-bg a:active {
+    color: #f6d101; }
+
+.sms-link-dark-bg-no-decoration a {
+  color: #cccccc; }
+  .sms-link-dark-bg-no-decoration a:hover, .sms-link-dark-bg-no-decoration a:focus {
+    color: #ffffff;
+    text-decoration: none; }
+  .sms-link-dark-bg-no-decoration a:active {
+    color: #f6d101; }
+
+.sms-link-light-bg-no-decoration a {
+  color: #094857; }
+  .sms-link-light-bg-no-decoration a:hover, .sms-link-light-bg-no-decoration a:focus {
+    color: #00232b;
+    text-decoration: none; }
+  .sms-link-light-bg-no-decoration a:active {
     color: #f6d101; }
 
 .text-color-primary-light {
