@@ -26,6 +26,12 @@
   background: $color-sms-grey-lighter;
 }
 
+@include media-breakpoint-up(sm) {
+  .sms-bg-sm-grey-lighter {
+    background: $color-sms-grey-lighter;
+  }
+}
+
 .sms-bg-front-fullscreen {
   background-image: url($sms-img-path-marvel-heroes-2);
   background-repeat: no-repeat;
@@ -88,8 +94,5 @@
     padding: 0;
     margin: 0;
   }
-  //#registration-collapse.form-group:last-child {
-  //  margin-bottom: 0;
-  //}
 }
 
