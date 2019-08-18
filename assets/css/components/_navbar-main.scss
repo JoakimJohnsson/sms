@@ -25,10 +25,14 @@
   }
 }
 
+.nav-link {
+  text-transform: uppercase;
+}
+
 @include media-breakpoint-up(lg) {
   .login-dropdown {
     .dropdown-menu {
-      background: $color-sms-primary-hover-lighter;
+      background: $color-sms-primary-hover-light;
       left: -160px;
       padding: 2rem;
       width: 300px;

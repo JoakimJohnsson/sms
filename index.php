@@ -9,3 +9,4 @@
 Hej här är sidan!
 
 <a href="testsida.html">TESTSIDA för utseende</a>
+<a href="testsida-inloggad.html">TESTSIDA för inloggad</a>

@@ -17,13 +17,6 @@
 </head>
 <body>
 
-<!-- TODO: Classes are defined in this order:
-"what kind of element? (container)"
-"a class that defines the name of the element (sms-navbar)"
-"general layout classes (bg's text-colors/sizes and such)"
-"margins and paddings"
-"display properties"
--->
 <header id="sms-header">
     <!-- Top navigation -->
     <div class="container-fluid sms-navbar-top sms-bg-primary d-none ">
@@ -85,7 +78,7 @@
                     </ul>
                     <ul class="navbar-nav login-dropdown">
                         <li class="nav-item dropdown">
-                            <a class="nav-link  sms-link-dark-bg-no-decoration" href="#" id="dropdown-login" role="button"
+                            <a class="nav-link  sms-link" href="#" id="dropdown-login" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 ftw-200">Inloggning</span>
                                 <span class="fas fa-door-closed fs-12x"></span>
@@ -98,6 +91,7 @@
                                            aria-label="Password">
 
                                     <button class="btn sms-btn-outline-contrast mb-3" type="submit">Logga in</button>
+                                    <a href="testsida-inloggad.html">Logga in</a>
 
                                     <div class="custom-control custom-checkbox mb-1 w-100">
                                         <input type="checkbox" class="custom-control-input"
@@ -107,7 +101,7 @@
                                         </label>
                                     </div>
                                 </form>
-                                <p class="sms-link-dark-bg mb-2 mb-sm-0"><a class="fs-08x" href="#">Glömt lösenord?</a>
+                                <p class="sms-link mb-2 mb-sm-0"><a class="fs-08x" href="#">Glömt lösenord?</a>
                                 </p>
                             </div>
                         </li>
@@ -162,7 +156,7 @@
             <div class="row pt-0 pb-0 pt-sm-4 pb-sm-5">
                 <div class="col-12 col-lg-8">
                     <div class="row">
-                        <div class=" col-12 sms-bg-white p-4 mb-0 mb-sm-3 sms-link-light-bg">
+                        <div class=" col-12 sms-bg-white p-4 mb-0 mb-sm-3 sms-link">
                             <h1>Välkommen till Svenska marvelsamlare</h1>
                             <p class="lead">En webbapplikation för dig som gillar att samla på svenska marveltidningar.
                                 Här
@@ -202,13 +196,12 @@
                 </div>
                 <aside class="col-12 col-lg-4 pr-0">
                     <!-- Registration collapse -->
-                    <div class="sms-btn-front-collapse col-12 p-4 mb-0 mb-sm-3" id="btn-registration" type="button"
+                    <div class="sms-btn-collapse sms-bg-contrast col-12 p-4 mb-0 mb-sm-3" id="btn-registration" type="button"
                          data-toggle="collapse"
                          data-target="#registration-collapse" aria-expanded="false"
                          aria-controls="registration-collapse">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <h3 class="m-0">Registrera dig
                                     <span class="show-more-registration fas fa-chevron-down"></span>
                                     <span class="show-more-registration fas fa-chevron-up"
                                           style="display: none;"></span>
@@ -217,7 +210,7 @@
 
                         </div>
                     </div>
-                    <div class="collapse w-100 sms-bg-primary-hover text-color-white sms-link-dark-bg" id="registration-collapse">
+                    <div class="collapse w-100 sms-bg-primary-hover text-color-white sms-link" id="registration-collapse">
                         <div class="container pt-3 pr-4 pl-4">
                             <form>
                                 <div class="form-group row">
@@ -265,7 +258,7 @@
                                                placeholder="Favorithjälte / skurk?">
                                     </div>
                                 </div>
-                                <div class="custom-control custom-checkbox mb-4 sms-link-dark-bg ">
+                                <div class="custom-control custom-checkbox mb-4 sms-link ">
                                     <input type="checkbox" class="custom-control-input"
                                            id="custom-checkbox-agree">
                                     <label class="custom-control-label fs-08x" for="custom-checkbox-agree">
@@ -313,7 +306,7 @@
                     </div>
                 </div> <!-- /col-12 -->
 
-                <div class="col-12 col-md-8 sms-link-dark-bg">
+                <div class="col-12 col-md-8 sms-link">
                     <p class="fs-12x">
                         <a href="#"><span class="fab fs-15x fa-facebook-f mr-2"></span></a>
                         <a href="#"><span class="fab fs-15x fa-instagram mr-2"></span></a>
