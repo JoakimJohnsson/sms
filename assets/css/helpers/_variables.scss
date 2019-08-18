@@ -5,38 +5,47 @@
 // ******************************************************
 
 // Main colors
-$color-sms-blue: #00232b;
-$color-sms-blue-hover: #013845;
-$color-sms-blue-hover-lighter: #094857;
-$color-sms-blue-rgba-trans: rgba(1, 70, 86, 0.5);
-$color-sms-blue-hover-rgba-trans: rgba(9, 97, 118, 0.5);
 
-$color-sms-yellow: #f6d101;
-$color-sms-yellow-hover: #fee141;
-$color-sms-yellow-rgba-trans: rgba(246, 209, 1, 0.5);
+$color-sms-black: rgb(44, 53, 49);
+$color-sms-white: rgb(255, 255, 255);
+$color-sms-green: rgb(63, 155, 53);
+$color-sms-red: rgb(255, 28, 75);
+$color-sms-blue: rgb(17, 100, 102);
+$color-sms-beige: rgb(233, 203, 154);
+$color-sms-dark-beige: rgb(179, 156, 140);
+$color-sms-light-blue: rgb(209, 232, 226);
 
-$color-sms-grey: #cccccc;
-$color-sms-grey-lighter: #eeeeee;
 
-$color-sms-black: #011c22;
-$color-sms-black-hover: $color-sms-blue-hover;
-$color-sms-black-active: $color-sms-yellow;
-$color-sms-black-disabled: $color-sms-grey;
 
-$color-sms-white: #ffffff;
-$color-sms-white-hover: $color-sms-grey;
-$color-sms-white-active: $color-sms-yellow;
-$color-sms-white-disabled: $color-sms-grey;
+
+$color-sms-blue-light-20: lighten($color-sms-blue, 20%);
+$color-sms-blue-light-40: lighten($color-sms-blue, 40%);
+$color-sms-blue-rgba-trans: rgba($color-sms-blue, 0.5);
+$color-sms-blue-light-rgba-trans: rgba($color-sms-blue-light-20, 0.5);
+$color-sms-light-blue-light-20: lighten($color-sms-light-blue, 20%);
+$color-sms-light-blue-light-40: lighten($color-sms-light-blue, 40%);
+$color-sms-light-blue-rgba-trans: rgba($color-sms-light-blue, 0.5);
+$color-sms-light-blue-light-rgba-trans: rgba($color-sms-light-blue, 0.5);
+$color-sms-beige-light-20: lighten($color-sms-beige, 20%);
+$color-sms-beige-rgba-trans: rgba($color-sms-beige, 0.5);
+$color-sms-dark-beige-light-20: lighten($color-sms-dark-beige, 20%);
+$color-sms-blue-hover: $color-sms-blue-light-20;
+$color-sms-blue-active: $color-sms-beige;
+$color-sms-blue-disabled: $color-sms-dark-beige;
+$color-sms-white-hover: $color-sms-dark-beige;
+$color-sms-white-active: $color-sms-beige;
+$color-sms-white-disabled: $color-sms-dark-beige;
 
 // Color variables
 $color-sms-primary: $color-sms-blue;
-$color-sms-primary-hover: $color-sms-blue-hover;
-$color-sms-primary-hover-lighter: $color-sms-blue-hover-lighter;
-$color-sms-primary-hover-rgba-trans: $color-sms-blue-hover-rgba-trans;
+$color-sms-primary-hover: lighten($color-sms-primary, 20%);
+$color-sms-primary-hover-trans: rgba($color-sms-primary-hover, 0.5);
+$color-sms-primary-hover-light: lighten($color-sms-primary, 40%);
 
-$color-sms-contrast: $color-sms-yellow;
-$color-sms-contrast-hover: $color-sms-yellow-hover;
-$color-sms-contrast-rgba-trans: $color-sms-yellow-rgba-trans;
+
+$color-sms-contrast: $color-sms-light-blue;
+$color-sms-contrast-hover: $color-sms-light-blue-light-20;
+$color-sms-contrast-rgba-trans: $color-sms-light-blue-rgba-trans;
 
 // TYPOGRAPHY
 // ******************************************************
@@ -60,9 +69,9 @@ $navbar-dark-disabled-color: $color-sms-white-disabled;
 $navbar-dark-toggler-border-color: transparent;
 
 $navbar-light-color: $color-sms-black;
-$navbar-light-hover-color: $color-sms-black-hover;
-$navbar-light-active-color: $color-sms-black-active;
-$navbar-light-disabled-color: $color-sms-black-disabled;
+$navbar-light-hover-color: $color-sms-blue-hover;
+$navbar-light-active-color: $color-sms-blue-active;
+$navbar-light-disabled-color: $color-sms-blue-disabled;
 $navbar-light-toggler-border-color: transparent;
 
 // IMAGE PATHS

@@ -1,0 +1,243 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+    <!--Meta-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Svenska Marvelsamlare</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- TODO: Classes are defined in this order:
+"what kind of element? (container)"
+"a class that defines the name of the element (sms-navbar)"
+"general layout classes (bg's text-colors/sizes and such)"
+"margins and paddings"
+"display properties"
+-->
+<header id="sms-header">
+    <!-- Top navigation -->
+    <div class="container-fluid sms-navbar-top sms-bg-primary-hover-lighter sms-link d-none d-lg-flex align-items-center">
+        <div class="container fs-08x p-0">
+            <a href="#" class="mb-0 ftw-200"><span class="mr-2">Joakim "Spindelmannen" Johnsson</span><span class="fas fa-user"></span></a>
+        </div> <!-- /container-fluid -->
+    </div> <!-- /row -->
+    <!-- /Top navigation -->
+
+    <!-- Main navigation -->
+    <div class="container-fluid sms-navbar-main sms-bg-primary">
+        <div class="container sms-bg-primary pr-0 pl-0">
+            <nav class="navbar pt-sm-2 pb-sm-2 pt-lg-3 pb-lg-3 navbar-expand-lg navbar-dark sms-bg-primary">
+                <a class="navbar-brand" href="#">
+                    <div class="sms-logo text-color-white d-flex align-items-center">
+                        <object class="mr-2" type="image/svg+xml"
+                                data="assets/images/shield.svg">Din webbläsare kan inte visa SVG-bilder
+                        </object>
+                        <div class="ftw-700">
+                            <p class="mb-neg-05">
+                                SVENSKA
+                            </p>
+                            <p class="m-0">
+                                MARVELSAMLARE
+                            </p>
+                        </div>
+                    </div> <!-- /sms-logo -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fs-18x fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto pt-sm-3 pt-lg-0">
+                        <li class="dropdown-divider"></li>
+                        <li class="text-color-white d-inline d-lg-none pt-3 pb-3">
+                            <a class="nav-link" href="#"><span class="mr-2 ftw-200">Joakim "Spindelmannen" Johnsson</span>
+                                <span class="fas fa-user fs-12x"></span></a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Arbetsyta<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2">Länkar</span><span class="fas fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Seriekatalogen</a>
+                                <a class="dropdown-item" href="#">Seriewikin</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">Instagram</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto: admin@svenskamarvelsamlare.se">Kontakt</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                    </ul>
+                    <ul class="navbar-nav login-dropdown">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  sms-link-dark-bg-no" href="testsida.html">
+                                <span class="mr-2 ftw-200">Logga ut</span>
+                                <span class="fas fa-door-open fs-12x"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> <!-- /container -->
+    </div> <!-- /container-fluid -->
+    <!-- /Main navigation -->
+</header>
+
+<main>
+    <div class="container-fluid sms-main-front sms-bg-sm-grey-lighter pt-4">
+        <div class="container">
+            <div class="row pt-0 pb-0 pt-sm-4 pb-sm-5">
+                <div class="col-12 col-lg-4">
+                    <div class="row">
+                        <div class=" col-12 sms-bg-white p-4 mb-0 mb-sm-3 sms-link">
+                            <h1>Min samling</h1>
+                            <p class="lead">Överblicka din samling och lägg till titlar, antingen direkt på sidan eller med hjälp av sökfunktionen.</p>
+                        </div>
+
+                        <!-- Add titles collapse -->
+                        <div class="sms-btn-collapse sms-bg-contrast col-12 p-4 mb-0 mb-sm-3" id="btn-add-titles" type="button"
+                             data-toggle="collapse"
+                             data-target="#add-titles-collapse" aria-expanded="false"
+                             aria-controls="add-titles-collapse">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h3 class="m-0">Lägg till titlar
+                                        <span class="show-more-add-titles fas fa-chevron-down"></span>
+                                        <span class="show-more-add-titles fas fa-chevron-up"
+                                              style="display: none;"></span>
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="collapse w-100 sms-bg-white sms-link" id="add-titles-collapse">
+                            <div class="container pt-3 pr-4 pl-4">
+                                <p class="m-0"><span class="mr-2">Conan 1974</span><span class="far fa-plus-square text-color-green"></span></p>
+                                <p class="pb-4"><span class="mr-2">Spindelmannen 1974</span><span class="far fa-plus-square text-color-green"></span></p>
+
+                            </div>
+                        </div> <!-- /collapse -->
+                        <!-- /Add titles collapse -->
+
+                        <!-- Statistics collapse -->
+                        <div class="sms-btn-collapse sms-bg-contrast-hover col-12 p-4 mb-0 mb-sm-3" id="btn-statistics" type="button"
+                             data-toggle="collapse"
+                             data-target="#statistics-collapse" aria-expanded="false"
+                             aria-controls="statistics-collapse">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h3 class="m-0">Statistik
+                                        <span class="show-more-statistics fas fa-chevron-down"></span>
+                                        <span class="show-more-statistics fas fa-chevron-up"
+                                              style="display: none;"></span>
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="collapse w-100 sms-bg-white sms-link" id="statistics-collapse">
+                            <div class="container pt-3 pr-4 pl-4">
+                                <p class="m-0"><span class="mr-2">Conan 1974</span><span class="far fa-plus-square text-color-green"></span></p>
+                                <p class="pb-4"><span class="mr-2">Spindelmannen 1974</span><span class="far fa-plus-square text-color-green"></span></p>
+
+                            </div>
+                        </div> <!-- /collapse -->
+                        <!-- /Add titles collapse -->
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <aside class="col-12 col-lg-8 pr-0">
+                    <div class="col-12 p-4 sms-bg-white">
+                        <h2>Titlar</h2>
+                        <p>Här visas de titlar du samlar på. Du har för tillfället inga titlar i samlingen.</p>
+                    </div>
+                </aside>
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </div> <!-- /container-fluid -->
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container-fluid sms-footer text-color-white fs-08x sms-bg-primary">
+        <div class="container pl-0 pr-0">
+            <div class="row p-4 pt-sm-5 pb-sm-5 pr-sm-o pl-sm-0">
+                <div class="col-12 col-md-4">
+                    <div class="fs-08x  text-color-white d-flex align-items-center">
+                        <div class="ftw-700 mb-3">
+                            <p class="m-0">
+                                SVENSKA
+                            </p>
+                            <p class="m-0">
+                                MARVELSAMLARE
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- /col-12 -->
+
+                <div class="col-12 col-md-8 sms-link">
+                    <p class="fs-12x">
+                        <a href="#"><span class="fab fs-15x fa-facebook-f mr-2"></span></a>
+                        <a href="#"><span class="fab fs-15x fa-instagram mr-2"></span></a>
+                    </p>
+                    <p class="fs-06x">
+                        This webb application contains images and information which is owned and
+                        copyrighted by <a href="http://www.marvel.com">MARVEL Entertainment</a> and is
+                        used without permission according to the Fair use doctrin of the United States.
+                        This material is used for such purposes as archiving, research, news reporting and informed
+                        discussion.
+                        Svenska marvelsamlare is a non-profit project run by a handful of Swedish Marvel collectors.
+                    </p>
+                    <div>
+                        <span class="far fa-copyright mr-2"></span>
+                        <span class="mr-3">2019 Svenska marvelsamlare</span>
+                    </div>
+                </div> <!-- /col-12 -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </div> <!-- /container-fluid -->
+</footer>
+
+<!-- /body -->
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

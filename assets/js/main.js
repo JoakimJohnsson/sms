@@ -12,21 +12,23 @@ smsobj.startpagetoggler = {
     }
 };
 
-// smsobj.setbodypaddingtop = {
-//     init: function() {
-//         var $header = $('#sms-header');
-//
-//         $(document.body).css('padding-top', $header.css("height"));
-//
-//         $( window ).resize(function() {
-//             $(document.body).css('padding-top', $header.css("height"));
-//         });
-//
-//
-//     }
-// };
+smsobj.desktoptogglers = {
+    init: function() {
+        var $addTitlesTogglerButton = $('#btn-add-titles');
+        var $statisticsTogglerButton = $('#btn-statistics');
+        var $showMoreRegistration = $('.show-more-add-titles');
+        var $showMoreStatistics = $('.show-more-statistics');
+
+        $addTitlesTogglerButton.click(function() {
+            $showMoreRegistration.toggle();
+        });
+        $statisticsTogglerButton.click(function() {
+            $showMoreStatistics.toggle();
+        });
+    }
+};
 
 $(function(){
     smsobj.startpagetoggler.init();
-    // smsobj.setbodypaddingtop.init();
+    smsobj.desktoptogglers.init();
 });

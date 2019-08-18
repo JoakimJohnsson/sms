@@ -4,53 +4,17 @@
 // ******************************************************
 
 // Links
-.sms-link-dark-bg {
+
+// TODO style för "vanlig link" (text) + en "ovanlig" som funkar med bakgrund.
+
+
+.sms-link {
   a {
     color: $color-sms-white-hover;
     text-decoration: underline;
     &:hover,
     &:focus {
       color: $color-sms-white;
-      text-decoration: none;
-    }
-    &:active {
-      color: $color-sms-white-active;
-    }
-  }
-}
-.sms-link-light-bg {
-  a {
-    color: $color-sms-primary-hover-lighter;
-    text-decoration: underline;
-    &:hover,
-    &:focus {
-      color: $color-sms-primary;
-      text-decoration: none;
-    }
-    &:active {
-      color: $color-sms-white-active;
-    }
-  }
-}
-.sms-link-dark-bg-no-decoration {
-  a {
-    color: $color-sms-white-hover;
-    &:hover,
-    &:focus {
-      color: $color-sms-white;
-      text-decoration: none;
-    }
-    &:active {
-      color: $color-sms-white-active;
-    }
-  }
-}
-.sms-link-light-bg-no-decoration {
-  a {
-    color: $color-sms-primary-hover-lighter;
-    &:hover,
-    &:focus {
-      color: $color-sms-primary;
       text-decoration: none;
     }
     &:active {
@@ -68,6 +32,12 @@
 }
 .text-color-white {
   color: $color-sms-white;
+}
+.text-color-green {
+  color: $color-sms-green;
+}
+.text-color-red {
+  color: $color-sms-red;
 }
 .text-color-white-hover {
   color: $color-sms-white-hover;

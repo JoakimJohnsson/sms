@@ -48,7 +48,7 @@
 }
 
 .sms-btn-outline-primary-light:focus, .sms-btn-outline-primary-light.focus {
-  box-shadow: 0 0 0 0.2rem $color-sms-primary-hover-rgba-trans;
+  box-shadow: 0 0 0 0.2rem $color-sms-primary-hover-trans;
 }
 
 .sms-btn-outline-primary-light.disabled, .sms-btn-outline-primary-light:disabled {
@@ -63,7 +63,7 @@
 }
 
 .sms-btn-outline-primary-light:not(:disabled):not(.disabled):active:focus, .sms-btn-outline-primary-light:not(:disabled):not(.disabled).active:focus, .show > .sms-btn-outline-primary-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $color-sms-primary-hover-rgba-trans;
+  box-shadow: 0 0 0 0.2rem $color-sms-primary-hover-trans;
 }
 
 // Custom checkbox
@@ -84,8 +84,7 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 
-.sms-btn-front-collapse {
-  background-color: $color-sms-contrast;
+.sms-btn-collapse {
   background-image: none;
   border: none;
   border-radius: 0;

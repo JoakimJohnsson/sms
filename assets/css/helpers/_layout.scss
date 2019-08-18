@@ -11,24 +11,33 @@
   background: $color-sms-primary-hover;
 }
 .sms-bg-primary-hover-lighter {
-  background: $color-sms-primary-hover-lighter;
+  background: $color-sms-primary-hover-light;
 }
 .sms-bg-contrast {
   background: $color-sms-contrast;
 }
+.sms-bg-contrast-hover {
+  background: $color-sms-contrast-hover
+}
 .sms-bg-white {
   background: $color-sms-white;
+}
+.sms-bg-green {
+  background: $color-sms-green;
+}
+.sms-bg-red {
+  background: $color-sms-red;
 }
 .sms-bg-white-hover {
   background: $color-sms-white-hover;
 }
 .sms-bg-grey-lighter {
-  background: $color-sms-grey-lighter;
+  background: $color-sms-dark-beige-light-20;
 }
 
 @include media-breakpoint-up(sm) {
   .sms-bg-sm-grey-lighter {
-    background: $color-sms-grey-lighter;
+    background: $color-sms-dark-beige-light-20;
   }
 }
 
