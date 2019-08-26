@@ -1,10 +1,12 @@
 @import "../helpers/variables";
+@import "../../bootstrap/bootstrap-4.0.0/scss/variables";
 
 // NAVBAR TOP
 // ******************************************************
 
 .sms-navbar-top {
+  background-color: $c-gold;
   min-height: 50px;
-  color: $color-sms-white;
-  border-bottom: 1px solid $color-sms-dark-beige;
+  color: $c-white;
+  border-bottom: 1px solid $c-white;
 }

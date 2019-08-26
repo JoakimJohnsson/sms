@@ -18,102 +18,26 @@
 <body>
 
 <header id="sms-header">
-    <!-- Top navigation -->
-    <div class="container-fluid sms-navbar-top sms-bg-primary d-none ">
+    <!-- top navigation -->
+    <div class="container-fluid sms-navbar-top d-none ">
         <div class="container fs-08x pr-0 pl-0 d-flex align-items-center">
             <p class="mb-0">Joakim "Spindelmannen" Johnsson</p>
         </div> <!-- /container-fluid -->
     </div> <!-- /row -->
-    <!-- /Top navigation -->
-
-    <!-- Main navigation -->
-    <div class="container-fluid sms-navbar-main sms-bg-primary">
-        <div class="container sms-bg-primary pr-0 pl-0">
-            <nav class="navbar pt-sm-2 pb-sm-2 pt-lg-3 pb-lg-3 navbar-expand-lg navbar-dark sms-bg-primary">
-                <a class="navbar-brand" href="#">
-                    <div class="sms-logo text-color-white d-flex align-items-center">
-                        <object class="mr-2" type="image/svg+xml"
-                                data="assets/images/shield.svg">Din webbläsare kan inte visa SVG-bilder
-                        </object>
-                        <div class="ftw-700">
-                            <p class="mb-neg-05">
-                                SVENSKA
-                            </p>
-                            <p class="m-0">
-                                MARVELSAMLARE
-                            </p>
-                        </div>
-                    </div> <!-- /sms-logo -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fas fs-18x fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto pt-sm-3 pt-lg-0">
-                        <li class="dropdown-divider"></li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Startsida<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2">Länkar</span><span class="fas fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Seriekatalogen</a>
-                                <a class="dropdown-item" href="#">Seriewikin</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Facebook</a>
-                                <a class="dropdown-item" href="#">Instagram</a>
-                            </div>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto: admin@svenskamarvelsamlare.se">Kontakt</a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                    </ul>
-                    <ul class="navbar-nav login-dropdown">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  sms-link" href="#" id="dropdown-login" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 ftw-200">Inloggning</span>
-                                <span class="fas fa-door-closed fs-12x"></span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown-login">
-                                <form class="form-row m-0">
-                                    <input class="form-control mb-3" type="email" placeholder="E-post"
-                                           aria-label="User name">
-                                    <input class="form-control mb-4" type="password" placeholder="Lösenord"
-                                           aria-label="Password">
-
-                                    <button class="btn sms-btn-outline-contrast mb-3" type="submit">Logga in</button>
-                                    <a href="testsida-inloggad.html">Logga in</a>
-
-                                    <div class="custom-control custom-checkbox mb-1 w-100">
-                                        <input type="checkbox" class="custom-control-input"
-                                               id="custom-checkbox-remember">
-                                        <label class="custom-control-label fs-08x" for="custom-checkbox-remember">
-                                            Kom ihåg mig
-                                        </label>
-                                    </div>
-                                </form>
-                                <p class="sms-link mb-2 mb-sm-0"><a class="fs-08x" href="#">Glömt lösenord?</a>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> <!-- /container -->
+    <!-- /top navigation -->
+    <!-- simple start page header-->
+    <div class="container-fluid sms-navbar-main start-page">
+        <div class="sms-logo start-page p-3">
+            <object type="image/svg+xml" data="assets/images/shield-black.svg">Din webbläsare kan inte visa
+                SVG-bilder
+            </object>
+            <p>SVENSKA MARVELSAMLARE</p>
+        </div> <!-- /sms-logo -->
     </div> <!-- /container-fluid -->
-    <!-- /Main navigation -->
+    <!-- /simple start page header -->
 </header>
 
-<div class="container-fluid sms-bg-sm-grey-lighter">
+<div class="container-fluid ">
     <div class="container pt-4  pr-0 pl-0">
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -144,14 +68,13 @@
         </div>
 
 
-
     </div>
 
 </div>
 
 
 <main>
-    <div class="container-fluid sms-main-front sms-bg-sm-grey-lighter">
+    <div class="container-fluid ">
         <div class="container">
             <div class="row pt-0 pb-0 pt-sm-4 pb-sm-5">
                 <div class="col-12 col-lg-8">
@@ -186,7 +109,8 @@
                             <p>För att kunna ta del av dessa funktioner måste du bli medlem. Du registrerar dig enkelt
                                 genom att fylla i formuläret här på sidan. Sedan är det bara att logga
                                 in och börja administrera din samling.</p>
-                            <p class="mb-4">Svenska marvelsamlare använder din personliga information bla bla bla lär mer om det <a href="#">här</a>.</p>
+                            <p class="mb-4">Svenska marvelsamlare använder din personliga information bla bla bla lär
+                                mer om det <a href="#">här</a>.</p>
                             <h2>Sociala medier</h2>
                             <p>Vi har en facebookgrupp. Du kan även använda hashtaggen #svenskamarvelsamlare överallt
                                 där
@@ -196,21 +120,23 @@
                 </div>
                 <aside class="col-12 col-lg-4 pr-0">
                     <!-- Registration collapse -->
-                    <div class="sms-btn-collapse sms-bg-contrast col-12 p-4 mb-0 mb-sm-3" id="btn-registration" type="button"
+                    <div class="sms-btn-collapse sms-bg-contrast col-12 p-4 mb-0 mb-sm-3" id="btn-registration"
+                         type="button"
                          data-toggle="collapse"
                          data-target="#registration-collapse" aria-expanded="false"
                          aria-controls="registration-collapse">
                         <div class="row">
                             <div class="col-12 text-center">
-                                    <span class="show-more-registration fas fa-chevron-down"></span>
-                                    <span class="show-more-registration fas fa-chevron-up"
-                                          style="display: none;"></span>
+                                <span class="show-more-registration fas fa-chevron-down"></span>
+                                <span class="show-more-registration fas fa-chevron-up"
+                                      style="display: none;"></span>
                                 </h3>
                             </div>
 
                         </div>
                     </div>
-                    <div class="collapse w-100 sms-bg-primary-hover text-color-white sms-link" id="registration-collapse">
+                    <div class="collapse w-100 sms-bg-primary-hover text-color-white sms-link"
+                         id="registration-collapse">
                         <div class="container pt-3 pr-4 pl-4">
                             <form>
                                 <div class="form-group row">
@@ -262,7 +188,8 @@
                                     <input type="checkbox" class="custom-control-input"
                                            id="custom-checkbox-agree">
                                     <label class="custom-control-label fs-08x" for="custom-checkbox-agree">
-                                        Jag har läst igenom <a href="#">användarinformationen</a> och godkänner att Svenska marvelsamlare sparar denna information.
+                                        Jag har läst igenom <a href="#">användarinformationen</a> och godkänner att
+                                        Svenska marvelsamlare sparar denna information.
                                     </label>
                                 </div>
                                 <div class="form-group row mb-0 mb-sm-3 pb-4">
