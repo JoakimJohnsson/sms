@@ -1,102 +1,53 @@
-//@import "variables";
+@import "variables";
+
+// TYPOGRAPHY
+// ******************************************************
+
+// LOGO
+// ------------------------------------------------------
+
 //
-//// TYPOGRAPHY
-//// ******************************************************
+
+
+
+
+
+
+// HEADER SIZES
+// ------------------------------------------------------
+@include media-breakpoint-down(md) {
+  h1 {
+    font-size: 2.15rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+}
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+}
 //
-//// Links
-//
-//// TODO style för "vanlig link" (text) + en "ovanlig" som funkar med bakgrund.
-//
-//
-//.sms-link {
-//  a {
-//    color: $color-sms-white-hover;
-//    text-decoration: underline;
-//    &:hover,
-//    &:focus {
-//      color: $color-sms-white;
-//      text-decoration: none;
-//    }
-//    &:active {
-//      color: $color-sms-white-active;
-//    }
-//  }
-//}
-//
-//// Text colors
-//.text-color-primary-light {
-//  color: $color-sms-primary-hover;
-//}
-//.text-color-primary {
-//  color: $color-sms-primary;
-//}
-//.text-color-white {
-//  color: $color-sms-white;
-//}
-//.text-color-green {
-//  color: $color-green;
-//}
-//.text-color-red {
-//  color: $color-red;
-//}
-//.text-color-white-hover {
-//  color: $color-sms-white-hover;
-//}
-//
-//// Font size
-//.fs-18x {
-//  font-size: 1.8rem;
-//}
-//.fs-15x {
-//  font-size: 1.5rem;
-//}
-//.fs-12x {
-//  font-size: 1.2rem;
-//}
-//.fs-08x {
-//  font-size: .8rem;
-//}
-//.fs-06x {
-//  font-size: .6rem;
-//}
-//
-//@include media-breakpoint-down(md) {
-//  h1 {
-//    font-size: 2.15rem;
-//  }
-//  h2 {
-//    font-size: 1.75rem;
-//  }
-//  h3 {
-//    font-size: 1.5rem;
-//  }
-//  h4 {
-//    font-size: 1.25rem;
-//  }
-//  h5 {
-//    font-size: 1.15rem;
-//  }
-//}
-//@include media-breakpoint-down(sm) {
-//  h1 {
-//    font-size: 1.75rem;
-//  }
-//  h2 {
-//    font-size: 1.5rem;
-//  }
-//  h3 {
-//    font-size: 1.3rem;
-//  }
-//  h4 {
-//    font-size: 1.15rem;
-//  }
-//  h5 {
-//    font-size: 1rem;
-//  }
-//}
-//
-//
-//// Special components
-//.form-control {
-//  font-weight: 200;
-//}
+

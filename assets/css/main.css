@@ -8118,24 +8118,55 @@ template {
 [hidden] {
   display: none !important; }
 
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2.15rem; }
+
+  h2 {
+    font-size: 1.75rem; }
+
+  h3 {
+    font-size: 1.5rem; }
+
+  h4 {
+    font-size: 1.25rem; }
+
+  h5 {
+    font-size: 1.15rem; } }
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 1.75rem; }
+
+  h2 {
+    font-size: 1.5rem; }
+
+  h3 {
+    font-size: 1.3rem; }
+
+  h4 {
+    font-size: 1.15rem; }
+
+  h5 {
+    font-size: 1rem; } }
 .sms-navbar-main {
   background-color: #ffffff;
-  color: #000000; }
+  color: #4c4c4c; }
   .sms-navbar-main h1, .sms-navbar-main h2, .sms-navbar-main h3, .sms-navbar-main h4, .sms-navbar-main h5 {
     color: #000000; }
   .sms-navbar-main a {
-    color: #982149; }
+    color: #000000; }
     .sms-navbar-main a:hover {
-      color: #d74878; }
+      color: #666666; }
     .sms-navbar-main a:active, .sms-navbar-main a:focus {
-      color: #d74878; }
+      color: #4d4d4d; }
   .sms-navbar-main.start-page a {
     color: #000000;
     text-decoration: none; }
 
 .sms-logo {
   font-size: 1rem;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #000000; }
   .sms-logo p {
     margin-top: -.5rem; }
   .sms-logo.start-page {
@@ -8157,54 +8188,58 @@ template {
 
 .sms-start-page-registration {
   background-color: #ffffff;
-  color: #000000; }
+  color: #4c4c4c; }
   .sms-start-page-registration h1, .sms-start-page-registration h2, .sms-start-page-registration h3, .sms-start-page-registration h4, .sms-start-page-registration h5 {
     color: #000000; }
   .sms-start-page-registration a {
-    color: #982149; }
+    color: #000000; }
     .sms-start-page-registration a:hover {
-      color: #d74878; }
+      color: #666666; }
     .sms-start-page-registration a:active, .sms-start-page-registration a:focus {
-      color: #d74878; }
+      color: #4d4d4d; }
 
 .sms-start-page-login {
   background-color: #ffffff;
-  color: #000000; }
+  color: #4c4c4c; }
   .sms-start-page-login h1, .sms-start-page-login h2, .sms-start-page-login h3, .sms-start-page-login h4, .sms-start-page-login h5 {
     color: #000000; }
   .sms-start-page-login a {
-    color: #982149; }
+    color: #000000; }
     .sms-start-page-login a:hover {
-      color: #d74878; }
+      color: #666666; }
     .sms-start-page-login a:active, .sms-start-page-login a:focus {
-      color: #d74878; }
+      color: #4d4d4d; }
 
 .sms-footer {
   background-color: #ffffff;
-  color: #000000;
+  color: #4c4c4c;
   font-size: .8rem; }
   .sms-footer h1, .sms-footer h2, .sms-footer h3, .sms-footer h4, .sms-footer h5 {
     color: #000000; }
   .sms-footer a {
-    color: #982149; }
+    color: #000000; }
     .sms-footer a:hover {
-      color: #d74878; }
+      color: #666666; }
     .sms-footer a:active, .sms-footer a:focus {
-      color: #d74878; }
+      color: #4d4d4d; }
+  .sms-footer .sms-text-logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #f2aab8; }
+  background-color: #ffffff; }
 
 .custom-control-label::before {
-  border: 1px solid black;
+  border: 1px solid #000000;
   background-color: #ffffff; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: #44708b;
-  background-color: #f2aab8; }
+  color: red;
+  background-color: #ffffff; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
 button,
 input[type="button"],
