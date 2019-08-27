@@ -1,0 +1,64 @@
+@import "variables";
+
+// MIXINS
+// ******************************************************
+
+// Backgrounds and Text
+// ******************************************************
+
+@mixin bg-text-colors__white {
+  background-color: $mx-white-bg;
+  color: $mx-white-color;
+  h1, h2, h3, h4, h5 {
+    color: $mx-white-header-color;
+  }
+  a {
+    color: $mx-white-link-color;
+    &:hover {
+    color: lighten($mx-white-link-color, 20%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($mx-white-link-color, 20%);
+    }
+  }
+}
+
+@mixin bg-text-colors__light-beige {
+  background-color: $mx-light-beige-bg;
+  color: $mx-light-beige-color;
+  h1, h2, h3, h4, h5 {
+    color: $mx-light-beige-header-color;
+  }
+  a {
+    color: $mx-light-beige-link-color;
+    &:hover {
+      color: lighten($mx-light-beige-link-color, 20%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($mx-light-beige-link-color, 20%);
+    }
+  }
+}
+
+@mixin bg-text-colors__dark-blue {
+  background-color: $mx-dark-blue-bg;
+  color: $mx-dark-blue-color;
+  h1, h2, h3, h4, h5 {
+    color: $mx-dark-blue-header-color;
+  }
+  a {
+    color: $mx-dark-blue-link-color;
+    &:hover {
+      color: lighten($mx-dark-blue-link-color, 20%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($mx-dark-blue-link-color, 20%);
+    }
+  }
+}
+
+
+

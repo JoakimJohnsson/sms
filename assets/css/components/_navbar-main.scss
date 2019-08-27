@@ -1,23 +1,46 @@
 @import "../helpers/variables";
+@import "../helpers/mixins";
 
 .sms-navbar-main {
-  .navbar {
-    padding: 0.5rem 0;
+  @include bg-text-colors__white;
+  &.start-page {
+    a {
+      color: $c-black;
+      text-decoration: none;
+    }
+  }
+
+}
+
+// Main navbar logo
+.sms-logo {
+  font-size: 1rem;
+  font-weight: 700;
+  p {
+    margin-top: -.5rem;
+  }
+  &.start-page {
+    text-align: center;
+  }
+  object {
+    width: 40px;
+    margin-bottom: 0;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .sms-logo {
+    font-size: 1.5rem;
+    object {
+      width: 50px;
+    }
   }
 }
 
-.navbar-brand {
-  margin-right: 2rem;
-}
-@include media-breakpoint-up(sm) {
-  .navbar-brand {
-    margin-right: 5rem;
-  }
-}
+
 
 .login-dropdown {
   label {
-    color: $color-sms-white;
+    color: $c-white;
   }
   .dropdown-menu {
     background: transparent;
@@ -25,14 +48,12 @@
   }
 }
 
-.nav-link {
-  text-transform: uppercase;
-}
+
 
 @include media-breakpoint-up(lg) {
   .login-dropdown {
     .dropdown-menu {
-      background: $color-sms-primary-hover-light;
+      background: $c-gold;
       left: -160px;
       padding: 2rem;
       width: 300px;

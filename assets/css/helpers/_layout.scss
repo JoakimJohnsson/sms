@@ -3,56 +3,10 @@
 // GENERAL LAYOUT
 // ******************************************************
 
-// Backgrounds
-.sms-bg-primary {
-  background: $color-sms-primary;
-}
-.sms-bg-primary-hover {
-  background: $color-sms-primary-hover;
-}
-.sms-bg-primary-hover-lighter {
-  background: $color-sms-primary-hover-light;
-}
-.sms-bg-contrast {
-  background: $color-sms-contrast;
-}
-.sms-bg-contrast-hover {
-  background: $color-sms-contrast-hover
-}
-.sms-bg-white {
-  background: $color-sms-white;
-}
-.sms-bg-green {
-  background: $color-sms-green;
-}
-.sms-bg-red {
-  background: $color-sms-red;
-}
-.sms-bg-white-hover {
-  background: $color-sms-white-hover;
-}
-.sms-bg-grey-lighter {
-  background: $color-sms-dark-beige-light-20;
-}
-
-@include media-breakpoint-up(sm) {
-  .sms-bg-sm-grey-lighter {
-    background: $color-sms-dark-beige-light-20;
-  }
-}
-
-.sms-bg-front-fullscreen {
-  background-image: url($sms-img-path-marvel-heroes-2);
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 // Borders
 .sms-border-white {
-  border: 1px solid $color-sms-white;
+  border: 1px solid $c-white;
 }
 
 
@@ -70,38 +24,5 @@
 // SPECIAL ELEMENTS
 // ******************************************************
 
-// Sms logotype
-.sms-logo {
-  font-size: .9rem;
-  object {
-    width: 40px;
-  }
-}
-@include media-breakpoint-up(sm) {
-  .sms-logo {
-    font-size: 1.2rem;
-    object {
-      width: 50px;
-    }
-  }
-}
 
-// Main front page
-.sms-main-front {
-  min-height: 75vh;
-}
-@include media-breakpoint-down(md) {
-  .sms-main-front {
-    aside {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
-@include media-breakpoint-down(sm) {
-  .sms-main-front {
-    padding: 0;
-    margin: 0;
-  }
-}
 

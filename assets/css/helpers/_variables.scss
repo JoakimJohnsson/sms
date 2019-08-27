@@ -1,80 +1,47 @@
 // VARIABLES
 // ******************************************************
 
-// COLORS
+// Colors
 // ******************************************************
 
 // Main colors
 
-$color-sms-black: rgb(44, 53, 49);
-$color-sms-white: rgb(255, 255, 255);
-$color-sms-green: rgb(63, 155, 53);
-$color-sms-red: rgb(255, 28, 75);
-$color-sms-blue: rgb(17, 100, 102);
-$color-sms-beige: rgb(233, 203, 154);
-$color-sms-dark-beige: rgb(179, 156, 140);
-$color-sms-light-blue: rgb(209, 232, 226);
+$c-light-beige: #fefbdc;
+$c-blue: #44708b;
+$c-dark-blue: #1f3540;
+$c-gold: #c8a44e;
+$c-dark-gold: #957529;
+$c-green: #3a6f67;
+$c-dark-green: #034c3b;
+$c-pink: #f2aab8;
+$c-dark-pink: #982149;
+$c-black: #000000;
+$c-white: #ffffff;
+
+// Mixin colors
+$mx-white-bg: $c-white;
+$mx-white-color: $c-black;
+$mx-white-header-color: $c-black;
+$mx-white-link-color: $c-dark-pink;
+
+$mx-light-beige-bg: $c-light-beige;
+$mx-light-beige-color: $c-dark-blue;
+$mx-light-beige-header-color: $c-dark-pink;
+$mx-light-beige-link-color: $c-dark-pink;
+
+$mx-dark-blue-bg: $c-blue;
+$mx-dark-blue-color: $c-white;
+$mx-dark-blue-header-color: $c-light-beige;
+$mx-dark-blue-link-color: $c-pink;
 
 
-
-
-$color-sms-blue-light-20: lighten($color-sms-blue, 20%);
-$color-sms-blue-light-40: lighten($color-sms-blue, 40%);
-$color-sms-blue-rgba-trans: rgba($color-sms-blue, 0.5);
-$color-sms-blue-light-rgba-trans: rgba($color-sms-blue-light-20, 0.5);
-$color-sms-light-blue-light-20: lighten($color-sms-light-blue, 20%);
-$color-sms-light-blue-light-40: lighten($color-sms-light-blue, 40%);
-$color-sms-light-blue-rgba-trans: rgba($color-sms-light-blue, 0.5);
-$color-sms-light-blue-light-rgba-trans: rgba($color-sms-light-blue, 0.5);
-$color-sms-beige-light-20: lighten($color-sms-beige, 20%);
-$color-sms-beige-rgba-trans: rgba($color-sms-beige, 0.5);
-$color-sms-dark-beige-light-20: lighten($color-sms-dark-beige, 20%);
-$color-sms-blue-hover: $color-sms-blue-light-20;
-$color-sms-blue-active: $color-sms-beige;
-$color-sms-blue-disabled: $color-sms-dark-beige;
-$color-sms-white-hover: $color-sms-dark-beige;
-$color-sms-white-active: $color-sms-beige;
-$color-sms-white-disabled: $color-sms-dark-beige;
-
-// Color variables
-$color-sms-primary: $color-sms-blue;
-$color-sms-primary-hover: lighten($color-sms-primary, 20%);
-$color-sms-primary-hover-trans: rgba($color-sms-primary-hover, 0.5);
-$color-sms-primary-hover-light: lighten($color-sms-primary, 40%);
-
-
-$color-sms-contrast: $color-sms-light-blue;
-$color-sms-contrast-hover: $color-sms-light-blue-light-20;
-$color-sms-contrast-rgba-trans: $color-sms-light-blue-rgba-trans;
-
-// TYPOGRAPHY
+// Typography
 // ******************************************************
-$font-family-sans-serif: 'Muli', sans-serif;
+$font-family-sans-serif: 'Cabin', sans-serif;
+$headings-font-family: 'Cabin', sans-serif;
+$headings-font-weight: 700;
 
-$headings-font-family: 'Muli', sans-serif;
-$headings-font-weight: 900;
-$headings-color: $color-sms-primary;
-
-$link-color: $color-sms-primary;
-$link-hover-color: $color-sms-primary-hover;
-
-// BOOTSTRAP
-// ******************************************************
-
-// Bootstrap overrides
-$navbar-dark-color: $color-sms-white;
-$navbar-dark-hover-color: $color-sms-white-hover;
-$navbar-dark-active-color: $color-sms-white-active;
-$navbar-dark-disabled-color: $color-sms-white-disabled;
-$navbar-dark-toggler-border-color: transparent;
-
-$navbar-light-color: $color-sms-black;
-$navbar-light-hover-color: $color-sms-blue-hover;
-$navbar-light-active-color: $color-sms-blue-active;
-$navbar-light-disabled-color: $color-sms-blue-disabled;
-$navbar-light-toggler-border-color: transparent;
-
-// IMAGE PATHS
+// Image Paths
 // ******************************************************
 
 // Shield in logo
