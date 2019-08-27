@@ -13,15 +13,16 @@ $c-dark-green: #034c3b;
 $c-pink: #f2aab8;
 $c-dark-pink: #982149;
 $c-black: #000000;
+$c-text: #4c4c4c;
 $c-white: #ffffff;
-// ------------------------------------------------------
+//
 
 // MIXIN COLORS
 // ------------------------------------------------------
 $mx-white-bg: $c-white;
-$mx-white-color: $c-black;
+$mx-white-color: $c-text;
 $mx-white-header-color: $c-black;
-$mx-white-link-color: $c-dark-pink;
+$mx-white-link-color: $c-black;
 
 $mx-light-beige-bg: $c-light-beige;
 $mx-light-beige-color: $c-dark-blue;
@@ -32,12 +33,12 @@ $mx-dark-blue-bg: $c-blue;
 $mx-dark-blue-color: $c-white;
 $mx-dark-blue-header-color: $c-light-beige;
 $mx-dark-blue-link-color: $c-pink;
-// ------------------------------------------------------
+//
 
 // TYPOGRAPHY
 // ------------------------------------------------------
 $font-family-sans-serif: 'Cabin', sans-serif;
 $headings-font-family: 'Cabin', sans-serif;
 $headings-font-weight: 700;
-// ------------------------------------------------------
+//
 
