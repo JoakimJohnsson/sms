@@ -3,9 +3,8 @@
 // MIXINS
 // ******************************************************
 
-// Backgrounds and Text
-// ******************************************************
-
+// BACKGROUNDS AND TEXT
+// ------------------------------------------------------
 @mixin bg-text-colors__white {
   background-color: $mx-white-bg;
   color: $mx-white-color;
@@ -23,7 +22,6 @@
     }
   }
 }
-
 @mixin bg-text-colors__light-beige {
   background-color: $mx-light-beige-bg;
   color: $mx-light-beige-color;
@@ -41,7 +39,6 @@
     }
   }
 }
-
 @mixin bg-text-colors__dark-blue {
   background-color: $mx-dark-blue-bg;
   color: $mx-dark-blue-color;
@@ -59,6 +56,7 @@
     }
   }
 }
+// ------------------------------------------------------
 
 
 

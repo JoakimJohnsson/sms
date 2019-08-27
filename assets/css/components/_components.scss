@@ -1,0 +1,91 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../../bootstrap/bootstrap-4.0.0/scss/variables";
+
+// COMPONENTS
+// ******************************************************
+
+// NAVBAR MAIN
+// ------------------------------------------------------
+.sms-navbar-main {
+  @include bg-text-colors__white;
+  &.start-page {
+    a {
+      color: $c-black;
+      text-decoration: none;
+    }
+  }
+}
+.sms-logo {
+  font-size: 1rem;
+  font-weight: 700;
+  p {
+    margin-top: -.5rem;
+  }
+  &.start-page {
+    text-align: center;
+  }
+  object {
+    width: 40px;
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+    object {
+      width: 50px;
+    }
+  }
+}
+// ------------------------------------------------------
+
+// NAVBAR TOP
+// ------------------------------------------------------
+.sms-navbar-top {
+  background-color: $c-gold;
+  min-height: 50px;
+  color: $c-white;
+  border-bottom: 1px solid $c-white;
+}
+// ------------------------------------------------------
+
+// START PAGE COMPONENTS
+// ------------------------------------------------------
+.sms-start-page-registration {
+  @include bg-text-colors__white;
+}
+.sms-start-page-login {
+  @include bg-text-colors__white;
+}
+// ------------------------------------------------------
+// START PAGE COMPONENTS
+// ------------------------------------------------------
+.sms-footer {
+  @include bg-text-colors__white;
+  font-size: .8rem;
+
+}
+// ------------------------------------------------------
+
+
+// ------------------------------------------------------
+// CUSTOM COMPONENTS
+// ------------------------------------------------------
+
+// Custom checkbox
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $c-pink;
+}
+
+.custom-control-label::before {
+  border: 1px solid black;
+  background-color: $c-white;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: $c-blue;
+  background-color: $c-pink;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23014656' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
