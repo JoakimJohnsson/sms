@@ -14,11 +14,11 @@
   a {
     color: $mx-white-link-color;
     &:hover {
-    color: lighten($mx-white-link-color, 20%);
+    color: lighten($mx-white-link-color, 40%);
     }
     &:active,
     &:focus {
-      color: lighten($mx-white-link-color, 20%);
+      color: lighten($mx-white-link-color, 30%);
     }
   }
 }
@@ -56,7 +56,7 @@
     }
   }
 }
-// ------------------------------------------------------
+//
 
 
 
