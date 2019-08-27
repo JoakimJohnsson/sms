@@ -1,11 +1,8 @@
 // VARIABLES
 // ******************************************************
 
-// Colors
-// ******************************************************
-
-// Main colors
-
+// COLORS
+// ------------------------------------------------------
 $c-light-beige: #fefbdc;
 $c-blue: #44708b;
 $c-dark-blue: #1f3540;
@@ -17,8 +14,10 @@ $c-pink: #f2aab8;
 $c-dark-pink: #982149;
 $c-black: #000000;
 $c-white: #ffffff;
+// ------------------------------------------------------
 
-// Mixin colors
+// MIXIN COLORS
+// ------------------------------------------------------
 $mx-white-bg: $c-white;
 $mx-white-color: $c-black;
 $mx-white-header-color: $c-black;
@@ -33,22 +32,12 @@ $mx-dark-blue-bg: $c-blue;
 $mx-dark-blue-color: $c-white;
 $mx-dark-blue-header-color: $c-light-beige;
 $mx-dark-blue-link-color: $c-pink;
+// ------------------------------------------------------
 
-
-// Typography
-// ******************************************************
+// TYPOGRAPHY
+// ------------------------------------------------------
 $font-family-sans-serif: 'Cabin', sans-serif;
 $headings-font-family: 'Cabin', sans-serif;
 $headings-font-weight: 700;
-
-// Image Paths
-// ******************************************************
-
-// Shield in logo
-$sms-img-path-logo-shield: "../images/shield.svg";
-
-// Front page background
-$sms-img-path-marvel-heroes-2: "../images/bg-marvel-heroes-2.jpg";
-
-
+// ------------------------------------------------------
 

@@ -1,5 +1,10 @@
 @import "helpers/variables";
 
+// GENERAL BODY STYLES
+// ******************************************************
+
+// BUTTONS
+// ------------------------------------------------------
 button,
  input[type="button"],
  input[type="reset"],
@@ -7,7 +12,11 @@ button,
    -moz-appearance: none;
    -webkit-appearance: none;
  }
+// ------------------------------------------------------
 
+// LINKS
+// ------------------------------------------------------
 a {
   text-decoration: underline;
 }
+// ------------------------------------------------------
