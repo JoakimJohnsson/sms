@@ -14,11 +14,28 @@
   a {
     color: $mx-white-link-color;
     &:hover {
-    color: lighten($mx-white-link-color, 40%);
+    color: darken($mx-white-link-color, 10%);
     }
     &:active,
     &:focus {
-      color: lighten($mx-white-link-color, 30%);
+      color: lighten($mx-white-link-color, 10%);
+    }
+  }
+}
+@mixin bg-text-colors__black {
+  background-color: $mx-black-bg;
+  color: $mx-black-color;
+  h1, h2, h3, h4, h5 {
+    color: $mx-black-header-color;
+  }
+  a {
+    color: $mx-black-link-color;
+    &:hover {
+      color: darken($mx-black-link-color, 10%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($mx-black-link-color, 10%);
     }
   }
 }

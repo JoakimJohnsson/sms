@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title -->
   <title>Svenska Marvelsamlare</title>
-  <!-- Favicons -->
+  <!-- Favicons TODO?? -->
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="icon" href="">
   <!-- Stylesheets -->
@@ -17,14 +17,14 @@
 </head>
 <body>
 
-<header id="sms-header">
-  <!-- top navigation -->
+<header>
+  <!-- top navigation TODO?? -->
   <div class="container-fluid sms-navbar-top d-none ">
     <div class="container fs-08x pr-0 pl-0 d-flex align-items-center">
       <p class="mb-0">Joakim "Spindelmannen" Johnsson</p>
-    </div> <!-- /container-fluid -->
-  </div> <!-- /row -->
-  <!-- /top navigation -->
+    </div>
+  </div>
+
   <!-- simple start page header-->
   <div class="container-fluid sms-navbar-main start-page">
     <div class="sms-logo start-page p-3">
@@ -32,11 +32,11 @@
         SVG-bilder
       </object>
       <p class="mb-0">SVENSKA MARVELSAMLARE</p>
-    </div> <!-- /sms-logo -->
-  </div> <!-- /container-fluid -->
-  <!-- /simple start page header -->
-</header>
+    </div>
+  </div>
 
+</header>
+<!-- carousel -->
 <div class="container mb-3">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -67,159 +67,156 @@
 
 <div class="container">
   <div class="row">
-    <main class="col-12 col-lg-8 sms-start-page-registration">
+
+    <!-- main content -->
+    <main class="col-12 col-lg-8 sms-start-page-bg-text">
+      <div class="sms-main-wrapper">
         <h1>Välkommen till svenska marvelsamlare</h1>
         <p class="lead">Hej hej</p>
         <p class="">Hej hej</p>
-
-
-
+      </div>
 
     </main>
 
-    <aside class="col-12 col-lg-4 sms-start-page-login">
+    <aside class="col-12 col-lg-4 sms-start-page-bg-text">
 
-      <h2>Logga in</h2>
-
-      <form>
-        <div class="form-group row">
-          <label for="login-input-email" class="col-12 col-form-label">E-post
-            (användarnamn)</label>
-          <div class="col-12 ">
-            <input type="email" class="form-control" id="login-input-email"
-                   placeholder="E-post (användarnamn)">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="login-input-password" class="col-12 col-form-label">Lösenord</label>
-          <div class="col-12">
-            <input type="password" class="form-control" id="login-input-password"
-                   placeholder="Lösenord">
-          </div>
-        </div>
-
-        <div class="custom-control custom-checkbox mb-4 sms-link ">
-          <input type="checkbox" class="custom-control-input"
-                 id="login-checkbox-remember">
-          <label class="custom-control-label fs-08x" for="login-checkbox-remember">
-            Kom ihåg mig
-          </label>
-        </div>
-        <div class="form-group row mb-0 mb-sm-3 pb-4">
-          <div class="col-12">
-            <button class="btn sms-btn-outline-contrast mb-3" type="submit">Logga in</button>
-          </div>
-        </div>
-      </form>
-
-        <h2>Registrera dig</h2>
-
-
+      <!-- login -->
+      <div class="sms-aside-wrapper">
+        <h2>Logga in</h2>
         <form>
-            <div class="form-group row">
-                <label for="reg-input-first-name" class="col-12 col-form-label">Förnamn</label>
-                <div class="col-12 ">
-                    <input type="text" class="form-control" id="reg-input-first-name"
-                           placeholder="Förnamn">
-                </div>
+          <div class="form-group row">
+            <label for="login-input-email" class="col-12 col-form-label">E-post
+              (användarnamn)</label>
+            <div class="col-12 ">
+              <input type="email" class="form-control" id="login-input-email"
+                     placeholder="E-post (användarnamn)">
             </div>
-            <div class="form-group row">
-                <label for="reg-input-last-name" class="col-12 col-form-label">Efternamn</label>
-                <div class="col-12 ">
-                    <input type="text" class="form-control" id="reg-input-last-name"
-                           placeholder="Efternamn">
-                </div>
+          </div>
+          <div class="form-group row">
+            <label for="login-input-password" class="col-12 col-form-label">Lösenord</label>
+            <div class="col-12">
+              <input type="password" class="form-control" id="login-input-password"
+                     placeholder="Lösenord">
             </div>
-            <div class="form-group row">
-                <label for="reg-input-email" class="col-12 col-form-label">E-post
-                    (användarnamn)</label>
-                <div class="col-12 ">
-                    <input type="email" class="form-control" id="reg-input-email"
-                           placeholder="E-post (användarnamn)">
-                </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-4 sms-link ">
+            <input type="checkbox" class="custom-control-input"
+                   id="login-checkbox-remember">
+            <label class="custom-control-label fs-08x" for="login-checkbox-remember">
+              Kom ihåg mig
+            </label>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <button class="btn sms-button__gold" type="submit">Logga in</button>
             </div>
-            <div class="form-group row">
-                <label for="reg-input-password" class="col-12 col-form-label">Lösenord</label>
-                <div class="col-12">
-                    <input type="password" class="form-control" id="reg-input-password"
-                           placeholder="Lösenord">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="reg-input-password-confirm" class="col-12 col-form-label">Bekräfta
-                    lösenord</label>
-                <div class="col-12">
-                    <input type="password" class="form-control" id="reg-input-password-confirm"
-                           placeholder="Lösenord">
-                </div>
-            </div>
-            <div class="form-group row mb-4">
-                <label for="reg-input-favorite-character" class="col-12 col-form-label">Säkerhetsfråga -
-                    Vilken är din favorithjälte / skurk?</label>
-                <div class="col-12">
-                    <input type="text" class="form-control" id="reg-input-favorite-character"
-                           placeholder="Favorithjälte / skurk?">
-                </div>
-            </div>
-            <div class="custom-control custom-checkbox mb-4 sms-link ">
-                <input type="checkbox" class="custom-control-input"
-                       id="reg-custom-checkbox-agree">
-                <label class="custom-control-label fs-08x" for="reg-custom-checkbox-agree">
-                    Jag har läst igenom <a href="#">användarinformationen</a> och godkänner att
-                    Svenska marvelsamlare sparar denna information.
-                </label>
-            </div>
-            <div class="form-group row mb-0 mb-sm-3 pb-4">
-                <div class="col-12">
-                    <button class="btn sms-btn-outline-contrast mb-3" type="submit">Skicka</button>
-                </div>
-            </div>
+          </div>
         </form>
+      </div>
 
+      <!-- registration -->
+      <div class="sms-aside-wrapper">
+        <h2>Registrera dig</h2>
+        <form>
+          <div class="form-group row">
+            <label for="reg-input-first-name" class="col-12 col-form-label">Förnamn</label>
+            <div class="col-12 ">
+              <input type="text" class="form-control" id="reg-input-first-name"
+                     placeholder="Förnamn">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="reg-input-last-name" class="col-12 col-form-label">Efternamn</label>
+            <div class="col-12 ">
+              <input type="text" class="form-control" id="reg-input-last-name"
+                     placeholder="Efternamn">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="reg-input-email" class="col-12 col-form-label">E-post
+              (användarnamn)</label>
+            <div class="col-12 ">
+              <input type="email" class="form-control" id="reg-input-email"
+                     placeholder="E-post (användarnamn)">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="reg-input-password" class="col-12 col-form-label">Lösenord</label>
+            <div class="col-12">
+              <input type="password" class="form-control" id="reg-input-password"
+                     placeholder="Lösenord">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="reg-input-password-confirm" class="col-12 col-form-label">Bekräfta
+              lösenord</label>
+            <div class="col-12">
+              <input type="password" class="form-control" id="reg-input-password-confirm"
+                     placeholder="Lösenord">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="reg-input-favorite-character" class="col-12 col-form-label">Säkerhetsfråga -
+              Vilken är din favorithjälte / skurk?</label>
+            <div class="col-12">
+              <input type="text" class="form-control" id="reg-input-favorite-character"
+                     placeholder="Favorithjälte / skurk?">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-4 sms-link ">
+            <input type="checkbox" class="custom-control-input"
+                   id="reg-custom-checkbox-agree">
+            <label class="custom-control-label" for="reg-custom-checkbox-agree">
+              Jag har läst igenom <a href="#">användarinformationen</a> och godkänner att
+              Svenska marvelsamlare sparar denna information.
+            </label>
+          </div>
+          <div class="form-group row">
+            <div class="col-12">
+              <button class="btn sms-button__gold" type="submit">Skicka</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </aside>
-
   </div>
 </div>
 
-
-<!-- Footer -->
-
-
-<footer class="container sms-footer pl-0 pr-0">
-  <div class="row p-4 pt-sm-5 pb-sm-5 pr-sm-o pl-sm-0">
-    <div class="col-12 col-md-4">
-      <div class="fs-08x  text-color-white d-flex align-items-center">
-        <div class="sms-text-logo">
-          <p class="m-0">
-            SVENSKA
-          </p>
-          <p class="m-0">
-            MARVELSAMLARE
-          </p>
+<!-- footer -->
+<footer class="container-fluid sms-footer">
+  <div class="container sms-footer pl-0 pr-0">
+    <div class="row p-4 pt-sm-5 pb-sm-5 pr-sm-o pl-sm-0">
+      <div class="col-12 col-md-4">
+        <div class="d-flex align-items-center">
+          <div class="sms-text-logo">
+            <p class="m-0">
+              SVENSKA
+            </p>
+            <p class="m-0">
+              MARVELSAMLARE
+            </p>
+          </div>
         </div>
       </div>
-    </div> <!-- /col-12 -->
-
-    <div class="col-12 col-md-8">
-      <p class="">
-        This webb application contains images and information which is owned and
-        copyrighted by <a href="http://www.marvel.com">MARVEL Entertainment</a> and is
-        used without permission according to the Fair use doctrin of the United States.
-        This material is used for such purposes as archiving, research, news reporting and informed
-        discussion.
-        Svenska marvelsamlare is a non-profit project run by a handful of Swedish Marvel collectors.
-      </p>
-      <div>
-        <span class="far fa-copyright mr-2"></span>
-        <span class="mr-3">2019 Svenska marvelsamlare</span>
+      <div class="col-12 col-md-8">
+        <p class="">
+          This webb application contains images and information which is owned and
+          copyrighted by <a href="http://www.marvel.com">MARVEL Entertainment</a> and is
+          used without permission according to the Fair use doctrin of the United States.
+          This material is used for such purposes as archiving, research, news reporting and informed
+          discussion.
+          Svenska marvelsamlare is a non-profit project run by a handful of Swedish Marvel collectors.
+        </p>
+        <div>
+          <span class="far fa-copyright mr-2"></span>
+          <span class="mr-3">2019 Svenska marvelsamlare</span>
+        </div>
       </div>
-    </div> <!-- /col-12 -->
-  </div> <!-- /row -->
-</footer> <!-- /container -->
+    </div>
+  </div>
+</footer>
 
-
-<!-- /body -->
-<!-- Javascript -->
+<!-- js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

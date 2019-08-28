@@ -51,23 +51,49 @@
 
 // START PAGE COMPONENTS
 // ------------------------------------------------------
-.sms-start-page-registration {
+.sms-start-page-bg-text {
   @include bg-text-colors__white;
 }
-.sms-start-page-login {
-  @include bg-text-colors__white;
-}
+//
+
+// MAIN
 // ------------------------------------------------------
+.sms-main-wrapper {
+  border-bottom: 1px solid $c-gold;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  @include media-breakpoint-up(lg) {
+    border: none;
+  }
+
+}
+//
+
+// ASIDE
+// ------------------------------------------------------
+.sms-aside-wrapper {
+  border-bottom: 1px solid $c-gold;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+
+
+
+}
+//
 
 // FOOTER
 // ------------------------------------------------------
 .sms-footer {
-  @include bg-text-colors__white;
+  @include bg-text-colors__black;
   font-size: .8rem;
   .sms-text-logo {
     font-size: 1rem;
     font-weight: 700;
-    color: $c-black;
+    color: $c-white;
   }
 }
 //
@@ -75,22 +101,30 @@
 
 // CUSTOM COMPONENTS
 // ------------------------------------------------------
-
 // Custom checkbox
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: $c-white;
 }
-
 .custom-control-label::before {
   border: 1px solid $c-black;
   background-color: $c-white;
 }
-
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: red;
+  color: $c-white;
   background-color: $c-white;
 }
-
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23826624' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+// Custom buttons
+.sms-button__gold {
+  color: $c-white;
+  background-color: $c-gold;
+  &:hover {
+    background-color: darken($c-gold, 10%);
+  }
+  &:active,
+  &:focus {
+    background-color: lighten($c-gold, 10%);
+  }
 }

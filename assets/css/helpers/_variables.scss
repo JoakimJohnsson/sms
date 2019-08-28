@@ -6,8 +6,7 @@
 $c-light-beige: #fefbdc;
 $c-blue: #44708b;
 $c-dark-blue: #1f3540;
-$c-gold: #c8a44e;
-$c-dark-gold: #957529;
+$c-gold: #826624;
 $c-green: #3a6f67;
 $c-dark-green: #034c3b;
 $c-pink: #f2aab8;
@@ -22,7 +21,12 @@ $c-white: #ffffff;
 $mx-white-bg: $c-white;
 $mx-white-color: $c-text;
 $mx-white-header-color: $c-black;
-$mx-white-link-color: $c-black;
+$mx-white-link-color: $c-gold;
+
+$mx-black-bg: $c-black;
+$mx-black-color: $c-white;
+$mx-black-header-color: $c-white;
+$mx-black-link-color: lighten($c-gold, 20%);
 
 $mx-light-beige-bg: $c-light-beige;
 $mx-light-beige-color: $c-dark-blue;

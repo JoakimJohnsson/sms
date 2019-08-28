@@ -8154,11 +8154,11 @@ template {
   .sms-navbar-main h1, .sms-navbar-main h2, .sms-navbar-main h3, .sms-navbar-main h4, .sms-navbar-main h5 {
     color: #000000; }
   .sms-navbar-main a {
-    color: #000000; }
+    color: #826624; }
     .sms-navbar-main a:hover {
-      color: #666666; }
+      color: #5a4719; }
     .sms-navbar-main a:active, .sms-navbar-main a:focus {
-      color: #4d4d4d; }
+      color: #aa852f; }
   .sms-navbar-main.start-page a {
     color: #000000;
     text-decoration: none; }
@@ -8181,51 +8181,54 @@ template {
         width: 50px; } }
 
 .sms-navbar-top {
-  background-color: #c8a44e;
+  background-color: #826624;
   min-height: 50px;
   color: #ffffff;
   border-bottom: 1px solid #ffffff; }
 
-.sms-start-page-registration {
+.sms-start-page-bg-text {
   background-color: #ffffff;
   color: #4c4c4c; }
-  .sms-start-page-registration h1, .sms-start-page-registration h2, .sms-start-page-registration h3, .sms-start-page-registration h4, .sms-start-page-registration h5 {
+  .sms-start-page-bg-text h1, .sms-start-page-bg-text h2, .sms-start-page-bg-text h3, .sms-start-page-bg-text h4, .sms-start-page-bg-text h5 {
     color: #000000; }
-  .sms-start-page-registration a {
-    color: #000000; }
-    .sms-start-page-registration a:hover {
-      color: #666666; }
-    .sms-start-page-registration a:active, .sms-start-page-registration a:focus {
-      color: #4d4d4d; }
+  .sms-start-page-bg-text a {
+    color: #826624; }
+    .sms-start-page-bg-text a:hover {
+      color: #5a4719; }
+    .sms-start-page-bg-text a:active, .sms-start-page-bg-text a:focus {
+      color: #aa852f; }
 
-.sms-start-page-login {
-  background-color: #ffffff;
-  color: #4c4c4c; }
-  .sms-start-page-login h1, .sms-start-page-login h2, .sms-start-page-login h3, .sms-start-page-login h4, .sms-start-page-login h5 {
-    color: #000000; }
-  .sms-start-page-login a {
-    color: #000000; }
-    .sms-start-page-login a:hover {
-      color: #666666; }
-    .sms-start-page-login a:active, .sms-start-page-login a:focus {
-      color: #4d4d4d; }
+.sms-main-wrapper {
+  border-bottom: 1px solid #826624;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 992px) {
+    .sms-main-wrapper {
+      border: none; } }
+
+.sms-aside-wrapper {
+  border-bottom: 1px solid #826624;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem; }
+  .sms-aside-wrapper:last-of-type {
+    border-bottom: none; }
 
 .sms-footer {
-  background-color: #ffffff;
-  color: #4c4c4c;
+  background-color: #000000;
+  color: #ffffff;
   font-size: .8rem; }
   .sms-footer h1, .sms-footer h2, .sms-footer h3, .sms-footer h4, .sms-footer h5 {
-    color: #000000; }
+    color: #ffffff; }
   .sms-footer a {
-    color: #000000; }
+    color: #cba241; }
     .sms-footer a:hover {
-      color: #666666; }
+      color: #aa852f; }
     .sms-footer a:active, .sms-footer a:focus {
-      color: #4d4d4d; }
+      color: #d6b569; }
   .sms-footer .sms-text-logo {
     font-size: 1rem;
     font-weight: 700;
-    color: #000000; }
+    color: #ffffff; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #ffffff; }
@@ -8235,11 +8238,19 @@ template {
   background-color: #ffffff; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: red;
+  color: #ffffff;
   background-color: #ffffff; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23826624' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
+
+.sms-button__gold {
+  color: #ffffff;
+  background-color: #826624; }
+  .sms-button__gold:hover {
+    background-color: #5a4719; }
+  .sms-button__gold:active, .sms-button__gold:focus {
+    background-color: #aa852f; }
 
 button,
 input[type="button"],
