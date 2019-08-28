@@ -7,6 +7,7 @@ $c-light-beige: #fefbdc;
 $c-blue: #44708b;
 $c-dark-blue: #1f3540;
 $c-gold: #826624;
+$c-gold-lighter: lighten($c-gold, 20%);
 $c-green: #3a6f67;
 $c-dark-green: #034c3b;
 $c-pink: #f2aab8;
@@ -15,6 +16,10 @@ $c-black: #000000;
 $c-text: #4c4c4c;
 $c-white: #ffffff;
 //
+
+// ELEMENT COLORS
+// ------------------------------------------------------
+$c-border: lighten($c-gold, 50%);
 
 // MIXIN COLORS
 // ------------------------------------------------------
@@ -26,7 +31,7 @@ $mx-white-link-color: $c-gold;
 $mx-black-bg: $c-black;
 $mx-black-color: $c-white;
 $mx-black-header-color: $c-white;
-$mx-black-link-color: lighten($c-gold, 20%);
+$mx-black-link-color: $c-gold-lighter;
 
 $mx-light-beige-bg: $c-light-beige;
 $mx-light-beige-color: $c-dark-blue;

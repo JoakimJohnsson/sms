@@ -37,7 +37,6 @@
     }
   }
 }
-//
 
 // NAVBAR TOP
 // ------------------------------------------------------
@@ -47,66 +46,62 @@
   color: $c-white;
   border-bottom: 1px solid $c-white;
 }
-//
 
 // START PAGE COMPONENTS
 // ------------------------------------------------------
 .sms-start-page-bg-text {
   @include bg-text-colors__white;
 }
-//
 
 // MAIN
 // ------------------------------------------------------
 .sms-main-wrapper {
-  border-bottom: 1px solid $c-gold;
+  border-bottom: 1px solid $c-border;
+  border-right: none;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   @include media-breakpoint-up(lg) {
-    border: none;
+    border-bottom: none;
+    border-right: 1px solid $c-border;
+    height: 100%;
   }
 
 }
-//
 
 // ASIDE
 // ------------------------------------------------------
 .sms-aside-wrapper {
-  border-bottom: 1px solid $c-gold;
+  border-bottom: 1px solid $c-border;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   &:last-of-type {
     border-bottom: none;
   }
-
-
-
-
 }
-//
 
 // FOOTER
 // ------------------------------------------------------
+
 .sms-footer {
   @include bg-text-colors__black;
   font-size: .8rem;
   .sms-text-logo {
     font-size: 1rem;
+    line-height: 1.1;
     font-weight: 700;
     color: $c-white;
   }
 }
-//
-
 
 // CUSTOM COMPONENTS
 // ------------------------------------------------------
+
 // Custom checkbox
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: $c-white;
 }
 .custom-control-label::before {
-  border: 1px solid $c-black;
+  border: 1px solid $c-border;
   background-color: $c-white;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -128,3 +123,8 @@
     background-color: lighten($c-gold, 10%);
   }
 }
+// Forms
+.form-control {
+  border: 1px solid $c-border;
+}
+
