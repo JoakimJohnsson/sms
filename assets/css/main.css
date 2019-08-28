@@ -8199,15 +8199,18 @@ template {
       color: #aa852f; }
 
 .sms-main-wrapper {
-  border-bottom: 1px solid #826624;
+  border-bottom: 1px solid #ecddb9;
+  border-right: none;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem; }
   @media (min-width: 992px) {
     .sms-main-wrapper {
-      border: none; } }
+      border-bottom: none;
+      border-right: 1px solid #ecddb9;
+      height: 100%; } }
 
 .sms-aside-wrapper {
-  border-bottom: 1px solid #826624;
+  border-bottom: 1px solid #ecddb9;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem; }
   .sms-aside-wrapper:last-of-type {
@@ -8227,6 +8230,7 @@ template {
       color: #d6b569; }
   .sms-footer .sms-text-logo {
     font-size: 1rem;
+    line-height: 1.1;
     font-weight: 700;
     color: #ffffff; }
 
@@ -8234,7 +8238,7 @@ template {
   background-color: #ffffff; }
 
 .custom-control-label::before {
-  border: 1px solid #000000;
+  border: 1px solid #ecddb9;
   background-color: #ffffff; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -8251,6 +8255,9 @@ template {
     background-color: #5a4719; }
   .sms-button__gold:active, .sms-button__gold:focus {
     background-color: #aa852f; }
+
+.form-control {
+  border: 1px solid #ecddb9; }
 
 button,
 input[type="button"],
