@@ -17,218 +17,206 @@
 </head>
 <body>
 
-<!-- TODO: Classes are defined in this order:
-"what kind of element? (container)"
-"a class that defines the name of the element (sms-navbar)"
-"general layout classes (bg's text-colors/sizes and such)"
-"margins and paddings"
-"display properties"
--->
-<header id="sms-header">
-    <!-- Top navigation -->
-    <div class="container-fluid sms-navbar-top sms-bg-primary-hover-lighter  d-none d-lg-flex align-items-center">
-        <div class="container fs-08x p-0">
-            <a href="#" class="mb-0 ftw-200"><span class="mr-2">Joakim "Spindelmannen" Johnsson</span><span class="fas fa-user"></span></a>
-        </div> <!-- /container-fluid -->
-    </div> <!-- /row -->
-    <!-- /Top navigation -->
+<header>
+    <!-- top navigation TODO?? -->
+    <div class="container-fluid sms-navbar-top d-none ">
+        <div class="container pr-0 pl-0 d-flex align-items-center">
+            <p class="mb-0">Joakim "Spindelmannen" Johnsson</p>
+        </div>
+    </div>
 
-    <!-- Main navigation -->
-    <div class="container-fluid sms-navbar-main sms-bg-primary">
-        <div class="container sms-bg-primary pr-0 pl-0">
-            <nav class="navbar pt-sm-2 pb-sm-2 pt-lg-3 pb-lg-3 navbar-expand-lg navbar-dark sms-bg-primary">
-                <a class="navbar-brand" href="#">
-                    <div class="sms-logo text-color-white d-flex align-items-center">
-                        <object class="mr-2" type="image/svg+xml"
-                                data="assets/images/shield-dark-green.svg">Din webbläsare kan inte visa SVG-bilder
-                        </object>
-                        <div class="ftw-700">
-                            <p class="">
-                                SVENSKA
-                            </p>
-                            <p class="m-0">
-                                MARVELSAMLARE
-                            </p>
-                        </div>
-                    </div> <!-- /sms-logo -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fas fs-18x fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto pt-sm-3 pt-lg-0">
-                        <li class="dropdown-divider"></li>
-                        <li class="text-color-white d-inline d-lg-none pt-3 pb-3">
-                            <a class="nav-link" href="#"><span class="mr-2 ftw-200">Joakim "Spindelmannen" Johnsson</span>
-                                <span class="fas fa-user "></span></a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Arbetsyta<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2">Länkar</span><span class="fas fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Seriekatalogen</a>
-                                <a class="dropdown-item" href="#">Seriewikin</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Facebook</a>
-                                <a class="dropdown-item" href="#">Instagram</a>
-                            </div>
-                        </li>
+    <!-- simple start page header-->
+    <div class="container-fluid sms-navbar-main">
+        <div class="sms-logo start-page p-3">
+            <object type="image/svg+xml" data="assets/images/shield-black.svg">Din webbläsare kan inte visa
+                SVG-bilder
+            </object>
+            <p class="mb-0">SVENSKA MARVELSAMLARE</p>
+        </div>
+    </div>
 
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto: admin@svenskamarvelsamlare.se">Kontakt</a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  " href="testsida.html">
-                                <span class="mr-2 ftw-200">Logga ut</span>
-                                <span class="fas fa-door-open "></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> <!-- /container -->
-    </div> <!-- /container-fluid -->
-    <!-- /Main navigation -->
 </header>
+<!-- carousel -->
+<div class="container mb-3">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/sliderimages/hulk-red.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/sliderimages/thing-blue.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/sliderimages/spman-yellow.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/sliderimages/iman-green.png" alt="Fourth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
-<main>
-    <div class="container-fluid pt-4">
-        <div class="container">
-            <div class="row pt-0 pb-0 pt-sm-4 pb-sm-5">
-                <div class="col-12 col-lg-4">
-                    <div class="row">
-                        <div class=" col-12 sms-bg-white p-4 mb-0 mb-sm-3 ">
-                            <h1>Min samling</h1>
-                            <p class="lead">Överblicka din samling och lägg till titlar, antingen direkt på sidan eller med hjälp av sökfunktionen.</p>
+
+<div class="container">
+    <div class="row mb-0 mb-lg-5">
+
+        <!-- main content -->
+        <main class="col-12 col-lg-8 sms-theme__white pb-3">
+            <div class="sms-main-column-content-wrapper">
+                <h1>Välkommen till svenska marvelsamlare</h1>
+                <p class="lead">Hej hej</p>
+                <p class="">Hej hej</p>
+            </div>
+
+        </main>
+
+        <aside class="col-12 col-lg-4 sms-theme__white">
+
+            <!-- login -->
+            <div class="sms-right-column-content-wrapper">
+                <h2>Logga in</h2>
+                <form>
+                    <div class="form-group row">
+                        <label for="login-input-email" class="col-12 col-form-label">E-post
+                            (användarnamn)</label>
+                        <div class="col-12 ">
+                            <input type="email" class="form-control" id="login-input-email"
+                                   placeholder="E-post (användarnamn)">
                         </div>
-
-                        <!-- Add titles collapse -->
-                        <div class="sms-btn-collapse sms-bg-contrast col-12 p-4 mb-0 mb-sm-3" id="btn-add-titles" type="button"
-                             data-toggle="collapse"
-                             data-target="#add-titles-collapse" aria-expanded="false"
-                             aria-controls="add-titles-collapse">
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <h3 class="m-0">Lägg till titlar
-                                        <span class="show-more-add-titles fas fa-chevron-down"></span>
-                                        <span class="show-more-add-titles fas fa-chevron-up"
-                                              style="display: none;"></span>
-                                    </h3>
-                                </div>
-
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="login-input-password" class="col-12 col-form-label">Lösenord</label>
+                        <div class="col-12">
+                            <input type="password" class="form-control" id="login-input-password"
+                                   placeholder="Lösenord">
                         </div>
-                        <div class="collapse w-100 sms-bg-white " id="add-titles-collapse">
-                            <div class="container pt-3 pr-4 pl-4">
-                                <p class="m-0"><span class="mr-2">Conan 1974</span><span class="far fa-plus-square text-color-green"></span></p>
-                                <p class="pb-4"><span class="mr-2">Spindelmannen 1974</span><span class="far fa-plus-square text-color-green"></span></p>
-
-                            </div>
-                        </div> <!-- /collapse -->
-                        <!-- /Add titles collapse -->
-
-                        <!-- Statistics collapse -->
-                        <div class="sms-btn-collapse sms-bg-contrast-hover col-12 p-4 mb-0 mb-sm-3" id="btn-statistics" type="button"
-                             data-toggle="collapse"
-                             data-target="#statistics-collapse" aria-expanded="false"
-                             aria-controls="statistics-collapse">
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <h3 class="m-0">Statistik
-                                        <span class="show-more-statistics fas fa-chevron-down"></span>
-                                        <span class="show-more-statistics fas fa-chevron-up"
-                                              style="display: none;"></span>
-                                    </h3>
-                                </div>
-
-                            </div>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4 ">
+                        <input type="checkbox" class="custom-control-input"
+                               id="login-checkbox-remember">
+                        <label class="custom-control-label fs-08x" for="login-checkbox-remember">
+                            Kom ihåg mig
+                        </label>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <button class="btn sms-button__gold" type="submit">Logga in</button>
                         </div>
-                        <div class="collapse w-100 sms-bg-white " id="statistics-collapse">
-                            <div class="container pt-3 pr-4 pl-4">
-                                <p class="m-0"><span class="mr-2">Conan 1974</span><span class="far fa-plus-square text-color-green"></span></p>
-                                <p class="pb-4"><span class="mr-2">Spindelmannen 1974</span><span class="far fa-plus-square text-color-green"></span></p>
+                    </div>
+                </form>
+            </div>
 
-                            </div>
-                        </div> <!-- /collapse -->
-                        <!-- /Add titles collapse -->
+            <!-- registration -->
+            <div class="sms-right-column-content-wrapper">
+                <h2>Registrera dig</h2>
+                <form>
+                    <div class="form-group row">
+                        <label for="reg-input-first-name" class="col-12 col-form-label">Förnamn</label>
+                        <div class="col-12 ">
+                            <input type="text" class="form-control" id="reg-input-first-name"
+                                   placeholder="Förnamn">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="reg-input-last-name" class="col-12 col-form-label">Efternamn</label>
+                        <div class="col-12 ">
+                            <input type="text" class="form-control" id="reg-input-last-name"
+                                   placeholder="Efternamn">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="reg-input-email" class="col-12 col-form-label">E-post
+                            (användarnamn)</label>
+                        <div class="col-12 ">
+                            <input type="email" class="form-control" id="reg-input-email"
+                                   placeholder="E-post (användarnamn)">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="reg-input-password" class="col-12 col-form-label">Lösenord</label>
+                        <div class="col-12">
+                            <input type="password" class="form-control" id="reg-input-password"
+                                   placeholder="Lösenord">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="reg-input-password-confirm" class="col-12 col-form-label">Bekräfta
+                            lösenord</label>
+                        <div class="col-12">
+                            <input type="password" class="form-control" id="reg-input-password-confirm"
+                                   placeholder="Lösenord">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="reg-input-favorite-character" class="col-12 col-form-label">Säkerhetsfråga -
+                            Vilken är din favorithjälte / skurk?</label>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="reg-input-favorite-character"
+                                   placeholder="Favorithjälte / skurk?">
+                        </div>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4 ">
+                        <input type="checkbox" class="custom-control-input"
+                               id="reg-custom-checkbox-agree">
+                        <label class="custom-control-label" for="reg-custom-checkbox-agree">
+                            Jag har läst igenom <a href="#">användarinformationen</a> och godkänner att
+                            Svenska marvelsamlare sparar denna information.
+                        </label>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <button class="btn sms-button__gold" type="submit">Skicka</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </aside>
+    </div>
+</div>
 
-
-
-
-
-
-
+<!-- footer -->
+<footer class="container-fluid sms-footer">
+    <div class="container sms-footer pl-0 pr-0">
+        <div class="row p-4 pt-sm-5 pb-sm-5 pr-sm-o pl-sm-0">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <div class="d-flex align-items-center">
+                    <div class="sms-logo">
+                        <p class="m-0">
+                            SVENSKA
+                        </p>
+                        <p class="m-0">
+                            MARVELSAMLARE
+                        </p>
                     </div>
                 </div>
-
-
-
-                <aside class="col-12 col-lg-8 pr-0">
-                    <div class="col-12 p-4 sms-bg-white">
-                        <h2>Titlar</h2>
-                        <p>Här visas de titlar du samlar på. Du har för tillfället inga titlar i samlingen.</p>
-                    </div>
-                </aside>
-            </div> <!-- /row -->
-        </div> <!-- /container -->
-    </div> <!-- /container-fluid -->
-</main>
-
-<!-- Footer -->
-<footer>
-    <div class="container-fluid sms-footer text-color-white fs-08x sms-bg-primary">
-        <div class="container pl-0 pr-0">
-            <div class="row p-4 pt-sm-5 pb-sm-5 pr-sm-o pl-sm-0">
-                <div class="col-12 col-md-4">
-                    <div class="fs-08x  text-color-white d-flex align-items-center">
-                        <div class="ftw-700 mb-3">
-                            <p class="m-0">
-                                SVENSKA
-                            </p>
-                            <p class="m-0">
-                                MARVELSAMLARE
-                            </p>
-                        </div>
-                    </div>
-                </div> <!-- /col-12 -->
-
-                <div class="col-12 col-md-8 ">
-                    <p class="">
-                        <a href="#"><span class="fab  fa-facebook-f mr-2"></span></a>
-                        <a href="#"><span class="fab  fa-instagram mr-2"></span></a>
-                    </p>
-                    <p class="">
-                        This webb application contains images and information which is owned and
-                        copyrighted by <a href="http://www.marvel.com">MARVEL Entertainment</a> and is
-                        used without permission according to the Fair use doctrin of the United States.
-                        This material is used for such purposes as archiving, research, news reporting and informed
-                        discussion.
-                        Svenska marvelsamlare is a non-profit project run by a handful of Swedish Marvel collectors.
-                    </p>
-                    <div>
-                        <span class="far fa-copyright mr-2"></span>
-                        <span class="mr-3">2019 Svenska marvelsamlare</span>
-                    </div>
-                </div> <!-- /col-12 -->
-            </div> <!-- /row -->
-        </div> <!-- /container -->
-    </div> <!-- /container-fluid -->
+            </div>
+            <div class="col-12 col-md-8">
+                <p class="">
+                    This webb application contains images and information which is owned and
+                    copyrighted by <a href="http://www.marvel.com">MARVEL Entertainment</a> and is
+                    used without permission according to the Fair use doctrin of the United States.
+                    This material is used for such purposes as archiving, research, news reporting and informed
+                    discussion.
+                    Svenska marvelsamlare is a non-profit project run by a handful of Swedish Marvel collectors.
+                </p>
+                <div>
+                    <span class="far fa-copyright mr-2"></span>
+                    <span class="mr-3">2019 Svenska marvelsamlare</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- /body -->
-<!-- Javascript -->
+<!-- js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

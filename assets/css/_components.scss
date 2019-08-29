@@ -14,20 +14,29 @@
 // Custom checkbox
 // Buttons
 // Forms
+// Themes
 
 // Navbar main
 .sms-navbar-main {
+}
+
+// Navbar top
+.sms-navbar-top {
+  background-color: $c-gold;
+  min-height: 50px;
+  color: $c-white;
+  border-bottom: 1px solid $c-white;
+}
+
+// Start page
+.sms-start-page-header {
   @include mx-sms-theme__light($c-white, $c-black, $c-gold);
   .sms-logo {
     font-size: 1rem;
     font-weight: 700;
     color: $c-black;
-    p {
-      margin-top: -.5rem;
-    }
-    &.start-page {
-      text-align: center;
-    }
+    text-align: center;
+    line-height: 1;
     object {
       width: 40px;
       margin-bottom: 0;
@@ -41,22 +50,8 @@
   }
 }
 
-
-// Navbar top
-.sms-navbar-top {
-  background-color: $c-gold;
-  min-height: 50px;
-  color: $c-white;
-  border-bottom: 1px solid $c-white;
-}
-
-// Start page
-.sms-start-page-bg-text {
-  @include mx-sms-theme__light($c-white, $c-black, $c-gold);
-}
-
 // Main
-.sms-main-wrapper {
+.sms-main-column-content-wrapper {
   border-bottom: 1px solid $c-border;
   border-right: none;
   padding-bottom: 1.5rem;
@@ -69,7 +64,7 @@
 }
 
 // Aside
-.sms-aside-wrapper {
+.sms-right-column-content-wrapper {
   border-bottom: 1px solid $c-border;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
@@ -122,6 +117,13 @@ input[type="submit"] {
   border: 1px solid $c-gold;
 }
 
+// Themes
+.sms-theme__white {
+  @include mx-sms-theme__light($c-white, $c-black, $c-gold);
+}
+.sms-theme__black {
+  @include mx-sms-theme__dark($c-black, $c-white, $c-gold);
+}
 
 
 
