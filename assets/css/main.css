@@ -8238,7 +8238,7 @@ template {
   background-color: #ffffff; }
 
 .custom-control-label::before {
-  border: 1px solid #ecddb9;
+  border: 1px solid #826624;
   background-color: #ffffff; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -8257,7 +8257,7 @@ template {
     background-color: #aa852f; }
 
 .form-control {
-  border: 1px solid #ecddb9; }
+  border: 1px solid #826624; }
 
 button,
 input[type="button"],

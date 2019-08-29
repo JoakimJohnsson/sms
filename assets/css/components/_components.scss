@@ -101,7 +101,7 @@
   background-color: $c-white;
 }
 .custom-control-label::before {
-  border: 1px solid $c-border;
+  border: 1px solid $c-gold;
   background-color: $c-white;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -125,6 +125,6 @@
 }
 // Forms
 .form-control {
-  border: 1px solid $c-border;
+  border: 1px solid $c-gold;
 }
 
