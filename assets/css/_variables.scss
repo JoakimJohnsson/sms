@@ -1,0 +1,28 @@
+// VARIABLES
+// ******************************************************
+
+// Colors
+// Element colors
+// Typography
+
+// Colors
+$c-light-beige: #fefbdc;
+$c-blue: #44708b;
+$c-dark-blue: #1f3540;
+$c-gold: #826624;
+$c-gold-lighter: lighten($c-gold, 20%);
+$c-green: #3a6f67;
+$c-dark-green: #034c3b;
+$c-pink: #f2aab8;
+$c-dark-pink: #982149;
+$c-black: #000000;
+$c-text: #4c4c4c;
+$c-white: #ffffff;
+
+// Element colors
+$c-border: lighten($c-gold, 50%);
+
+// Typography
+$font-family-sans-serif: 'Cabin', sans-serif;
+$headings-font-family: 'Cabin', sans-serif;
+$headings-font-weight: 700;

@@ -1,45 +1,48 @@
-@import "../helpers/variables";
-@import "../helpers/mixins";
-@import "../../bootstrap/bootstrap-4.0.0/scss/variables";
+@import "variables";
+@import "mixins";
+@import "../bootstrap/bootstrap-4.0.0/scss/variables";
 
 // COMPONENTS
 // ******************************************************
 
-// NAVBAR MAIN
-// ------------------------------------------------------
+// Navbar main
+// Navbar top
+// Start page
+// Main
+// Aside
+// Footer
+// Custom checkbox
+// Buttons
+// Forms
+
+// Navbar main
 .sms-navbar-main {
-  @include bg-text-colors__white;
-  &.start-page {
-    a {
-      color: $c-black;
-      text-decoration: none;
+  @include mx-sms-theme__light($c-white, $c-black, $c-gold);
+  .sms-logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $c-black;
+    p {
+      margin-top: -.5rem;
     }
-  }
-}
-.sms-logo {
-  font-size: 1rem;
-  font-weight: 700;
-  color: $c-black;
-  p {
-    margin-top: -.5rem;
-  }
-  &.start-page {
-    text-align: center;
-  }
-  object {
-    width: 40px;
-    margin-bottom: 0;
-  }
-  @include media-breakpoint-up(sm) {
-    font-size: 1.5rem;
+    &.start-page {
+      text-align: center;
+    }
     object {
-      width: 50px;
+      width: 40px;
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-up(sm) {
+      font-size: 1.5rem;
+      object {
+        width: 50px;
+      }
     }
   }
 }
 
-// NAVBAR TOP
-// ------------------------------------------------------
+
+// Navbar top
 .sms-navbar-top {
   background-color: $c-gold;
   min-height: 50px;
@@ -47,14 +50,12 @@
   border-bottom: 1px solid $c-white;
 }
 
-// START PAGE COMPONENTS
-// ------------------------------------------------------
+// Start page
 .sms-start-page-bg-text {
-  @include bg-text-colors__white;
+  @include mx-sms-theme__light($c-white, $c-black, $c-gold);
 }
 
-// MAIN
-// ------------------------------------------------------
+// Main
 .sms-main-wrapper {
   border-bottom: 1px solid $c-border;
   border-right: none;
@@ -65,11 +66,9 @@
     border-right: 1px solid $c-border;
     height: 100%;
   }
-
 }
 
-// ASIDE
-// ------------------------------------------------------
+// Aside
 .sms-aside-wrapper {
   border-bottom: 1px solid $c-border;
   padding-bottom: 1.5rem;
@@ -79,22 +78,16 @@
   }
 }
 
-// FOOTER
-// ------------------------------------------------------
-
+// Footer
 .sms-footer {
-  @include bg-text-colors__black;
+  @include mx-sms-theme__dark($c-black, $c-white, $c-gold);
   font-size: .8rem;
-  .sms-text-logo {
+  .sms-logo {
     font-size: 1rem;
     line-height: 1.1;
     font-weight: 700;
-    color: $c-white;
   }
 }
-
-// CUSTOM COMPONENTS
-// ------------------------------------------------------
 
 // Custom checkbox
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
@@ -111,20 +104,24 @@
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23826624' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
-// Custom buttons
-.sms-button__gold {
-  color: $c-white;
-  background-color: $c-gold;
-  &:hover {
-    background-color: darken($c-gold, 10%);
-  }
-  &:active,
-  &:focus {
-    background-color: lighten($c-gold, 10%);
-  }
+
+// Buttons
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
+.sms-button__gold {
+  @include mx-sms-button__standard($c-white, $c-gold)
+}
+
 // Forms
 .form-control {
   border: 1px solid $c-gold;
 }
+
+
+
 

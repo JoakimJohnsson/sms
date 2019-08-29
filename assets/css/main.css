@@ -4,7 +4,6 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i&display=swap");
 :root {
   --blue: #007bff;
@@ -8148,37 +8147,34 @@ template {
 
   h5 {
     font-size: 1rem; } }
+a {
+  text-decoration: underline; }
+
 .sms-navbar-main {
   background-color: #ffffff;
-  color: #4c4c4c; }
-  .sms-navbar-main h1, .sms-navbar-main h2, .sms-navbar-main h3, .sms-navbar-main h4, .sms-navbar-main h5 {
-    color: #000000; }
+  color: #000000; }
   .sms-navbar-main a {
     color: #826624; }
     .sms-navbar-main a:hover {
       color: #5a4719; }
     .sms-navbar-main a:active, .sms-navbar-main a:focus {
       color: #aa852f; }
-  .sms-navbar-main.start-page a {
-    color: #000000;
-    text-decoration: none; }
-
-.sms-logo {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #000000; }
-  .sms-logo p {
-    margin-top: -.5rem; }
-  .sms-logo.start-page {
-    text-align: center; }
-  .sms-logo object {
-    width: 40px;
-    margin-bottom: 0; }
-  @media (min-width: 576px) {
-    .sms-logo {
-      font-size: 1.5rem; }
-      .sms-logo object {
-        width: 50px; } }
+  .sms-navbar-main .sms-logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000; }
+    .sms-navbar-main .sms-logo p {
+      margin-top: -.5rem; }
+    .sms-navbar-main .sms-logo.start-page {
+      text-align: center; }
+    .sms-navbar-main .sms-logo object {
+      width: 40px;
+      margin-bottom: 0; }
+    @media (min-width: 576px) {
+      .sms-navbar-main .sms-logo {
+        font-size: 1.5rem; }
+        .sms-navbar-main .sms-logo object {
+          width: 50px; } }
 
 .sms-navbar-top {
   background-color: #826624;
@@ -8188,9 +8184,7 @@ template {
 
 .sms-start-page-bg-text {
   background-color: #ffffff;
-  color: #4c4c4c; }
-  .sms-start-page-bg-text h1, .sms-start-page-bg-text h2, .sms-start-page-bg-text h3, .sms-start-page-bg-text h4, .sms-start-page-bg-text h5 {
-    color: #000000; }
+  color: #000000; }
   .sms-start-page-bg-text a {
     color: #826624; }
     .sms-start-page-bg-text a:hover {
@@ -8220,19 +8214,16 @@ template {
   background-color: #000000;
   color: #ffffff;
   font-size: .8rem; }
-  .sms-footer h1, .sms-footer h2, .sms-footer h3, .sms-footer h4, .sms-footer h5 {
-    color: #ffffff; }
   .sms-footer a {
-    color: #cba241; }
+    color: #aa852f; }
     .sms-footer a:hover {
-      color: #aa852f; }
+      color: #cba241; }
     .sms-footer a:active, .sms-footer a:focus {
       color: #d6b569; }
-  .sms-footer .sms-text-logo {
+  .sms-footer .sms-logo {
     font-size: 1rem;
     line-height: 1.1;
-    font-weight: 700;
-    color: #ffffff; }
+    font-weight: 700; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #ffffff; }
@@ -8248,6 +8239,13 @@ template {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23826624' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
 .sms-button__gold {
   color: #ffffff;
   background-color: #826624; }
@@ -8258,15 +8256,5 @@ template {
 
 .form-control {
   border: 1px solid #826624; }
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -moz-appearance: none;
-  -webkit-appearance: none; }
-
-a {
-  text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

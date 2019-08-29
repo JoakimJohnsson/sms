@@ -1,0 +1,50 @@
+@import "variables";
+
+// MIXINS
+// ******************************************************
+
+// Themes
+// Buttons
+
+// Themes
+@mixin mx-sms-theme__light($bg, $color, $contrast) {
+  background-color: $bg;
+  color: $color;
+  a {
+    color: $contrast;
+    &:hover {
+    color: darken($contrast, 10%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($contrast, 10%);
+    }
+  }
+}
+@mixin mx-sms-theme__dark($bg, $color, $contrast) {
+  background-color: $bg;
+  color: $color;
+  a {
+    color: lighten($contrast, 10%);
+    &:hover {
+      color: lighten($contrast, 20%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($contrast, 30%);
+    }
+  }
+}
+
+// Buttons
+@mixin mx-sms-button__standard($color, $bg) {
+  color: $color;
+  background-color: $bg;
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+  &:active,
+  &:focus {
+    background-color: lighten($bg, 10%);
+  }
+}

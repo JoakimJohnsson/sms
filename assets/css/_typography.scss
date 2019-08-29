@@ -3,18 +3,10 @@
 // TYPOGRAPHY
 // ******************************************************
 
-// LOGO
-// ------------------------------------------------------
+// Header sizes
+// Links
 
-//
-
-
-
-
-
-
-// HEADER SIZES
-// ------------------------------------------------------
+// Header sizes
 @include media-breakpoint-down(md) {
   h1 {
     font-size: 2.15rem;
@@ -49,5 +41,9 @@
     font-size: 1rem;
   }
 }
-//
+
+// Links
+a {
+  text-decoration: underline;
+}
 
