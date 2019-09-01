@@ -3,6 +3,13 @@
 
 // Variables - Has to be imported before bootstrap because of !default classes.
 @import "variables";
+
+// Font awesome
+@import "../scss/fontawesome";
+@import "../scss/brands";
+@import "../scss/solid";
+@import "../scss/regular";
+
 // Bootstrap
 @import "../bootstrap/bootstrap-4.0.0/scss/bootstrap";
 @import "../bootstrap/bootstrap-4.0.0/scss/bootstrap-grid";
@@ -15,3 +22,5 @@
 
 // Typography
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap');

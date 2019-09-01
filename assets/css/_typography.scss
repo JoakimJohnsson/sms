@@ -7,40 +7,68 @@
 // Links
 
 // Header sizes
-@include media-breakpoint-down(md) {
-  h1 {
-    font-size: 2.15rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 1.25rem;
-  }
-  h5 {
-    font-size: 1.15rem;
+
+h1 {
+  font-size: 1.8rem;
+  @include media-breakpoint-up(lg){
+    font-size: 2.5rem;
   }
 }
-@include media-breakpoint-down(sm) {
-  h1 {
-    font-size: 1.75rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.3rem;
-  }
-  h4 {
-    font-size: 1.15rem;
-  }
-  h5 {
-    font-size: 1rem;
+h2 {
+  font-size: 1.2rem;
+  @include media-breakpoint-up(lg){
+    font-size: 1.6rem;
   }
 }
+h3 {
+  font-size: 1rem;
+  @include media-breakpoint-up(lg){
+    font-size: 1.2rem;
+  }
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+
+
+//@include media-breakpoint-down(md) {
+//  h1 {
+//    font-size: 2.15rem;
+//  }
+//  h2 {
+//    font-size: 1.75rem;
+//  }
+//  h3 {
+//    font-size: 1.5rem;
+//  }
+//  h4 {
+//    font-size: 1.25rem;
+//  }
+//  h5 {
+//    font-size: 1.15rem;
+//  }
+//}
+//@include media-breakpoint-down(sm) {
+//  h1 {
+//    font-size: 1.75rem;
+//  }
+//  h2 {
+//    font-size: 1.5rem;
+//  }
+//  h3 {
+//    font-size: 1.3rem;
+//  }
+//  h4 {
+//    font-size: 1.15rem;
+//  }
+//  h5 {
+//    font-size: 1rem;
+//  }
+//}
 
 // Links
 a {

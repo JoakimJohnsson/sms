@@ -5,6 +5,8 @@
 
 // Themes
 // Buttons
+// Alignment
+// Font awesome
 
 // Themes
 @mixin mx-sms-theme__light($bg, $color, $contrast) {
@@ -35,16 +37,80 @@
     }
   }
 }
+@mixin mx-sms-theme-expanded__dark($bg, $color, $contrast) {
+  background-color: $bg;
+  color: $color;
+  a {
+    text-decoration: none;
+    color: $color;
+    &:hover {
+      color: lighten($contrast, 40%);
+    }
+    &:active,
+    &:focus {
+      color: lighten($contrast, 30%);
+    }
+  }
+}
 
 // Buttons
 @mixin mx-sms-button__standard($color, $bg) {
   color: $color;
   background-color: $bg;
+  padding: .7rem 1.2rem;
+  display: block;
   &:hover {
     background-color: darken($bg, 10%);
   }
   &:active,
   &:focus {
     background-color: lighten($bg, 10%);
+  }
+}
+@mixin mx-sms-button__border($color, $bg) {
+  color: $color;
+  background-color: transparent;
+  border: 1px solid $bg;
+  padding: .7rem 1.2rem;
+  display: block;
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+  &:active,
+  &:focus {
+    background-color: lighten($bg, 10%);
+  }
+}
+
+// Alignment
+@mixin mx-vertical-alignment__center {
+  display: flex;
+  align-items: center;
+}
+
+// Font awesome
+@mixin mx-fas-after($icon, $size) {
+  &::after {
+    font-family: $font-font-awesome;
+    font-weight: 900;
+    content: $icon;
+    font-size: $size;
+    margin-left: .5rem;
+  }
+}
+@mixin mx-fa-after($icon, $size) {
+  &::after {
+    font-family: $font-font-awesome;
+    content: $icon;
+    font-size: $size;
+    margin-left: .5rem;
+  }
+}
+@mixin mx-fa-before($icon, $size) {
+  &::before {
+    font-family: $font-font-awesome;
+    content: $icon;
+    font-size: $size;
+    margin-right: .5rem;
   }
 }

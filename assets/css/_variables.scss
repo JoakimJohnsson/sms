@@ -4,6 +4,7 @@
 // Colors
 // Element colors
 // Typography
+// Font awesome
 
 // Colors
 $c-light-beige: #fefbdc;
@@ -23,6 +24,14 @@ $c-white: #ffffff;
 $c-border: lighten($c-gold, 50%);
 
 // Typography
-$font-family-sans-serif: 'Cabin', sans-serif;
-$headings-font-family: 'Cabin', sans-serif;
-$headings-font-weight: 700;
+$font-family-sans-serif: 'Nunito', sans-serif;
+$headings-font-family: 'Bitter', serif;
+$headings-font-weight: 400;
+
+// Font awesome
+$font-font-awesome: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+$fa-icon-copyright: "\f1f9";
+$fa-icon-cog: "\f013";
+$fa-icon-sign-out: "\f1f9";
+
+
