@@ -7,6 +7,7 @@
 // Buttons
 // Alignment
 // Font awesome
+// Show / hide
 
 // Themes
 @mixin mx-sms-theme__light($bg, $color, $contrast) {
@@ -89,7 +90,7 @@
 }
 
 // Font awesome
-@mixin mx-fas-after($icon, $size) {
+@mixin mx-fas-after-solid($icon, $size) {
   &::after {
     font-family: $font-font-awesome;
     font-weight: 900;
@@ -98,7 +99,25 @@
     margin-left: .5rem;
   }
 }
-@mixin mx-fa-after($icon, $size) {
+@mixin mx-fa-after-solid($icon, $size) {
+  &::after {
+    font-family: $font-font-awesome;
+    font-weight: 900;
+    content: $icon;
+    font-size: $size;
+    margin-left: .5rem;
+  }
+}
+@mixin mx-fa-before-solid($icon, $size) {
+  &::before {
+    font-family: $font-font-awesome;
+    font-weight: 900;
+    content: $icon;
+    font-size: $size;
+    margin-right: .5rem;
+  }
+}
+@mixin mx-fas-after-regular($icon, $size) {
   &::after {
     font-family: $font-font-awesome;
     content: $icon;
@@ -106,11 +125,31 @@
     margin-left: .5rem;
   }
 }
-@mixin mx-fa-before($icon, $size) {
+@mixin mx-fa-after-regular($icon, $size) {
+  &::after {
+    font-family: $font-font-awesome;
+    content: $icon;
+    font-size: $size;
+    margin-left: .5rem;
+  }
+}
+@mixin mx-fa-before-regular($icon, $size) {
   &::before {
     font-family: $font-font-awesome;
     content: $icon;
     font-size: $size;
     margin-right: .5rem;
   }
+}
+
+@mixin mx-hide-span-md() {
+  span {
+    display: none
+  }
+  @include media-breakpoint-up(md) {
+    span {
+      display: inline;
+    }
+  }
+
 }

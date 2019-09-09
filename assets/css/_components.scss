@@ -168,13 +168,25 @@ input[type="submit"] {
 // Font awesome
 
 .fa-copyright__before {
-  @include mx-fa-before($fa-icon-copyright, 1rem);
+  @include mx-fa-before-regular($fa-icon-copyright, 1rem);
 }
 .fa-cog__after {
-  @include mx-fas-after($fa-icon-cog, 1.2rem);
+  display: inline;
+  @include mx-fas-after-solid($fa-icon-cog, 1.2rem);
+  @include mx-hide-span-md;
 }
 .fa-sign-out__after {
-  @include mx-fa-after($fa-icon-sign-out, 1.2rem);
+  display: inline;
+  @include mx-fa-after-solid($fa-icon-sign-out, 1.2rem);
+  @include mx-hide-span-md;
+}
+.fa-user__after {
+  display: inline;
+  @include mx-fa-after-solid($fa-icon-user, 1.2rem);
+  @include mx-hide-span-md;
+}
+.fa-plus__after {
+  @include mx-fa-after-solid($fa-icon-plus, 1rem);
 }
 
 
